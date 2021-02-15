@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+		spec="1.0+"
+		codebase="http://geni-images.renci.org/webstart"
+		href="flukes.jnlp">
+	<information>
+		<title>FLUKES</title>
+		<vendor>RENCI, The University of North Carolina at Chapel Hill</vendor>
+		<homepage href="http://www.renci.org"/>
+		<description>FLUKES - ORCA NDL graph editor</description>
+		<icon kind="splash" href="http://geni-images.renci.org/webstart/html/icon.png"/>
+		<icon href="http://geni-images.renci.org/webstart/html/icon.png"/>
+	</information>
+	<security>
+		<all-permissions/>
+	</security>
+	<resources>
+		<j2se version="1.6+" max-heap-size="1024m" />
+		    
+    <jar href="lib/flukes-0.7.4.jar" main="true"/>
+    <jar href="lib/ndl-5.4.10-SNAPSHOT.jar"/>
+    <jar href="lib/jena-tdb-1.0.2.jar"/>
+    <jar href="lib/jena-arq-2.11.2.jar"/>
+    <jar href="lib/jsonld-java-0.4.jar"/>
+    <jar href="lib/jackson-core-2.3.3.jar"/>
+    <jar href="lib/jackson-databind-2.3.3.jar"/>
+    <jar href="lib/jena-core-2.11.2.jar"/>
+    <jar href="lib/jena-iri-1.0.2.jar"/>
+    <jar href="lib/xercesImpl-2.11.0.jar"/>
+    <jar href="lib/jaxb-xjc-2.0EA3.jar"/>
+    <jar href="lib/gleen-0.6.2.jar"/>
+    <jar href="lib/slf4j-log4j12-1.7.5.jar"/>
+    <jar href="lib/jwhoisserver-0.4.1.1.jar"/>
+    <jar href="lib/commons-logging-1.2.jar"/>
+    <jar href="lib/ini4j-0.5.4.jar"/>
+    <jar href="lib/json-simple-1.1.1.jar"/>
+    <jar href="lib/log4j-1.2.13.jar"/>
+    <jar href="lib/jcl-over-slf4j-1.7.5.jar"/>
+    <jar href="lib/slf4j-api-1.7.5.jar"/>
+    <jar href="lib/jung-api-2.0.1.jar"/>
+    <jar href="lib/collections-generic-4.01.jar"/>
+    <jar href="lib/jung-3d-2.0.1.jar"/>
+    <jar href="lib/vecmath-1.3.1.jar"/>
+    <jar href="lib/j3d-core-1.3.1.jar"/>
+    <jar href="lib/jung-algorithms-2.0.1.jar"/>
+    <jar href="lib/colt-1.2.0.jar"/>
+    <jar href="lib/concurrent-1.3.4.jar"/>
+    <jar href="lib/jung-graph-impl-2.0.1.jar"/>
+    <jar href="lib/jung-jai-2.0.1.jar"/>
+    <jar href="lib/jung-visualization-2.0.1.jar"/>
+    <jar href="lib/jung-io-2.0.1.jar"/>
+    <jar href="lib/wstx-asl-3.2.6.jar"/>
+    <jar href="lib/stax-api-1.0.1.jar"/>
+    <jar href="lib/swing-layout-1.0.2.jar"/>
+    <jar href="lib/kiwi-2.4.1.jar"/>
+    <jar href="lib/commons-lang-2.5.jar"/>
+    <jar href="lib/xmlrpc-client-3.1.3.jar"/>
+    <jar href="lib/xmlrpc-common-3.1.3.jar"/>
+    <jar href="lib/ws-commons-util-1.0.2.jar"/>
+    <jar href="lib/util-5.4.10-SNAPSHOT.jar"/>
+    <jar href="lib/commons-dbcp-1.4.jar"/>
+    <jar href="lib/commons-pool-1.5.4.jar"/>
+    <jar href="lib/mysql-connector-java-5.1.43.jar"/>
+    <jar href="lib/jabac-1.3.1.jar"/>
+    <jar href="lib/collections-generic-4.01.jar"/>
+    <jar href="lib/commons-httpclient-3.1.jar"/>
+    <jar href="lib/commons-codec-1.2.jar"/>
+    <jar href="lib/ektorp-1.4.2.jar"/>
+    <jar href="lib/httpclient-4.2.3.jar"/>
+    <jar href="lib/httpcore-4.2.2.jar"/>
+    <jar href="lib/httpclient-cache-4.2.3.jar"/>
+    <jar href="lib/jackson-annotations-2.4.1.jar"/>
+    <jar href="lib/commons-io-2.0.1.jar"/>
+    <jar href="lib/guava-14.0.1.jar"/>
+    <jar href="lib/xmpp-pubsub-1.0.jar"/>
+    <jar href="lib/smack-pubsub-3.4.1.jar"/>
+    <jar href="lib/smackx-pubsub-3.4.1.jar"/>
+    <jar href="lib/xml-apis-1.4.01.jar"/>
+    <jar href="lib/twitter4j-core-4.0.7.jar"/>
+
+		<extension name="BouncyCastle cryptography libraries" href="bcprov.jnlp"/>
+	</resources>
+	<application-desc main-class="orca.flukes.GUI"/>
+</jnlp>

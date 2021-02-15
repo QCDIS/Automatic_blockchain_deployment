@@ -1,0 +1,1 @@
+{"_id":"602a59971b13ddb0875b4bd0","timestamp":"2021-02-15T11:23:03.101Z","input":{"blockchain_type":"Sawtooth","consensus_algorithm":"pBFT","hosts":[{"cloud":"EC2","number":1,"zone":"California","os_type":"Ubuntu 16.04","instance_type":"t2.micro"},{"cloud":"EC2","number":1,"zone":"California","os_type":"Ubuntu 16.04","instance_type":"t2.micro"}],"transactions":[]}}

@@ -1,0 +1,91 @@
+---
+SEngineClass: null
+extraInfo:
+  LocalEntry: "https://uva-nl-hn.exogeni.net:11443/orca/xmlrpc"
+VMs:
+- name: "sub0node0"
+  type: null
+  nodeType: "XOSmall"
+  CPU: "1"
+  Mem: "1"
+  OStype: "Ubuntu 16.04"
+  defaultSSHAccount: "root"
+  script: null
+  publicAddress: "145.100.133.244"
+  selfEthAddresses:
+    192.168.10.10/255.255.255.0: "self_0"
+  VEngineClass: null
+  extraInfo:
+    OS_URL: "http://geni-images.renci.org/images/standard/ubuntu-comet/ubuntu-16.04/ubuntu-16.04.xml"
+    DiskSize: "10"
+    OS_GUID: "564ae072fb3500fa6721c2f976f24fc407e41b5e"
+  VNFType: null
+  scaledFrom: null
+  fake: null
+  OS_URL: "http://geni-images.renci.org/images/standard/ubuntu-comet/ubuntu-16.04/ubuntu-16.04.xml"
+  OS_GUID: "564ae072fb3500fa6721c2f976f24fc407e41b5e"
+- name: "sub0node1"
+  type: null
+  nodeType: "XOSmall"
+  CPU: "1"
+  Mem: "1"
+  OStype: "Ubuntu 16.04"
+  defaultSSHAccount: "root"
+  script: null
+  publicAddress: "145.100.133.146"
+  selfEthAddresses:
+    192.168.10.11/255.255.255.0: "self_0"
+  VEngineClass: null
+  extraInfo:
+    OS_URL: "http://geni-images.renci.org/images/standard/ubuntu-comet/ubuntu-16.04/ubuntu-16.04.xml"
+    DiskSize: "10"
+    OS_GUID: "564ae072fb3500fa6721c2f976f24fc407e41b5e"
+  VNFType: null
+  scaledFrom: null
+  fake: null
+  OS_URL: "http://geni-images.renci.org/images/standard/ubuntu-comet/ubuntu-16.04/ubuntu-16.04.xml"
+  OS_GUID: "564ae072fb3500fa6721c2f976f24fc407e41b5e"
+- name: "sub0node2"
+  type: null
+  nodeType: "XOSmall"
+  CPU: "1"
+  Mem: "1"
+  OStype: "Ubuntu 16.04"
+  defaultSSHAccount: "root"
+  script: null
+  publicAddress: "145.100.133.187"
+  selfEthAddresses:
+    192.168.10.12/255.255.255.0: "self_0"
+  VEngineClass: null
+  extraInfo:
+    OS_URL: "http://geni-images.renci.org/images/standard/ubuntu-comet/ubuntu-16.04/ubuntu-16.04.xml"
+    DiskSize: "10"
+    OS_GUID: "564ae072fb3500fa6721c2f976f24fc407e41b5e"
+  VNFType: null
+  scaledFrom: null
+  fake: null
+  OS_URL: "http://geni-images.renci.org/images/standard/ubuntu-comet/ubuntu-16.04/ubuntu-16.04.xml"
+  OS_GUID: "564ae072fb3500fa6721c2f976f24fc407e41b5e"
+- name: "monitor"
+  type: null
+  nodeType: "XOSmall"
+  CPU: "1"
+  Mem: "1"
+  OStype: "Ubuntu 16.04"
+  defaultSSHAccount: "root"
+  script: null
+  publicAddress: "145.100.133.154"
+  selfEthAddresses:
+    192.168.10.5/255.255.255.0: "self_0"
+  VEngineClass: null
+  extraInfo:
+    OS_URL: "http://geni-images.renci.org/images/standard/ubuntu-comet/ubuntu-16.04/ubuntu-16.04.xml"
+    DiskSize: "10"
+    OS_GUID: "564ae072fb3500fa6721c2f976f24fc407e41b5e"
+  VNFType: null
+  scaledFrom: null
+  fake: null
+  OS_URL: "http://geni-images.renci.org/images/standard/ubuntu-comet/ubuntu-16.04/ubuntu-16.04.xml"
+  OS_GUID: "564ae072fb3500fa6721c2f976f24fc407e41b5e"
+sliceName: "subtop0-cebb658c-480c-4a1f-865a-68aee188e74a"
+duration: "1"

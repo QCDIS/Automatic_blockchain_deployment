@@ -1,0 +1,122 @@
+LOGs:
+- Time: "1613388310020"
+  Overhead: "114817"
+  Event:
+    Operation: "provision"
+    Command: null
+    Options: null
+    Log: null
+    LogString: null
+    ObjectType: "SubTopology"
+    Objects: "subtop0"
+  LOG:
+    sub0node0#network: "5154@1613388304847"
+    sub0node0#pubIP: "54.219.170.41"
+    sub0node0#deploy: "49460@1613388255356"
+    subtop0#Provision: "107626@1613388197214"
+    sub0node0#provision: "36784@1613388204904"
+    subtop0#Network: "5163@1613388304846"
+- Time: "1613388434973"
+  Overhead: "124949"
+  Event:
+    Operation: "provision"
+    Command: null
+    Options: null
+    Log: null
+    LogString: null
+    ObjectType: "SubTopology"
+    Objects: "subtop1"
+  LOG:
+    sub1node0#provision: "35112@1613388317765"
+    monitor#provision: "37274@1613388317765"
+    monitor#pubIP: "54.183.179.65"
+    sub1node0#network: "5162@1613388429797"
+    sub1node0#pubIP: "3.101.131.253"
+    monitor#network: "5163@1613388429797"
+    subtop1#Provision: "119763@1613388310025"
+    subtop1#Network: "5169@1613388429797"
+    monitor#deploy: "60757@1613388369023"
+    sub1node0#deploy: "47858@1613388366743"
+- Time: "1613389042348"
+  Overhead: "6008"
+  Event:
+    Operation: "put"
+    Command: null
+    Options:
+      Src: "file@./cloud_storm/cloud/602a59971b13ddb0875b4bd0/stop.sh"
+      Dst: "file@/root"
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node0: "File stop.sh is uploaded!"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node0"
+  LOG:
+    MSG: ""
+    subtop0.sub0node0: "File stop.sh is uploaded!"
+- Time: "1613389048365"
+  Overhead: "6013"
+  Event:
+    Operation: "put"
+    Command: null
+    Options:
+      Src: "file@./cloud_storm/cloud/602a59971b13ddb0875b4bd0/genesis.sh"
+      Dst: "file@/root"
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node0: "File genesis.sh is uploaded!"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node0"
+  LOG:
+    MSG: ""
+    subtop0.sub0node0: "File genesis.sh is uploaded!"
+- Time: "1613389077028"
+  Overhead: "28660"
+  Event:
+    Operation: "execute"
+    Command: "bash /root/genesis.sh"
+    Options: null
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node0: "Generated config-genesis.batch\nusage: sawset [-h] [-v]\
+        \ [-V] {genesis,proposal} ...\nsawset: error: unrecognized arguments: sawtooth.consensus.pbft.block_publishing_delay=1000\
+        \ sawtooth.consensus.pbft.commit_timeout=10000 sawtooth.consensus.pbft.forced_view_change_interval=100\
+        \ sawtooth.consensus.pbft.idle_timeout=30000 sawtooth.consensus.pbft.view_change_duration=5000\n\
+        Error: Unable to read config-consensus.batch\nProcessing config-genesis.batch...\n\
+        Processing config-consensus.batch...\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\n"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node0"
+  LOG:
+    MSG: ""
+    subtop0.sub0node0: "Generated config-genesis.batch\nusage: sawset [-h] [-v] [-V]\
+      \ {genesis,proposal} ...\nsawset: error: unrecognized arguments: sawtooth.consensus.pbft.block_publishing_delay=1000\
+      \ sawtooth.consensus.pbft.commit_timeout=10000 sawtooth.consensus.pbft.forced_view_change_interval=100\
+      \ sawtooth.consensus.pbft.idle_timeout=30000 sawtooth.consensus.pbft.view_change_duration=5000\n\
+      Error: Unable to read config-consensus.batch\nProcessing config-genesis.batch...\n\
+      Processing config-consensus.batch...\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub1node0,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\n"

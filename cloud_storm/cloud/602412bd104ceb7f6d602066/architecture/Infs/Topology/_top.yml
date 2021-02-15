@@ -1,0 +1,90 @@
+---
+userName: "jardenna"
+publicKeyPath: "name@test.pub"
+topologies:
+- topology: "subtop0"
+  cloudProvider: "EC2"
+  subTopologyClass: null
+  domain: "Virginia"
+  status: "running"
+  logsInfo:
+    sub0node0#network: "5091@1612977060230"
+    sub0node0#deploy: "45892@1612976895643"
+    subtop0#Provision: "106811@1612976834762"
+    sub0node0#provision: "40115@1612976842454"
+    subtop0#Network: "5097@1612977060230"
+  sshKeyPairId: "ec2-virginia"
+  scaledFrom: null
+- topology: "subtop1"
+  cloudProvider: "EC2"
+  subTopologyClass: null
+  domain: "Virginia"
+  status: "running"
+  logsInfo:
+    sub1node0#provision: "34518@1612976954672"
+    monitor#provision: "35364@1612976954673"
+    sub1node0#network: "5324@1612977060231"
+    monitor#network: "5309@1612977060231"
+    subtop1#Provision: "113776@1612976946447"
+    subtop1#Network: "5332@1612977060230"
+    monitor#deploy: "58016@1612977002198"
+    sub1node0#deploy: "42680@1612977002094"
+  sshKeyPairId: "ec2-virginia"
+  scaledFrom: null
+connections:
+- name: "c0"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "subtop0.monitor"
+    netmask: "24"
+    address: "192.168.10.5"
+    ethName: "acp_0"
+  target:
+    vmName: "subtop0.sub0node0"
+    netmask: "24"
+    address: "192.168.10.10"
+    ethName: "acp_0"
+  logic: "false"
+- name: "c1"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "subtop0.monitor"
+    netmask: "24"
+    address: "192.168.10.5"
+    ethName: "acp_1"
+  target:
+    vmName: "subtop1.sub1node0"
+    netmask: "24"
+    address: "192.168.10.11"
+    ethName: "acp_0"
+  logic: "false"
+- name: "c2"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "subtop0.sub0node0"
+    netmask: "24"
+    address: "192.168.10.10"
+    ethName: "acp_1"
+  target:
+    vmName: "subtop1.sub1node0"
+    netmask: "24"
+    address: "192.168.10.11"
+    ethName: "acp_1"
+  logic: "false"
+subnets:
+- name: "s1"
+  subnet: "192.168.10.0"
+  netmask: "24"
+  members:
+  - vmName: "subtop0.monitor"
+    address: "192.168.10.5"
+  - vmName: "subtop0.sub0node0"
+    address: "192.168.10.10"
+  - vmName: "subtop1.sub1node0"
+    address: "192.168.10.11"

@@ -1,0 +1,11 @@
+Mode: "CTRL" # or CTRL
+InfrasCodes:
+- CodeType: "LOOP"
+  Duration: null
+  Count: 1
+  Deadline: null
+  OpCodes:
+  - Operation: "execute"
+    Command: "timeout 300 intkey workload --rate 25 -d 10 ; exit 0"
+    ObjectType: VM
+    Objects: "subtop0.sub0node0"

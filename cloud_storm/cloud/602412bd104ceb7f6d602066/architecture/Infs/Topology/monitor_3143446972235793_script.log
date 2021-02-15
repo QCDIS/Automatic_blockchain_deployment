@@ -1,0 +1,221 @@
+sudo: unable to resolve host monitor
+sudo: unable to resolve host monitor
+OK
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial InRelease
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+Get:4 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+Get:5 https://download.docker.com/linux/ubuntu xenial InRelease [66.2 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main Sources [868 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/restricted Sources [4,808 B]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe Sources [7,728 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/multiverse Sources [179 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [7,532 kB]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe Translation-en [4,354 kB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [144 kB]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/multiverse Translation-en [106 kB]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main Sources [531 kB]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/restricted Sources [3,608 B]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe Sources [443 kB]
+Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/multiverse Sources [12.3 kB]
+Get:18 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1,946 kB]
+Get:19 http://security.ubuntu.com/ubuntu xenial-security/main Sources [247 kB]
+Get:20 http://security.ubuntu.com/ubuntu xenial-security/restricted Sources [2,976 B]
+Get:21 http://security.ubuntu.com/ubuntu xenial-security/universe Sources [210 kB]
+Get:22 http://security.ubuntu.com/ubuntu xenial-security/multiverse Sources [4,636 B]
+Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [466 kB]
+Get:24 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [1,547 kB]
+Get:25 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [10.2 kB]
+Get:26 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en [2,272 B]
+Get:27 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [1,216 kB]
+Get:28 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [355 kB]
+Get:29 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [364 kB]
+Get:30 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [22.6 kB]
+Get:31 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en [8,476 B]
+Get:32 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/main Sources [6,720 B]
+Get:33 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/universe Sources [11.0 kB]
+Get:34 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [9,812 B]
+Get:35 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [9,824 B]
+Get:36 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/main Translation-en [4,456 B]
+Get:37 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [11.3 kB]
+Get:38 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en [4,476 B]
+Get:39 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [785 kB]
+Get:40 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [224 kB]
+Get:41 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [7,864 B]
+Get:42 https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages [18.2 kB]
+Get:43 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en [2,672 B]
+Fetched 29.8 MB in 5s (5,379 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  containerd.io docker-ce-cli docker-ce-rootless-extras libltdl7 libseccomp2
+  pigz
+Suggested packages:
+  aufs-tools cgroupfs-mount | cgroup-lite
+Recommended packages:
+  slirp4netns
+The following NEW packages will be installed:
+  containerd.io docker-ce docker-ce-cli docker-ce-rootless-extras libltdl7
+  pigz
+The following packages will be upgraded:
+  libseccomp2
+1 upgraded, 6 newly installed, 0 to remove and 191 not upgraded.
+Need to get 103 MB of archives.
+After this operation, 450 MB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/universe amd64 pigz amd64 2.3.1-2 [61.1 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libseccomp2 amd64 2.4.3-1ubuntu3.16.04.3 [41.0 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial/main amd64 libltdl7 amd64 2.4.6-0.1 [38.3 kB]
+Get:4 https://download.docker.com/linux/ubuntu xenial/stable amd64 containerd.io amd64 1.4.3-1 [28.0 MB]
+Get:5 https://download.docker.com/linux/ubuntu xenial/stable amd64 docker-ce-cli amd64 5:20.10.3~3-0~ubuntu-xenial [41.1 MB]
+Get:6 https://download.docker.com/linux/ubuntu xenial/stable amd64 docker-ce amd64 5:20.10.3~3-0~ubuntu-xenial [24.7 MB]
+Get:7 https://download.docker.com/linux/ubuntu xenial/stable amd64 docker-ce-rootless-extras amd64 5:20.10.3~3-0~ubuntu-xenial [8,901 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 103 MB in 2s (46.0 MB/s)
+Selecting previously unselected package pigz.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51334 files and directories currently installed.)
+Preparing to unpack .../pigz_2.3.1-2_amd64.deb ...
+Unpacking pigz (2.3.1-2) ...
+Preparing to unpack .../libseccomp2_2.4.3-1ubuntu3.16.04.3_amd64.deb ...
+Unpacking libseccomp2:amd64 (2.4.3-1ubuntu3.16.04.3) over (2.3.1-2.1ubuntu2~16.04.1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Setting up libseccomp2:amd64 (2.4.3-1ubuntu3.16.04.3) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Selecting previously unselected package containerd.io.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51342 files and directories currently installed.)
+Preparing to unpack .../containerd.io_1.4.3-1_amd64.deb ...
+Unpacking containerd.io (1.4.3-1) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../docker-ce-cli_5%3a20.10.3~3-0~ubuntu-xenial_amd64.deb ...
+Unpacking docker-ce-cli (5:20.10.3~3-0~ubuntu-xenial) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../docker-ce_5%3a20.10.3~3-0~ubuntu-xenial_amd64.deb ...
+Unpacking docker-ce (5:20.10.3~3-0~ubuntu-xenial) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../docker-ce-rootless-extras_5%3a20.10.3~3-0~ubuntu-xenial_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:20.10.3~3-0~ubuntu-xenial) ...
+Selecting previously unselected package libltdl7:amd64.
+Preparing to unpack .../libltdl7_2.4.6-0.1_amd64.deb ...
+Unpacking libltdl7:amd64 (2.4.6-0.1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for systemd (229-4ubuntu21.15) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Setting up pigz (2.3.1-2) ...
+Setting up containerd.io (1.4.3-1) ...
+Setting up docker-ce-cli (5:20.10.3~3-0~ubuntu-xenial) ...
+Setting up docker-ce (5:20.10.3~3-0~ubuntu-xenial) ...
+Setting up docker-ce-rootless-extras (5:20.10.3~3-0~ubuntu-xenial) ...
+Setting up libltdl7:amd64 (2.4.6-0.1) ...
+Processing triggers for systemd (229-4ubuntu21.15) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Cloning into 'sawtooth-core'...
+Using default tag: latest
+latest: Pulling from library/influxdb
+1e987daa2432: Pulling fs layer
+a0edb687a3da: Pulling fs layer
+6891892cc2ec: Pulling fs layer
+cf0485a89d8e: Pulling fs layer
+3f0907122426: Pulling fs layer
+e8d3d7e535c1: Pulling fs layer
+d45b611f60bf: Pulling fs layer
+db7c9bc15cec: Pulling fs layer
+cf0485a89d8e: Waiting
+3f0907122426: Waiting
+e8d3d7e535c1: Waiting
+d45b611f60bf: Waiting
+db7c9bc15cec: Waiting
+6891892cc2ec: Verifying Checksum
+6891892cc2ec: Download complete
+a0edb687a3da: Verifying Checksum
+a0edb687a3da: Download complete
+cf0485a89d8e: Verifying Checksum
+cf0485a89d8e: Download complete
+1e987daa2432: Verifying Checksum
+1e987daa2432: Download complete
+d45b611f60bf: Download complete
+e8d3d7e535c1: Verifying Checksum
+e8d3d7e535c1: Download complete
+db7c9bc15cec: Verifying Checksum
+db7c9bc15cec: Download complete
+3f0907122426: Verifying Checksum
+3f0907122426: Download complete
+1e987daa2432: Pull complete
+a0edb687a3da: Pull complete
+6891892cc2ec: Pull complete
+cf0485a89d8e: Pull complete
+3f0907122426: Pull complete
+e8d3d7e535c1: Pull complete
+d45b611f60bf: Pull complete
+db7c9bc15cec: Pull complete
+Digest: sha256:a66fa6bd81bee3c70e6c408235af068422ab73d74aa5d6acfc09dc76eba0ebf7
+Status: Downloaded newer image for influxdb:latest
+docker.io/library/influxdb:latest
+Using default tag: latest
+latest: Pulling from zh9314/sawtooth-stats-grafana
+c6b13209f43b: Pulling fs layer
+a3ed95caeb02: Pulling fs layer
+051738ac6f7e: Pulling fs layer
+66e042ba6513: Pulling fs layer
+71f0469b58d6: Pulling fs layer
+f1272b64677c: Pulling fs layer
+8cc7bfa90756: Pulling fs layer
+278756b31d40: Pulling fs layer
+0726682962b6: Pulling fs layer
+53e610f3e2e1: Pulling fs layer
+8e1df233eeef: Pulling fs layer
+66e042ba6513: Waiting
+71f0469b58d6: Waiting
+f1272b64677c: Waiting
+8cc7bfa90756: Waiting
+278756b31d40: Waiting
+0726682962b6: Waiting
+53e610f3e2e1: Waiting
+8e1df233eeef: Waiting
+a3ed95caeb02: Verifying Checksum
+a3ed95caeb02: Download complete
+66e042ba6513: Verifying Checksum
+66e042ba6513: Download complete
+71f0469b58d6: Verifying Checksum
+71f0469b58d6: Download complete
+c6b13209f43b: Verifying Checksum
+c6b13209f43b: Download complete
+f1272b64677c: Verifying Checksum
+f1272b64677c: Download complete
+8cc7bfa90756: Verifying Checksum
+8cc7bfa90756: Download complete
+051738ac6f7e: Verifying Checksum
+051738ac6f7e: Download complete
+0726682962b6: Verifying Checksum
+0726682962b6: Download complete
+278756b31d40: Verifying Checksum
+278756b31d40: Download complete
+53e610f3e2e1: Verifying Checksum
+53e610f3e2e1: Download complete
+8e1df233eeef: Verifying Checksum
+8e1df233eeef: Download complete
+c6b13209f43b: Pull complete
+a3ed95caeb02: Pull complete
+051738ac6f7e: Pull complete
+66e042ba6513: Pull complete
+71f0469b58d6: Pull complete
+f1272b64677c: Pull complete
+8cc7bfa90756: Pull complete
+278756b31d40: Pull complete
+0726682962b6: Pull complete
+53e610f3e2e1: Pull complete
+8e1df233eeef: Pull complete
+Digest: sha256:0471404589b3ea4cf8423bc81105766ff0d33ea1a63d46bc1cf5c8b8ee69a57f
+Status: Downloaded newer image for zh9314/sawtooth-stats-grafana:latest
+docker.io/zh9314/sawtooth-stats-grafana:latest
+a694d761236d3c555ca72e76a6c52209d9678795e6f200573f0687d80a8f4c02
+53d1e7b18fa2d09e9420d9ec4526de776b1e33371b6a697473e30c5dcee0acee

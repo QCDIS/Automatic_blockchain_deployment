@@ -1,0 +1,2116 @@
+LOGs:
+- Time: "1594197105188"
+  Overhead: "314633"
+  Event:
+    Operation: "provision"
+    Command: null
+    Options: null
+    Log: null
+    LogString: null
+    ObjectType: "SubTopology"
+    Objects: "subtop0"
+  LOG:
+    sub0node1#pubIP: "145.100.133.146"
+    monitor#pubIP: "145.100.133.154"
+    sub0node0#network: "9558@1594197095613"
+    sub0node0#pubIP: "145.100.133.244"
+    sub0node2#pubIP: "145.100.133.187"
+    monitor#deploy: "0@1594197095546"
+    subtop0#Provision: "304854@1594196790721"
+    sub0node2#network: "8555@1594197095613"
+    sub0node2#deploy: "0@1594197095546"
+    monitor#network: "8555@1594197095613"
+    sub0node1#deploy: "0@1594197095575"
+    sub0node0#deploy: "0@1594197095532"
+    sub0node1#network: "7550@1594197095613"
+    subtop0#Network: "9567@1594197095613"
+- Time: "1594197710659"
+  Overhead: "3554"
+  Event:
+    Operation: "put"
+    Command: null
+    Options:
+      Src: "file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/architecture/Infs/Topology/sub0node0.sh"
+      Dst: "file@/root"
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node0: "File sub0node0.sh is uploaded!"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node0"
+  LOG:
+    MSG: ""
+    subtop0.sub0node0: "File sub0node0.sh is uploaded!"
+- Time: "1594197775429"
+  Overhead: "64766"
+  Event:
+    Operation: "execute"
+    Command: "bash /root/sub0node0.sh &"
+    Options: null
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node0: "Executing: /tmp/tmp.SCw1obaLkP/gpg.1.sh --keyserver\nhkp://keyserver.ubuntu.com:80\n\
+        --recv-keys\n8AA7AF1F1091A5FD\nOK\nHit:1 http://security.ubuntu.com/ubuntu\
+        \ xenial-security InRelease\nHit:2 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial InRelease\nGet:3 http://repo.sawtooth.me/ubuntu/bumper/stable xenial\
+        \ InRelease [2,421 B]\nHit:4 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial-updates InRelease\nGet:5 https://repos.influxdata.com/ubuntu xenial\
+        \ InRelease [4,731 B]\nHit:6 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial-backports InRelease\nGet:7 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 Packages [37.8 kB]\nGet:8 https://repos.influxdata.com/ubuntu\
+        \ xenial/stable amd64 Packages [925 B]\nFetched 45.9 kB in 1s (33.7 kB/s)\n\
+        Reading package lists...\nReading package lists...\nBuilding dependency tree...\n\
+        Reading state information...\nThe following packages were automatically installed\
+        \ and are no longer required:\n  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n\
+        \  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\nUse 'sudo\
+        \ apt autoremove' to remove them.\nThe following additional packages will\
+        \ be installed:\n  libprotobuf12 libsecp256k1-0 libsodium18 libssl-dev libssl-doc\
+        \ libzmq5\n  python3-aiodns python3-aiohttp python3-async-timeout python3-cbor\n\
+        \  python3-cchardet python3-colorlog python3-cryptography python3-lmdb\n \
+        \ python3-multidict python3-netifaces python3-protobuf python3-pycares\n \
+        \ python3-pyformance python3-sawtooth-cli python3-sawtooth-intkey\n  python3-sawtooth-poet-cli\
+        \ python3-sawtooth-poet-common\n  python3-sawtooth-poet-core python3-sawtooth-poet-families\n\
+        \  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n  python3-sawtooth-sdk\
+        \ python3-sawtooth-settings python3-sawtooth-signing\n  python3-sawtooth-validator\
+        \ python3-sawtooth-xo python3-secp256k1\n  python3-toml python3-yarl python3-zmq\
+        \ zlib1g-dev\nThe following NEW packages will be installed:\n  libprotobuf12\
+        \ libsecp256k1-0 libsodium18 libssl-dev libssl-doc libzmq5\n  python3-aiodns\
+        \ python3-aiohttp python3-async-timeout python3-cbor\n  python3-cchardet python3-colorlog\
+        \ python3-lmdb python3-multidict\n  python3-netifaces python3-protobuf python3-pycares\
+        \ python3-pyformance\n  python3-sawtooth-cli python3-sawtooth-identity python3-sawtooth-intkey\n\
+        \  python3-sawtooth-poet-cli python3-sawtooth-poet-common\n  python3-sawtooth-poet-core\
+        \ python3-sawtooth-poet-families\n  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n\
+        \  python3-sawtooth-sdk python3-sawtooth-settings python3-sawtooth-signing\n\
+        \  python3-sawtooth-validator python3-sawtooth-xo python3-secp256k1\n  python3-toml\
+        \ python3-yarl python3-zmq sawtooth zlib1g-dev\nThe following packages will\
+        \ be upgraded:\n  python3-cryptography\n1 upgraded, 38 newly installed, 0\
+        \ to remove and 57 not upgraded.\nNeed to get 9,805 kB of archives.\nAfter\
+        \ this operation, 45.8 MB of additional disk space will be used.\nGet:1 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 libsodium18 amd64 1.0.8-5 [144 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 libprotobuf12 amd64 3.4.1-0~maarten0 [700 kB]\nGet:3\
+        \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 zlib1g-dev\
+        \ amd64 1:1.2.8.dfsg-2ubuntu4.3 [167 kB]\nGet:4 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial-updates/main amd64 libssl-dev amd64 1.0.2g-1ubuntu4.16 [1,344 kB]\n\
+        Get:5 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64\
+        \ libssl-doc all 1.0.2g-1ubuntu4.16 [1,078 kB]\nGet:6 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 libsecp256k1-0 amd64 0.1~20161228-1 [108 kB]\nGet:7\
+        \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/universe amd64\
+        \ libzmq5 amd64 4.1.4-7ubuntu0.1 [149 kB]\nGet:8 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 python3-cbor amd64 0.1.24-1 [20.3 kB]\nGet:9 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 python3-colorlog all 2.6.0-1 [7,912 B]\nGet:10 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/main amd64 python3-netifaces amd64 0.10.4-0.1build2 [12.9 kB]\nGet:11\
+        \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 python3-toml\
+        \ all 0.9.1-1 [7,932 B]\nGet:12 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 python3-zmq amd64 15.2.0-0ubuntu4 [202 kB]\nGet:13\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-pycares\
+        \ amd64 2.1.1-1 [46.5 kB]\nGet:14 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-aiodns all 1.1.1-1 [4,794 B]\nGet:15 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-async-timeout all 1.2.0-1 [3,448 B]\nGet:16\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-multidict\
+        \ amd64 2.1.4-1 [115 kB]\nGet:17 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-yarl amd64 0.10.0-1 [65.0 kB]\nGet:18 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-aiohttp amd64 2.3.2-1 [238 kB]\nGet:19 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-cchardet amd64 2.0a3-1 [80.0 kB]\nGet:20 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-cryptography amd64 1.7.2-1 [214 kB]\nGet:21\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-lmdb\
+        \ amd64 0.92-1 [76.7 kB]\nGet:22 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-protobuf amd64 3.4.1-0~maarten0 [292 kB]\n\
+        Get:23 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-pyformance all 0.4-1 [14.3 kB]\nGet:24 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-cli all 1.1.5-1 [51.7 kB]\nGet:25\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-secp256k1\
+        \ amd64 0.13.2-1 [13.4 kB]\nGet:26 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-signing all 1.1.5-1 [4,230 B]\nGet:27\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-sdk\
+        \ all 1.1.5-1 [42.3 kB]\nGet:28 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-identity all 1.1.5-1 [31.2 kB]\n\
+        Get:29 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-intkey all 1.1.5-1 [15.6 kB]\nGet:30 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-common all 1.1.2-1 [9,176 B]\n\
+        Get:31 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-poet-simulator all 1.1.2-1 [11.5 kB]\nGet:32 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-core all 1.1.2-1 [33.6 kB]\n\
+        Get:33 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-poet-cli all 1.1.2-1 [7,656 B]\nGet:34 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-families all 1.1.2-1 [8,058\
+        \ B]\nGet:35 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+        \ amd64 python3-sawtooth-rest-api all 1.1.5-1 [44.4 kB]\nGet:36 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-settings all 1.1.5-1 [31.8 kB]\n\
+        Get:37 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-validator all 1.1.5-1 [4,395 kB]\nGet:38 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-xo all 1.1.5-1 [12.2 kB]\nGet:39\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 sawtooth\
+        \ all 1.1.5 [2,218 B]\nFetched 9,805 kB in 3s (2,758 kB/s)\nSelecting previously\
+        \ unselected package libprotobuf12:amd64.\r\n(Reading database ... \r(Reading\
+        \ database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r\
+        (Reading database ... 20%\r(Reading database ... 25%\r(Reading database ...\
+        \ 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database\
+        \ ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading\
+        \ database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r\
+        (Reading database ... 75%\r(Reading database ... 80%\r(Reading database ...\
+        \ 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+        \ ... 100%\r(Reading database ... 116586 files and directories currently installed.)\r\
+        \nPreparing to unpack .../libprotobuf12_3.4.1-0~maarten0_amd64.deb ...\r\n\
+        Unpacking libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSelecting previously\
+        \ unselected package libsecp256k1-0:amd64.\r\nPreparing to unpack .../libsecp256k1-0_0.1~20161228-1_amd64.deb\
+        \ ...\r\nUnpacking libsecp256k1-0:amd64 (0.1~20161228-1) ...\r\nSelecting\
+        \ previously unselected package libsodium18:amd64.\r\nPreparing to unpack\
+        \ .../libsodium18_1.0.8-5_amd64.deb ...\r\nUnpacking libsodium18:amd64 (1.0.8-5)\
+        \ ...\r\nSelecting previously unselected package zlib1g-dev:amd64.\r\nPreparing\
+        \ to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-2ubuntu4.3_amd64.deb ...\r\nUnpacking\
+        \ zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSelecting previously unselected\
+        \ package libssl-dev:amd64.\r\nPreparing to unpack .../libssl-dev_1.0.2g-1ubuntu4.16_amd64.deb\
+        \ ...\r\nUnpacking libssl-dev:amd64 (1.0.2g-1ubuntu4.16) ...\r\nSelecting\
+        \ previously unselected package libssl-doc.\r\nPreparing to unpack .../libssl-doc_1.0.2g-1ubuntu4.16_all.deb\
+        \ ...\r\nUnpacking libssl-doc (1.0.2g-1ubuntu4.16) ...\r\nSelecting previously\
+        \ unselected package libzmq5:amd64.\r\nPreparing to unpack .../libzmq5_4.1.4-7ubuntu0.1_amd64.deb\
+        \ ...\r\nUnpacking libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSelecting previously\
+        \ unselected package python3-pycares.\r\nPreparing to unpack .../python3-pycares_2.1.1-1_amd64.deb\
+        \ ...\r\nUnpacking python3-pycares (2.1.1-1) ...\r\nSelecting previously unselected\
+        \ package python3-aiodns.\r\nPreparing to unpack .../python3-aiodns_1.1.1-1_all.deb\
+        \ ...\r\nUnpacking python3-aiodns (1.1.1-1) ...\r\nSelecting previously unselected\
+        \ package python3-async-timeout.\r\nPreparing to unpack .../python3-async-timeout_1.2.0-1_all.deb\
+        \ ...\r\nUnpacking python3-async-timeout (1.2.0-1) ...\r\nSelecting previously\
+        \ unselected package python3-multidict.\r\nPreparing to unpack .../python3-multidict_2.1.4-1_amd64.deb\
+        \ ...\r\nUnpacking python3-multidict (2.1.4-1) ...\r\nSelecting previously\
+        \ unselected package python3-yarl.\r\nPreparing to unpack .../python3-yarl_0.10.0-1_amd64.deb\
+        \ ...\r\nUnpacking python3-yarl (0.10.0-1) ...\r\nSelecting previously unselected\
+        \ package python3-aiohttp.\r\nPreparing to unpack .../python3-aiohttp_2.3.2-1_amd64.deb\
+        \ ...\r\nUnpacking python3-aiohttp (2.3.2-1) ...\r\nSelecting previously unselected\
+        \ package python3-cbor.\r\nPreparing to unpack .../python3-cbor_0.1.24-1_amd64.deb\
+        \ ...\r\nUnpacking python3-cbor (0.1.24-1) ...\r\nSelecting previously unselected\
+        \ package python3-cchardet.\r\nPreparing to unpack .../python3-cchardet_2.0a3-1_amd64.deb\
+        \ ...\r\nUnpacking python3-cchardet (2.0a3-1) ...\r\nSelecting previously\
+        \ unselected package python3-colorlog.\r\nPreparing to unpack .../python3-colorlog_2.6.0-1_all.deb\
+        \ ...\r\nUnpacking python3-colorlog (2.6.0-1) ...\r\nPreparing to unpack .../python3-cryptography_1.7.2-1_amd64.deb\
+        \ ...\r\nUnpacking python3-cryptography (1.7.2-1) over (1.2.3-1ubuntu0.2)\
+        \ ...\r\nSelecting previously unselected package python3-lmdb.\r\nPreparing\
+        \ to unpack .../python3-lmdb_0.92-1_amd64.deb ...\r\nUnpacking python3-lmdb\
+        \ (0.92-1) ...\r\nSelecting previously unselected package python3-netifaces.\r\
+        \nPreparing to unpack .../python3-netifaces_0.10.4-0.1build2_amd64.deb ...\r\
+        \nUnpacking python3-netifaces (0.10.4-0.1build2) ...\r\nSelecting previously\
+        \ unselected package python3-protobuf.\r\nPreparing to unpack .../python3-protobuf_3.4.1-0~maarten0_amd64.deb\
+        \ ...\r\nUnpacking python3-protobuf (3.4.1-0~maarten0) ...\r\nSelecting previously\
+        \ unselected package python3-pyformance.\r\nPreparing to unpack .../python3-pyformance_0.4-1_all.deb\
+        \ ...\r\nUnpacking python3-pyformance (0.4-1) ...\r\nSelecting previously\
+        \ unselected package python3-toml.\r\nPreparing to unpack .../python3-toml_0.9.1-1_all.deb\
+        \ ...\r\nUnpacking python3-toml (0.9.1-1) ...\r\nSelecting previously unselected\
+        \ package python3-sawtooth-cli.\r\nPreparing to unpack .../python3-sawtooth-cli_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-cli (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-secp256k1.\r\nPreparing to unpack .../python3-secp256k1_0.13.2-1_amd64.deb\
+        \ ...\r\nUnpacking python3-secp256k1 (0.13.2-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-signing.\r\nPreparing to unpack .../python3-sawtooth-signing_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-signing (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-zmq.\r\nPreparing to unpack .../python3-zmq_15.2.0-0ubuntu4_amd64.deb\
+        \ ...\r\nUnpacking python3-zmq (15.2.0-0ubuntu4) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-sdk.\r\nPreparing to unpack .../python3-sawtooth-sdk_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-sdk (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-identity.\r\nPreparing to unpack .../python3-sawtooth-identity_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-identity (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-intkey.\r\nPreparing to unpack .../python3-sawtooth-intkey_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-intkey (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-poet-common.\r\nPreparing to unpack\
+        \ .../python3-sawtooth-poet-common_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-common\
+        \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-poet-simulator.\r\
+        \nPreparing to unpack .../python3-sawtooth-poet-simulator_1.1.2-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-poet-simulator (1.1.2-1) ...\r\nSelecting\
+        \ previously unselected package python3-sawtooth-poet-core.\r\nPreparing to\
+        \ unpack .../python3-sawtooth-poet-core_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-core\
+        \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-poet-cli.\r\
+        \nPreparing to unpack .../python3-sawtooth-poet-cli_1.1.2-1_all.deb ...\r\n\
+        Unpacking python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-poet-families.\r\nPreparing to unpack\
+        \ .../python3-sawtooth-poet-families_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-families\
+        \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-rest-api.\r\
+        \nPreparing to unpack .../python3-sawtooth-rest-api_1.1.5-1_all.deb ...\r\n\
+        Unpacking python3-sawtooth-rest-api (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-settings.\r\nPreparing to unpack .../python3-sawtooth-settings_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-settings (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-validator.\r\nPreparing to unpack .../python3-sawtooth-validator_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-validator (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-xo.\r\nPreparing to unpack .../python3-sawtooth-xo_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-xo (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package sawtooth.\r\nPreparing to unpack .../sawtooth_1.1.5_all.deb\
+        \ ...\r\nUnpacking sawtooth (1.1.5) ...\r\nProcessing triggers for libc-bin\
+        \ (2.23-0ubuntu11.2) ...\r\nProcessing triggers for man-db (2.7.5-1) ...\r\
+        \nSetting up libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSetting up libsecp256k1-0:amd64\
+        \ (0.1~20161228-1) ...\r\nSetting up libsodium18:amd64 (1.0.8-5) ...\r\nSetting\
+        \ up zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSetting up libssl-dev:amd64\
+        \ (1.0.2g-1ubuntu4.16) ...\r\nSetting up libssl-doc (1.0.2g-1ubuntu4.16) ...\r\
+        \nSetting up libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSetting up python3-pycares\
+        \ (2.1.1-1) ...\r\nSetting up python3-aiodns (1.1.1-1) ...\r\nSetting up python3-async-timeout\
+        \ (1.2.0-1) ...\r\nSetting up python3-multidict (2.1.4-1) ...\r\nSetting up\
+        \ python3-yarl (0.10.0-1) ...\r\nSetting up python3-aiohttp (2.3.2-1) ...\r\
+        \nSetting up python3-cbor (0.1.24-1) ...\r\nSetting up python3-cchardet (2.0a3-1)\
+        \ ...\r\nSetting up python3-colorlog (2.6.0-1) ...\r\nSetting up python3-cryptography\
+        \ (1.7.2-1) ...\r\nSetting up python3-lmdb (0.92-1) ...\r\nSetting up python3-netifaces\
+        \ (0.10.4-0.1build2) ...\r\nSetting up python3-protobuf (3.4.1-0~maarten0)\
+        \ ...\r\nSetting up python3-pyformance (0.4-1) ...\r\nSetting up python3-toml\
+        \ (0.9.1-1) ...\r\nSetting up python3-sawtooth-cli (1.1.5-1) ...\r\nSetting\
+        \ up python3-secp256k1 (0.13.2-1) ...\r\nSetting up python3-sawtooth-signing\
+        \ (1.1.5-1) ...\r\nSetting up python3-zmq (15.2.0-0ubuntu4) ...\r\nSetting\
+        \ up python3-sawtooth-sdk (1.1.5-1) ...\r\nSetting up python3-sawtooth-identity\
+        \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-intkey (1.1.5-1) ...\r\nSetting\
+        \ up python3-sawtooth-poet-common (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-simulator\
+        \ (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-core (1.1.2-1) ...\r\n\
+        Setting up python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-families\
+        \ (1.1.2-1) ...\r\nSetting up python3-sawtooth-rest-api (1.1.5-1) ...\r\n\
+        Setting up python3-sawtooth-settings (1.1.5-1) ...\r\nSetting up python3-sawtooth-validator\
+        \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-xo (1.1.5-1) ...\r\nSetting\
+        \ up sawtooth (1.1.5) ...\r\nProcessing triggers for libc-bin (2.23-0ubuntu11.2)\
+        \ ...\r\nReading package lists...\nBuilding dependency tree...\nReading state\
+        \ information...\npython3-sawtooth-poet-cli is already the newest version\
+        \ (1.1.2-1).\npython3-sawtooth-poet-cli set to manually installed.\nThe following\
+        \ packages were automatically installed and are no longer required:\n  linux-headers-4.4.0-148\
+        \ linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\n\
+        Use 'sudo apt autoremove' to remove them.\nThe following NEW packages will\
+        \ be installed:\n  sawtooth-pbft-engine sawtooth-raft-engine\n0 upgraded,\
+        \ 2 newly installed, 0 to remove and 57 not upgraded.\nNeed to get 2,047 kB\
+        \ of archives.\nAfter this operation, 8,167 kB of additional disk space will\
+        \ be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+        \ amd64 sawtooth-pbft-engine amd64 0.1.3 [1,042 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 sawtooth-raft-engine amd64 0.1.2 [1,004 kB]\nFetched\
+        \ 2,047 kB in 1s (1,356 kB/s)\nSelecting previously unselected package sawtooth-pbft-engine.\r\
+        \n(Reading database ... \r(Reading database ... 5%\r(Reading database ...\
+        \ 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database\
+        \ ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading\
+        \ database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r\
+        (Reading database ... 55%\r(Reading database ... 60%\r(Reading database ...\
+        \ 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database\
+        \ ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading\
+        \ database ... 95%\r(Reading database ... 100%\r(Reading database ... 119522\
+        \ files and directories currently installed.)\r\nPreparing to unpack .../sawtooth-pbft-engine_0.1.3_amd64.deb\
+        \ ...\r\nUnpacking sawtooth-pbft-engine (0.1.3) ...\r\nSelecting previously\
+        \ unselected package sawtooth-raft-engine.\r\nPreparing to unpack .../sawtooth-raft-engine_0.1.2_amd64.deb\
+        \ ...\r\nUnpacking sawtooth-raft-engine (0.1.2) ...\r\nSetting up sawtooth-pbft-engine\
+        \ (0.1.3) ...\r\nSetting up sawtooth-raft-engine (0.1.2) ...\r\nReading package\
+        \ lists...\nBuilding dependency tree...\nReading state information...\npython3-sawtooth-poet-families\
+        \ is already the newest version (1.1.2-1).\npython3-sawtooth-poet-families\
+        \ set to manually installed.\nThe following packages were automatically installed\
+        \ and are no longer required:\n  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n\
+        \  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\nUse 'sudo\
+        \ apt autoremove' to remove them.\nThe following NEW packages will be installed:\n\
+        \  python3-sawtooth-poet-engine\n0 upgraded, 1 newly installed, 0 to remove\
+        \ and 57 not upgraded.\nNeed to get 8,210 B of archives.\nAfter this operation,\
+        \ 57.3 kB of additional disk space will be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-engine all 1.1.2-1 [8,210 B]\n\
+        Fetched 8,210 B in 0s (17.7 kB/s)\nSelecting previously unselected package\
+        \ python3-sawtooth-poet-engine.\r\n(Reading database ... \r(Reading database\
+        \ ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database\
+        \ ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading\
+        \ database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r\
+        (Reading database ... 50%\r(Reading database ... 55%\r(Reading database ...\
+        \ 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database\
+        \ ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading\
+        \ database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r\
+        (Reading database ... 119532 files and directories currently installed.)\r\
+        \nPreparing to unpack .../python3-sawtooth-poet-engine_1.1.2-1_all.deb ...\r\
+        \nUnpacking python3-sawtooth-poet-engine (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-engine\
+        \ (1.1.2-1) ...\r\ncreating key directory: /root/.sawtooth/keys\nwriting file:\
+        \ /root/.sawtooth/keys/root.priv\nwriting file: /root/.sawtooth/keys/root.pub\n\
+        writing file: /etc/sawtooth/keys/validator.priv\nwriting file: /etc/sawtooth/keys/validator.pub\n\
+        Reading package lists...\nBuilding dependency tree...\nReading state information...\n\
+        The following packages were automatically installed and are no longer required:\n\
+        \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+        \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+        The following NEW packages will be installed:\n  telegraf\n0 upgraded, 1 newly\
+        \ installed, 0 to remove and 57 not upgraded.\nNeed to get 21.1 MB of archives.\n\
+        After this operation, 69.5 MB of additional disk space will be used.\nGet:1\
+        \ https://repos.influxdata.com/ubuntu xenial/stable amd64 telegraf amd64 1.14.5-1\
+        \ [21.1 MB]\nFetched 21.1 MB in 1s (11.5 MB/s)\nSelecting previously unselected\
+        \ package telegraf.\r\n(Reading database ... \r(Reading database ... 5%\r\
+        (Reading database ... 10%\r(Reading database ... 15%\r(Reading database ...\
+        \ 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database\
+        \ ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading\
+        \ database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r\
+        (Reading database ... 65%\r(Reading database ... 70%\r(Reading database ...\
+        \ 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database\
+        \ ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading\
+        \ database ... 119549 files and directories currently installed.)\r\nPreparing\
+        \ to unpack .../telegraf_1.14.5-1_amd64.deb ...\r\nUnpacking telegraf (1.14.5-1)\
+        \ ...\r\nSetting up telegraf (1.14.5-1) ...\r\nCreated symlink from /etc/systemd/system/multi-user.target.wants/telegraf.service\
+        \ to /lib/systemd/system/telegraf.service.\r\n"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node0"
+  LOG:
+    MSG: ""
+    subtop0.sub0node0: "Executing: /tmp/tmp.SCw1obaLkP/gpg.1.sh --keyserver\nhkp://keyserver.ubuntu.com:80\n\
+      --recv-keys\n8AA7AF1F1091A5FD\nOK\nHit:1 http://security.ubuntu.com/ubuntu xenial-security\
+      \ InRelease\nHit:2 http://nova.clouds.archive.ubuntu.com/ubuntu xenial InRelease\n\
+      Get:3 http://repo.sawtooth.me/ubuntu/bumper/stable xenial InRelease [2,421 B]\n\
+      Hit:4 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates InRelease\n\
+      Get:5 https://repos.influxdata.com/ubuntu xenial InRelease [4,731 B]\nHit:6\
+      \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial-backports InRelease\n\
+      Get:7 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 Packages\
+      \ [37.8 kB]\nGet:8 https://repos.influxdata.com/ubuntu xenial/stable amd64 Packages\
+      \ [925 B]\nFetched 45.9 kB in 1s (33.7 kB/s)\nReading package lists...\nReading\
+      \ package lists...\nBuilding dependency tree...\nReading state information...\n\
+      The following packages were automatically installed and are no longer required:\n\
+      \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+      \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+      The following additional packages will be installed:\n  libprotobuf12 libsecp256k1-0\
+      \ libsodium18 libssl-dev libssl-doc libzmq5\n  python3-aiodns python3-aiohttp\
+      \ python3-async-timeout python3-cbor\n  python3-cchardet python3-colorlog python3-cryptography\
+      \ python3-lmdb\n  python3-multidict python3-netifaces python3-protobuf python3-pycares\n\
+      \  python3-pyformance python3-sawtooth-cli python3-sawtooth-intkey\n  python3-sawtooth-poet-cli\
+      \ python3-sawtooth-poet-common\n  python3-sawtooth-poet-core python3-sawtooth-poet-families\n\
+      \  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n  python3-sawtooth-sdk\
+      \ python3-sawtooth-settings python3-sawtooth-signing\n  python3-sawtooth-validator\
+      \ python3-sawtooth-xo python3-secp256k1\n  python3-toml python3-yarl python3-zmq\
+      \ zlib1g-dev\nThe following NEW packages will be installed:\n  libprotobuf12\
+      \ libsecp256k1-0 libsodium18 libssl-dev libssl-doc libzmq5\n  python3-aiodns\
+      \ python3-aiohttp python3-async-timeout python3-cbor\n  python3-cchardet python3-colorlog\
+      \ python3-lmdb python3-multidict\n  python3-netifaces python3-protobuf python3-pycares\
+      \ python3-pyformance\n  python3-sawtooth-cli python3-sawtooth-identity python3-sawtooth-intkey\n\
+      \  python3-sawtooth-poet-cli python3-sawtooth-poet-common\n  python3-sawtooth-poet-core\
+      \ python3-sawtooth-poet-families\n  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n\
+      \  python3-sawtooth-sdk python3-sawtooth-settings python3-sawtooth-signing\n\
+      \  python3-sawtooth-validator python3-sawtooth-xo python3-secp256k1\n  python3-toml\
+      \ python3-yarl python3-zmq sawtooth zlib1g-dev\nThe following packages will\
+      \ be upgraded:\n  python3-cryptography\n1 upgraded, 38 newly installed, 0 to\
+      \ remove and 57 not upgraded.\nNeed to get 9,805 kB of archives.\nAfter this\
+      \ operation, 45.8 MB of additional disk space will be used.\nGet:1 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 libsodium18 amd64 1.0.8-5 [144 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 libprotobuf12 amd64 3.4.1-0~maarten0 [700 kB]\nGet:3\
+      \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 zlib1g-dev\
+      \ amd64 1:1.2.8.dfsg-2ubuntu4.3 [167 kB]\nGet:4 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial-updates/main amd64 libssl-dev amd64 1.0.2g-1ubuntu4.16 [1,344 kB]\n\
+      Get:5 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64\
+      \ libssl-doc all 1.0.2g-1ubuntu4.16 [1,078 kB]\nGet:6 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 libsecp256k1-0 amd64 0.1~20161228-1 [108 kB]\nGet:7\
+      \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/universe amd64\
+      \ libzmq5 amd64 4.1.4-7ubuntu0.1 [149 kB]\nGet:8 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 python3-cbor amd64 0.1.24-1 [20.3 kB]\nGet:9 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 python3-colorlog all 2.6.0-1 [7,912 B]\nGet:10 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/main amd64 python3-netifaces amd64 0.10.4-0.1build2 [12.9 kB]\nGet:11\
+      \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 python3-toml\
+      \ all 0.9.1-1 [7,932 B]\nGet:12 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 python3-zmq amd64 15.2.0-0ubuntu4 [202 kB]\nGet:13 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-pycares amd64 2.1.1-1 [46.5 kB]\nGet:14 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-aiodns all 1.1.1-1 [4,794 B]\nGet:15 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-async-timeout all 1.2.0-1 [3,448 B]\nGet:16\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-multidict\
+      \ amd64 2.1.4-1 [115 kB]\nGet:17 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-yarl amd64 0.10.0-1 [65.0 kB]\nGet:18 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-aiohttp amd64 2.3.2-1 [238 kB]\nGet:19 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-cchardet amd64 2.0a3-1 [80.0 kB]\nGet:20 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-cryptography amd64 1.7.2-1 [214 kB]\nGet:21\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-lmdb\
+      \ amd64 0.92-1 [76.7 kB]\nGet:22 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-protobuf amd64 3.4.1-0~maarten0 [292 kB]\nGet:23\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-pyformance\
+      \ all 0.4-1 [14.3 kB]\nGet:24 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+      \ amd64 python3-sawtooth-cli all 1.1.5-1 [51.7 kB]\nGet:25 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-secp256k1 amd64 0.13.2-1 [13.4 kB]\nGet:26 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-signing all 1.1.5-1 [4,230 B]\nGet:27\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-sdk\
+      \ all 1.1.5-1 [42.3 kB]\nGet:28 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-identity all 1.1.5-1 [31.2 kB]\nGet:29\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-intkey\
+      \ all 1.1.5-1 [15.6 kB]\nGet:30 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-common all 1.1.2-1 [9,176 B]\n\
+      Get:31 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-poet-simulator\
+      \ all 1.1.2-1 [11.5 kB]\nGet:32 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-core all 1.1.2-1 [33.6 kB]\nGet:33\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-poet-cli\
+      \ all 1.1.2-1 [7,656 B]\nGet:34 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-families all 1.1.2-1 [8,058 B]\n\
+      Get:35 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-rest-api\
+      \ all 1.1.5-1 [44.4 kB]\nGet:36 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-settings all 1.1.5-1 [31.8 kB]\nGet:37\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-validator\
+      \ all 1.1.5-1 [4,395 kB]\nGet:38 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-xo all 1.1.5-1 [12.2 kB]\nGet:39 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 sawtooth all 1.1.5 [2,218 B]\nFetched 9,805 kB in 3s\
+      \ (2,758 kB/s)\nSelecting previously unselected package libprotobuf12:amd64.\r\
+      \n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r\
+      (Reading database ... 15%\r(Reading database ... 20%\r(Reading database ...\
+      \ 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database\
+      \ ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database\
+      \ ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database\
+      \ ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database\
+      \ ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+      \ ... 100%\r(Reading database ... 116586 files and directories currently installed.)\r\
+      \nPreparing to unpack .../libprotobuf12_3.4.1-0~maarten0_amd64.deb ...\r\nUnpacking\
+      \ libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSelecting previously unselected\
+      \ package libsecp256k1-0:amd64.\r\nPreparing to unpack .../libsecp256k1-0_0.1~20161228-1_amd64.deb\
+      \ ...\r\nUnpacking libsecp256k1-0:amd64 (0.1~20161228-1) ...\r\nSelecting previously\
+      \ unselected package libsodium18:amd64.\r\nPreparing to unpack .../libsodium18_1.0.8-5_amd64.deb\
+      \ ...\r\nUnpacking libsodium18:amd64 (1.0.8-5) ...\r\nSelecting previously unselected\
+      \ package zlib1g-dev:amd64.\r\nPreparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-2ubuntu4.3_amd64.deb\
+      \ ...\r\nUnpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSelecting\
+      \ previously unselected package libssl-dev:amd64.\r\nPreparing to unpack .../libssl-dev_1.0.2g-1ubuntu4.16_amd64.deb\
+      \ ...\r\nUnpacking libssl-dev:amd64 (1.0.2g-1ubuntu4.16) ...\r\nSelecting previously\
+      \ unselected package libssl-doc.\r\nPreparing to unpack .../libssl-doc_1.0.2g-1ubuntu4.16_all.deb\
+      \ ...\r\nUnpacking libssl-doc (1.0.2g-1ubuntu4.16) ...\r\nSelecting previously\
+      \ unselected package libzmq5:amd64.\r\nPreparing to unpack .../libzmq5_4.1.4-7ubuntu0.1_amd64.deb\
+      \ ...\r\nUnpacking libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSelecting previously\
+      \ unselected package python3-pycares.\r\nPreparing to unpack .../python3-pycares_2.1.1-1_amd64.deb\
+      \ ...\r\nUnpacking python3-pycares (2.1.1-1) ...\r\nSelecting previously unselected\
+      \ package python3-aiodns.\r\nPreparing to unpack .../python3-aiodns_1.1.1-1_all.deb\
+      \ ...\r\nUnpacking python3-aiodns (1.1.1-1) ...\r\nSelecting previously unselected\
+      \ package python3-async-timeout.\r\nPreparing to unpack .../python3-async-timeout_1.2.0-1_all.deb\
+      \ ...\r\nUnpacking python3-async-timeout (1.2.0-1) ...\r\nSelecting previously\
+      \ unselected package python3-multidict.\r\nPreparing to unpack .../python3-multidict_2.1.4-1_amd64.deb\
+      \ ...\r\nUnpacking python3-multidict (2.1.4-1) ...\r\nSelecting previously unselected\
+      \ package python3-yarl.\r\nPreparing to unpack .../python3-yarl_0.10.0-1_amd64.deb\
+      \ ...\r\nUnpacking python3-yarl (0.10.0-1) ...\r\nSelecting previously unselected\
+      \ package python3-aiohttp.\r\nPreparing to unpack .../python3-aiohttp_2.3.2-1_amd64.deb\
+      \ ...\r\nUnpacking python3-aiohttp (2.3.2-1) ...\r\nSelecting previously unselected\
+      \ package python3-cbor.\r\nPreparing to unpack .../python3-cbor_0.1.24-1_amd64.deb\
+      \ ...\r\nUnpacking python3-cbor (0.1.24-1) ...\r\nSelecting previously unselected\
+      \ package python3-cchardet.\r\nPreparing to unpack .../python3-cchardet_2.0a3-1_amd64.deb\
+      \ ...\r\nUnpacking python3-cchardet (2.0a3-1) ...\r\nSelecting previously unselected\
+      \ package python3-colorlog.\r\nPreparing to unpack .../python3-colorlog_2.6.0-1_all.deb\
+      \ ...\r\nUnpacking python3-colorlog (2.6.0-1) ...\r\nPreparing to unpack .../python3-cryptography_1.7.2-1_amd64.deb\
+      \ ...\r\nUnpacking python3-cryptography (1.7.2-1) over (1.2.3-1ubuntu0.2) ...\r\
+      \nSelecting previously unselected package python3-lmdb.\r\nPreparing to unpack\
+      \ .../python3-lmdb_0.92-1_amd64.deb ...\r\nUnpacking python3-lmdb (0.92-1) ...\r\
+      \nSelecting previously unselected package python3-netifaces.\r\nPreparing to\
+      \ unpack .../python3-netifaces_0.10.4-0.1build2_amd64.deb ...\r\nUnpacking python3-netifaces\
+      \ (0.10.4-0.1build2) ...\r\nSelecting previously unselected package python3-protobuf.\r\
+      \nPreparing to unpack .../python3-protobuf_3.4.1-0~maarten0_amd64.deb ...\r\n\
+      Unpacking python3-protobuf (3.4.1-0~maarten0) ...\r\nSelecting previously unselected\
+      \ package python3-pyformance.\r\nPreparing to unpack .../python3-pyformance_0.4-1_all.deb\
+      \ ...\r\nUnpacking python3-pyformance (0.4-1) ...\r\nSelecting previously unselected\
+      \ package python3-toml.\r\nPreparing to unpack .../python3-toml_0.9.1-1_all.deb\
+      \ ...\r\nUnpacking python3-toml (0.9.1-1) ...\r\nSelecting previously unselected\
+      \ package python3-sawtooth-cli.\r\nPreparing to unpack .../python3-sawtooth-cli_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-cli (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-secp256k1.\r\nPreparing to unpack .../python3-secp256k1_0.13.2-1_amd64.deb\
+      \ ...\r\nUnpacking python3-secp256k1 (0.13.2-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-signing.\r\nPreparing to unpack .../python3-sawtooth-signing_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-signing (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-zmq.\r\nPreparing to unpack .../python3-zmq_15.2.0-0ubuntu4_amd64.deb\
+      \ ...\r\nUnpacking python3-zmq (15.2.0-0ubuntu4) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-sdk.\r\nPreparing to unpack .../python3-sawtooth-sdk_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-sdk (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-identity.\r\nPreparing to unpack .../python3-sawtooth-identity_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-identity (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-intkey.\r\nPreparing to unpack .../python3-sawtooth-intkey_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-intkey (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-poet-common.\r\nPreparing to unpack .../python3-sawtooth-poet-common_1.1.2-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-poet-common (1.1.2-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-poet-simulator.\r\nPreparing to unpack\
+      \ .../python3-sawtooth-poet-simulator_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-simulator\
+      \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-poet-core.\r\
+      \nPreparing to unpack .../python3-sawtooth-poet-core_1.1.2-1_all.deb ...\r\n\
+      Unpacking python3-sawtooth-poet-core (1.1.2-1) ...\r\nSelecting previously unselected\
+      \ package python3-sawtooth-poet-cli.\r\nPreparing to unpack .../python3-sawtooth-poet-cli_1.1.2-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-poet-families.\r\nPreparing to unpack\
+      \ .../python3-sawtooth-poet-families_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-families\
+      \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-rest-api.\r\
+      \nPreparing to unpack .../python3-sawtooth-rest-api_1.1.5-1_all.deb ...\r\n\
+      Unpacking python3-sawtooth-rest-api (1.1.5-1) ...\r\nSelecting previously unselected\
+      \ package python3-sawtooth-settings.\r\nPreparing to unpack .../python3-sawtooth-settings_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-settings (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-validator.\r\nPreparing to unpack .../python3-sawtooth-validator_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-validator (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-xo.\r\nPreparing to unpack .../python3-sawtooth-xo_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-xo (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package sawtooth.\r\nPreparing to unpack .../sawtooth_1.1.5_all.deb\
+      \ ...\r\nUnpacking sawtooth (1.1.5) ...\r\nProcessing triggers for libc-bin\
+      \ (2.23-0ubuntu11.2) ...\r\nProcessing triggers for man-db (2.7.5-1) ...\r\n\
+      Setting up libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSetting up libsecp256k1-0:amd64\
+      \ (0.1~20161228-1) ...\r\nSetting up libsodium18:amd64 (1.0.8-5) ...\r\nSetting\
+      \ up zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSetting up libssl-dev:amd64\
+      \ (1.0.2g-1ubuntu4.16) ...\r\nSetting up libssl-doc (1.0.2g-1ubuntu4.16) ...\r\
+      \nSetting up libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSetting up python3-pycares\
+      \ (2.1.1-1) ...\r\nSetting up python3-aiodns (1.1.1-1) ...\r\nSetting up python3-async-timeout\
+      \ (1.2.0-1) ...\r\nSetting up python3-multidict (2.1.4-1) ...\r\nSetting up\
+      \ python3-yarl (0.10.0-1) ...\r\nSetting up python3-aiohttp (2.3.2-1) ...\r\n\
+      Setting up python3-cbor (0.1.24-1) ...\r\nSetting up python3-cchardet (2.0a3-1)\
+      \ ...\r\nSetting up python3-colorlog (2.6.0-1) ...\r\nSetting up python3-cryptography\
+      \ (1.7.2-1) ...\r\nSetting up python3-lmdb (0.92-1) ...\r\nSetting up python3-netifaces\
+      \ (0.10.4-0.1build2) ...\r\nSetting up python3-protobuf (3.4.1-0~maarten0) ...\r\
+      \nSetting up python3-pyformance (0.4-1) ...\r\nSetting up python3-toml (0.9.1-1)\
+      \ ...\r\nSetting up python3-sawtooth-cli (1.1.5-1) ...\r\nSetting up python3-secp256k1\
+      \ (0.13.2-1) ...\r\nSetting up python3-sawtooth-signing (1.1.5-1) ...\r\nSetting\
+      \ up python3-zmq (15.2.0-0ubuntu4) ...\r\nSetting up python3-sawtooth-sdk (1.1.5-1)\
+      \ ...\r\nSetting up python3-sawtooth-identity (1.1.5-1) ...\r\nSetting up python3-sawtooth-intkey\
+      \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-poet-common (1.1.2-1) ...\r\n\
+      Setting up python3-sawtooth-poet-simulator (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-core\
+      \ (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSetting\
+      \ up python3-sawtooth-poet-families (1.1.2-1) ...\r\nSetting up python3-sawtooth-rest-api\
+      \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-settings (1.1.5-1) ...\r\nSetting\
+      \ up python3-sawtooth-validator (1.1.5-1) ...\r\nSetting up python3-sawtooth-xo\
+      \ (1.1.5-1) ...\r\nSetting up sawtooth (1.1.5) ...\r\nProcessing triggers for\
+      \ libc-bin (2.23-0ubuntu11.2) ...\r\nReading package lists...\nBuilding dependency\
+      \ tree...\nReading state information...\npython3-sawtooth-poet-cli is already\
+      \ the newest version (1.1.2-1).\npython3-sawtooth-poet-cli set to manually installed.\n\
+      The following packages were automatically installed and are no longer required:\n\
+      \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+      \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+      The following NEW packages will be installed:\n  sawtooth-pbft-engine sawtooth-raft-engine\n\
+      0 upgraded, 2 newly installed, 0 to remove and 57 not upgraded.\nNeed to get\
+      \ 2,047 kB of archives.\nAfter this operation, 8,167 kB of additional disk space\
+      \ will be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+      \ amd64 sawtooth-pbft-engine amd64 0.1.3 [1,042 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 sawtooth-raft-engine amd64 0.1.2 [1,004 kB]\nFetched\
+      \ 2,047 kB in 1s (1,356 kB/s)\nSelecting previously unselected package sawtooth-pbft-engine.\r\
+      \n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r\
+      (Reading database ... 15%\r(Reading database ... 20%\r(Reading database ...\
+      \ 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database\
+      \ ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database\
+      \ ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database\
+      \ ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database\
+      \ ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+      \ ... 100%\r(Reading database ... 119522 files and directories currently installed.)\r\
+      \nPreparing to unpack .../sawtooth-pbft-engine_0.1.3_amd64.deb ...\r\nUnpacking\
+      \ sawtooth-pbft-engine (0.1.3) ...\r\nSelecting previously unselected package\
+      \ sawtooth-raft-engine.\r\nPreparing to unpack .../sawtooth-raft-engine_0.1.2_amd64.deb\
+      \ ...\r\nUnpacking sawtooth-raft-engine (0.1.2) ...\r\nSetting up sawtooth-pbft-engine\
+      \ (0.1.3) ...\r\nSetting up sawtooth-raft-engine (0.1.2) ...\r\nReading package\
+      \ lists...\nBuilding dependency tree...\nReading state information...\npython3-sawtooth-poet-families\
+      \ is already the newest version (1.1.2-1).\npython3-sawtooth-poet-families set\
+      \ to manually installed.\nThe following packages were automatically installed\
+      \ and are no longer required:\n  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n\
+      \  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\nUse 'sudo\
+      \ apt autoremove' to remove them.\nThe following NEW packages will be installed:\n\
+      \  python3-sawtooth-poet-engine\n0 upgraded, 1 newly installed, 0 to remove\
+      \ and 57 not upgraded.\nNeed to get 8,210 B of archives.\nAfter this operation,\
+      \ 57.3 kB of additional disk space will be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-engine all 1.1.2-1 [8,210 B]\n\
+      Fetched 8,210 B in 0s (17.7 kB/s)\nSelecting previously unselected package python3-sawtooth-poet-engine.\r\
+      \n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r\
+      (Reading database ... 15%\r(Reading database ... 20%\r(Reading database ...\
+      \ 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database\
+      \ ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database\
+      \ ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database\
+      \ ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database\
+      \ ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+      \ ... 100%\r(Reading database ... 119532 files and directories currently installed.)\r\
+      \nPreparing to unpack .../python3-sawtooth-poet-engine_1.1.2-1_all.deb ...\r\
+      \nUnpacking python3-sawtooth-poet-engine (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-engine\
+      \ (1.1.2-1) ...\r\ncreating key directory: /root/.sawtooth/keys\nwriting file:\
+      \ /root/.sawtooth/keys/root.priv\nwriting file: /root/.sawtooth/keys/root.pub\n\
+      writing file: /etc/sawtooth/keys/validator.priv\nwriting file: /etc/sawtooth/keys/validator.pub\n\
+      Reading package lists...\nBuilding dependency tree...\nReading state information...\n\
+      The following packages were automatically installed and are no longer required:\n\
+      \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+      \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+      The following NEW packages will be installed:\n  telegraf\n0 upgraded, 1 newly\
+      \ installed, 0 to remove and 57 not upgraded.\nNeed to get 21.1 MB of archives.\n\
+      After this operation, 69.5 MB of additional disk space will be used.\nGet:1\
+      \ https://repos.influxdata.com/ubuntu xenial/stable amd64 telegraf amd64 1.14.5-1\
+      \ [21.1 MB]\nFetched 21.1 MB in 1s (11.5 MB/s)\nSelecting previously unselected\
+      \ package telegraf.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading\
+      \ database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading\
+      \ database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading\
+      \ database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading\
+      \ database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading\
+      \ database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading\
+      \ database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading\
+      \ database ... 100%\r(Reading database ... 119549 files and directories currently\
+      \ installed.)\r\nPreparing to unpack .../telegraf_1.14.5-1_amd64.deb ...\r\n\
+      Unpacking telegraf (1.14.5-1) ...\r\nSetting up telegraf (1.14.5-1) ...\r\n\
+      Created symlink from /etc/systemd/system/multi-user.target.wants/telegraf.service\
+      \ to /lib/systemd/system/telegraf.service.\r\n"
+- Time: "1594197778813"
+  Overhead: "3369"
+  Event:
+    Operation: "put"
+    Command: null
+    Options:
+      Src: "file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/architecture/Infs/Topology/sub0node1.sh"
+      Dst: "file@/root"
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node1: "File sub0node1.sh is uploaded!"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node1"
+  LOG:
+    MSG: ""
+    subtop0.sub0node1: "File sub0node1.sh is uploaded!"
+- Time: "1594197846766"
+  Overhead: "67949"
+  Event:
+    Operation: "execute"
+    Command: "bash /root/sub0node1.sh &"
+    Options: null
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node1: "Executing: /tmp/tmp.0cRQkTmC25/gpg.1.sh --keyserver\nhkp://keyserver.ubuntu.com:80\n\
+        --recv-keys\n8AA7AF1F1091A5FD\nOK\nHit:1 http://security.ubuntu.com/ubuntu\
+        \ xenial-security InRelease\nHit:2 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial InRelease\nHit:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates\
+        \ InRelease\nHit:4 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-backports\
+        \ InRelease\nGet:5 http://repo.sawtooth.me/ubuntu/bumper/stable xenial InRelease\
+        \ [2,421 B]\nGet:6 https://repos.influxdata.com/ubuntu xenial InRelease [4,731\
+        \ B]\nGet:7 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ Packages [37.8 kB]\nGet:8 https://repos.influxdata.com/ubuntu xenial/stable\
+        \ amd64 Packages [925 B]\nFetched 45.9 kB in 1s (33.4 kB/s)\nReading package\
+        \ lists...\nReading package lists...\nBuilding dependency tree...\nReading\
+        \ state information...\nThe following packages were automatically installed\
+        \ and are no longer required:\n  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n\
+        \  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\nUse 'sudo\
+        \ apt autoremove' to remove them.\nThe following additional packages will\
+        \ be installed:\n  libprotobuf12 libsecp256k1-0 libsodium18 libssl-dev libssl-doc\
+        \ libzmq5\n  python3-aiodns python3-aiohttp python3-async-timeout python3-cbor\n\
+        \  python3-cchardet python3-colorlog python3-cryptography python3-lmdb\n \
+        \ python3-multidict python3-netifaces python3-protobuf python3-pycares\n \
+        \ python3-pyformance python3-sawtooth-cli python3-sawtooth-intkey\n  python3-sawtooth-poet-cli\
+        \ python3-sawtooth-poet-common\n  python3-sawtooth-poet-core python3-sawtooth-poet-families\n\
+        \  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n  python3-sawtooth-sdk\
+        \ python3-sawtooth-settings python3-sawtooth-signing\n  python3-sawtooth-validator\
+        \ python3-sawtooth-xo python3-secp256k1\n  python3-toml python3-yarl python3-zmq\
+        \ zlib1g-dev\nThe following NEW packages will be installed:\n  libprotobuf12\
+        \ libsecp256k1-0 libsodium18 libssl-dev libssl-doc libzmq5\n  python3-aiodns\
+        \ python3-aiohttp python3-async-timeout python3-cbor\n  python3-cchardet python3-colorlog\
+        \ python3-lmdb python3-multidict\n  python3-netifaces python3-protobuf python3-pycares\
+        \ python3-pyformance\n  python3-sawtooth-cli python3-sawtooth-identity python3-sawtooth-intkey\n\
+        \  python3-sawtooth-poet-cli python3-sawtooth-poet-common\n  python3-sawtooth-poet-core\
+        \ python3-sawtooth-poet-families\n  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n\
+        \  python3-sawtooth-sdk python3-sawtooth-settings python3-sawtooth-signing\n\
+        \  python3-sawtooth-validator python3-sawtooth-xo python3-secp256k1\n  python3-toml\
+        \ python3-yarl python3-zmq sawtooth zlib1g-dev\nThe following packages will\
+        \ be upgraded:\n  python3-cryptography\n1 upgraded, 38 newly installed, 0\
+        \ to remove and 57 not upgraded.\nNeed to get 9,805 kB of archives.\nAfter\
+        \ this operation, 45.8 MB of additional disk space will be used.\nGet:1 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 libsodium18 amd64 1.0.8-5 [144 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 libprotobuf12 amd64 3.4.1-0~maarten0 [700 kB]\nGet:3\
+        \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 zlib1g-dev\
+        \ amd64 1:1.2.8.dfsg-2ubuntu4.3 [167 kB]\nGet:4 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial-updates/main amd64 libssl-dev amd64 1.0.2g-1ubuntu4.16 [1,344 kB]\n\
+        Get:5 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 libsecp256k1-0\
+        \ amd64 0.1~20161228-1 [108 kB]\nGet:6 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial-updates/main amd64 libssl-doc all 1.0.2g-1ubuntu4.16 [1,078 kB]\n\
+        Get:7 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/universe\
+        \ amd64 libzmq5 amd64 4.1.4-7ubuntu0.1 [149 kB]\nGet:8 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 python3-cbor amd64 0.1.24-1 [20.3 kB]\nGet:9 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 python3-colorlog all 2.6.0-1 [7,912 B]\nGet:10 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/main amd64 python3-netifaces amd64 0.10.4-0.1build2 [12.9 kB]\nGet:11\
+        \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 python3-toml\
+        \ all 0.9.1-1 [7,932 B]\nGet:12 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 python3-zmq amd64 15.2.0-0ubuntu4 [202 kB]\nGet:13\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-pycares\
+        \ amd64 2.1.1-1 [46.5 kB]\nGet:14 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-aiodns all 1.1.1-1 [4,794 B]\nGet:15 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-async-timeout all 1.2.0-1 [3,448 B]\nGet:16\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-multidict\
+        \ amd64 2.1.4-1 [115 kB]\nGet:17 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-yarl amd64 0.10.0-1 [65.0 kB]\nGet:18 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-aiohttp amd64 2.3.2-1 [238 kB]\nGet:19 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-cchardet amd64 2.0a3-1 [80.0 kB]\nGet:20 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-cryptography amd64 1.7.2-1 [214 kB]\nGet:21\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-lmdb\
+        \ amd64 0.92-1 [76.7 kB]\nGet:22 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-protobuf amd64 3.4.1-0~maarten0 [292 kB]\n\
+        Get:23 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-pyformance all 0.4-1 [14.3 kB]\nGet:24 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-cli all 1.1.5-1 [51.7 kB]\nGet:25\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-secp256k1\
+        \ amd64 0.13.2-1 [13.4 kB]\nGet:26 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-signing all 1.1.5-1 [4,230 B]\nGet:27\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-sdk\
+        \ all 1.1.5-1 [42.3 kB]\nGet:28 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-identity all 1.1.5-1 [31.2 kB]\n\
+        Get:29 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-intkey all 1.1.5-1 [15.6 kB]\nGet:30 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-common all 1.1.2-1 [9,176 B]\n\
+        Get:31 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-poet-simulator all 1.1.2-1 [11.5 kB]\nGet:32 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-core all 1.1.2-1 [33.6 kB]\n\
+        Get:33 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-poet-cli all 1.1.2-1 [7,656 B]\nGet:34 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-families all 1.1.2-1 [8,058\
+        \ B]\nGet:35 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+        \ amd64 python3-sawtooth-rest-api all 1.1.5-1 [44.4 kB]\nGet:36 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-settings all 1.1.5-1 [31.8 kB]\n\
+        Get:37 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-validator all 1.1.5-1 [4,395 kB]\nGet:38 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-xo all 1.1.5-1 [12.2 kB]\nGet:39\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 sawtooth\
+        \ all 1.1.5 [2,218 B]\nFetched 9,805 kB in 3s (2,967 kB/s)\nSelecting previously\
+        \ unselected package libprotobuf12:amd64.\r\n(Reading database ... \r(Reading\
+        \ database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r\
+        (Reading database ... 20%\r(Reading database ... 25%\r(Reading database ...\
+        \ 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database\
+        \ ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading\
+        \ database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r\
+        (Reading database ... 75%\r(Reading database ... 80%\r(Reading database ...\
+        \ 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+        \ ... 100%\r(Reading database ... 116586 files and directories currently installed.)\r\
+        \nPreparing to unpack .../libprotobuf12_3.4.1-0~maarten0_amd64.deb ...\r\n\
+        Unpacking libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSelecting previously\
+        \ unselected package libsecp256k1-0:amd64.\r\nPreparing to unpack .../libsecp256k1-0_0.1~20161228-1_amd64.deb\
+        \ ...\r\nUnpacking libsecp256k1-0:amd64 (0.1~20161228-1) ...\r\nSelecting\
+        \ previously unselected package libsodium18:amd64.\r\nPreparing to unpack\
+        \ .../libsodium18_1.0.8-5_amd64.deb ...\r\nUnpacking libsodium18:amd64 (1.0.8-5)\
+        \ ...\r\nSelecting previously unselected package zlib1g-dev:amd64.\r\nPreparing\
+        \ to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-2ubuntu4.3_amd64.deb ...\r\nUnpacking\
+        \ zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSelecting previously unselected\
+        \ package libssl-dev:amd64.\r\nPreparing to unpack .../libssl-dev_1.0.2g-1ubuntu4.16_amd64.deb\
+        \ ...\r\nUnpacking libssl-dev:amd64 (1.0.2g-1ubuntu4.16) ...\r\nSelecting\
+        \ previously unselected package libssl-doc.\r\nPreparing to unpack .../libssl-doc_1.0.2g-1ubuntu4.16_all.deb\
+        \ ...\r\nUnpacking libssl-doc (1.0.2g-1ubuntu4.16) ...\r\nSelecting previously\
+        \ unselected package libzmq5:amd64.\r\nPreparing to unpack .../libzmq5_4.1.4-7ubuntu0.1_amd64.deb\
+        \ ...\r\nUnpacking libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSelecting previously\
+        \ unselected package python3-pycares.\r\nPreparing to unpack .../python3-pycares_2.1.1-1_amd64.deb\
+        \ ...\r\nUnpacking python3-pycares (2.1.1-1) ...\r\nSelecting previously unselected\
+        \ package python3-aiodns.\r\nPreparing to unpack .../python3-aiodns_1.1.1-1_all.deb\
+        \ ...\r\nUnpacking python3-aiodns (1.1.1-1) ...\r\nSelecting previously unselected\
+        \ package python3-async-timeout.\r\nPreparing to unpack .../python3-async-timeout_1.2.0-1_all.deb\
+        \ ...\r\nUnpacking python3-async-timeout (1.2.0-1) ...\r\nSelecting previously\
+        \ unselected package python3-multidict.\r\nPreparing to unpack .../python3-multidict_2.1.4-1_amd64.deb\
+        \ ...\r\nUnpacking python3-multidict (2.1.4-1) ...\r\nSelecting previously\
+        \ unselected package python3-yarl.\r\nPreparing to unpack .../python3-yarl_0.10.0-1_amd64.deb\
+        \ ...\r\nUnpacking python3-yarl (0.10.0-1) ...\r\nSelecting previously unselected\
+        \ package python3-aiohttp.\r\nPreparing to unpack .../python3-aiohttp_2.3.2-1_amd64.deb\
+        \ ...\r\nUnpacking python3-aiohttp (2.3.2-1) ...\r\nSelecting previously unselected\
+        \ package python3-cbor.\r\nPreparing to unpack .../python3-cbor_0.1.24-1_amd64.deb\
+        \ ...\r\nUnpacking python3-cbor (0.1.24-1) ...\r\nSelecting previously unselected\
+        \ package python3-cchardet.\r\nPreparing to unpack .../python3-cchardet_2.0a3-1_amd64.deb\
+        \ ...\r\nUnpacking python3-cchardet (2.0a3-1) ...\r\nSelecting previously\
+        \ unselected package python3-colorlog.\r\nPreparing to unpack .../python3-colorlog_2.6.0-1_all.deb\
+        \ ...\r\nUnpacking python3-colorlog (2.6.0-1) ...\r\nPreparing to unpack .../python3-cryptography_1.7.2-1_amd64.deb\
+        \ ...\r\nUnpacking python3-cryptography (1.7.2-1) over (1.2.3-1ubuntu0.2)\
+        \ ...\r\nSelecting previously unselected package python3-lmdb.\r\nPreparing\
+        \ to unpack .../python3-lmdb_0.92-1_amd64.deb ...\r\nUnpacking python3-lmdb\
+        \ (0.92-1) ...\r\nSelecting previously unselected package python3-netifaces.\r\
+        \nPreparing to unpack .../python3-netifaces_0.10.4-0.1build2_amd64.deb ...\r\
+        \nUnpacking python3-netifaces (0.10.4-0.1build2) ...\r\nSelecting previously\
+        \ unselected package python3-protobuf.\r\nPreparing to unpack .../python3-protobuf_3.4.1-0~maarten0_amd64.deb\
+        \ ...\r\nUnpacking python3-protobuf (3.4.1-0~maarten0) ...\r\nSelecting previously\
+        \ unselected package python3-pyformance.\r\nPreparing to unpack .../python3-pyformance_0.4-1_all.deb\
+        \ ...\r\nUnpacking python3-pyformance (0.4-1) ...\r\nSelecting previously\
+        \ unselected package python3-toml.\r\nPreparing to unpack .../python3-toml_0.9.1-1_all.deb\
+        \ ...\r\nUnpacking python3-toml (0.9.1-1) ...\r\nSelecting previously unselected\
+        \ package python3-sawtooth-cli.\r\nPreparing to unpack .../python3-sawtooth-cli_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-cli (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-secp256k1.\r\nPreparing to unpack .../python3-secp256k1_0.13.2-1_amd64.deb\
+        \ ...\r\nUnpacking python3-secp256k1 (0.13.2-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-signing.\r\nPreparing to unpack .../python3-sawtooth-signing_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-signing (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-zmq.\r\nPreparing to unpack .../python3-zmq_15.2.0-0ubuntu4_amd64.deb\
+        \ ...\r\nUnpacking python3-zmq (15.2.0-0ubuntu4) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-sdk.\r\nPreparing to unpack .../python3-sawtooth-sdk_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-sdk (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-identity.\r\nPreparing to unpack .../python3-sawtooth-identity_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-identity (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-intkey.\r\nPreparing to unpack .../python3-sawtooth-intkey_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-intkey (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-poet-common.\r\nPreparing to unpack\
+        \ .../python3-sawtooth-poet-common_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-common\
+        \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-poet-simulator.\r\
+        \nPreparing to unpack .../python3-sawtooth-poet-simulator_1.1.2-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-poet-simulator (1.1.2-1) ...\r\nSelecting\
+        \ previously unselected package python3-sawtooth-poet-core.\r\nPreparing to\
+        \ unpack .../python3-sawtooth-poet-core_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-core\
+        \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-poet-cli.\r\
+        \nPreparing to unpack .../python3-sawtooth-poet-cli_1.1.2-1_all.deb ...\r\n\
+        Unpacking python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-poet-families.\r\nPreparing to unpack\
+        \ .../python3-sawtooth-poet-families_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-families\
+        \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-rest-api.\r\
+        \nPreparing to unpack .../python3-sawtooth-rest-api_1.1.5-1_all.deb ...\r\n\
+        Unpacking python3-sawtooth-rest-api (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-settings.\r\nPreparing to unpack .../python3-sawtooth-settings_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-settings (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-validator.\r\nPreparing to unpack .../python3-sawtooth-validator_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-validator (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-xo.\r\nPreparing to unpack .../python3-sawtooth-xo_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-xo (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package sawtooth.\r\nPreparing to unpack .../sawtooth_1.1.5_all.deb\
+        \ ...\r\nUnpacking sawtooth (1.1.5) ...\r\nProcessing triggers for libc-bin\
+        \ (2.23-0ubuntu11.2) ...\r\nProcessing triggers for man-db (2.7.5-1) ...\r\
+        \nSetting up libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSetting up libsecp256k1-0:amd64\
+        \ (0.1~20161228-1) ...\r\nSetting up libsodium18:amd64 (1.0.8-5) ...\r\nSetting\
+        \ up zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSetting up libssl-dev:amd64\
+        \ (1.0.2g-1ubuntu4.16) ...\r\nSetting up libssl-doc (1.0.2g-1ubuntu4.16) ...\r\
+        \nSetting up libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSetting up python3-pycares\
+        \ (2.1.1-1) ...\r\nSetting up python3-aiodns (1.1.1-1) ...\r\nSetting up python3-async-timeout\
+        \ (1.2.0-1) ...\r\nSetting up python3-multidict (2.1.4-1) ...\r\nSetting up\
+        \ python3-yarl (0.10.0-1) ...\r\nSetting up python3-aiohttp (2.3.2-1) ...\r\
+        \nSetting up python3-cbor (0.1.24-1) ...\r\nSetting up python3-cchardet (2.0a3-1)\
+        \ ...\r\nSetting up python3-colorlog (2.6.0-1) ...\r\nSetting up python3-cryptography\
+        \ (1.7.2-1) ...\r\nSetting up python3-lmdb (0.92-1) ...\r\nSetting up python3-netifaces\
+        \ (0.10.4-0.1build2) ...\r\nSetting up python3-protobuf (3.4.1-0~maarten0)\
+        \ ...\r\nSetting up python3-pyformance (0.4-1) ...\r\nSetting up python3-toml\
+        \ (0.9.1-1) ...\r\nSetting up python3-sawtooth-cli (1.1.5-1) ...\r\nSetting\
+        \ up python3-secp256k1 (0.13.2-1) ...\r\nSetting up python3-sawtooth-signing\
+        \ (1.1.5-1) ...\r\nSetting up python3-zmq (15.2.0-0ubuntu4) ...\r\nSetting\
+        \ up python3-sawtooth-sdk (1.1.5-1) ...\r\nSetting up python3-sawtooth-identity\
+        \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-intkey (1.1.5-1) ...\r\nSetting\
+        \ up python3-sawtooth-poet-common (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-simulator\
+        \ (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-core (1.1.2-1) ...\r\n\
+        Setting up python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-families\
+        \ (1.1.2-1) ...\r\nSetting up python3-sawtooth-rest-api (1.1.5-1) ...\r\n\
+        Setting up python3-sawtooth-settings (1.1.5-1) ...\r\nSetting up python3-sawtooth-validator\
+        \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-xo (1.1.5-1) ...\r\nSetting\
+        \ up sawtooth (1.1.5) ...\r\nProcessing triggers for libc-bin (2.23-0ubuntu11.2)\
+        \ ...\r\nReading package lists...\nBuilding dependency tree...\nReading state\
+        \ information...\npython3-sawtooth-poet-cli is already the newest version\
+        \ (1.1.2-1).\npython3-sawtooth-poet-cli set to manually installed.\nThe following\
+        \ packages were automatically installed and are no longer required:\n  linux-headers-4.4.0-148\
+        \ linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\n\
+        Use 'sudo apt autoremove' to remove them.\nThe following NEW packages will\
+        \ be installed:\n  sawtooth-pbft-engine sawtooth-raft-engine\n0 upgraded,\
+        \ 2 newly installed, 0 to remove and 57 not upgraded.\nNeed to get 2,047 kB\
+        \ of archives.\nAfter this operation, 8,167 kB of additional disk space will\
+        \ be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+        \ amd64 sawtooth-pbft-engine amd64 0.1.3 [1,042 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 sawtooth-raft-engine amd64 0.1.2 [1,004 kB]\nFetched\
+        \ 2,047 kB in 1s (1,881 kB/s)\nSelecting previously unselected package sawtooth-pbft-engine.\r\
+        \n(Reading database ... \r(Reading database ... 5%\r(Reading database ...\
+        \ 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database\
+        \ ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading\
+        \ database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r\
+        (Reading database ... 55%\r(Reading database ... 60%\r(Reading database ...\
+        \ 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database\
+        \ ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading\
+        \ database ... 95%\r(Reading database ... 100%\r(Reading database ... 119522\
+        \ files and directories currently installed.)\r\nPreparing to unpack .../sawtooth-pbft-engine_0.1.3_amd64.deb\
+        \ ...\r\nUnpacking sawtooth-pbft-engine (0.1.3) ...\r\nSelecting previously\
+        \ unselected package sawtooth-raft-engine.\r\nPreparing to unpack .../sawtooth-raft-engine_0.1.2_amd64.deb\
+        \ ...\r\nUnpacking sawtooth-raft-engine (0.1.2) ...\r\nSetting up sawtooth-pbft-engine\
+        \ (0.1.3) ...\r\nSetting up sawtooth-raft-engine (0.1.2) ...\r\nReading package\
+        \ lists...\nBuilding dependency tree...\nReading state information...\npython3-sawtooth-poet-families\
+        \ is already the newest version (1.1.2-1).\npython3-sawtooth-poet-families\
+        \ set to manually installed.\nThe following packages were automatically installed\
+        \ and are no longer required:\n  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n\
+        \  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\nUse 'sudo\
+        \ apt autoremove' to remove them.\nThe following NEW packages will be installed:\n\
+        \  python3-sawtooth-poet-engine\n0 upgraded, 1 newly installed, 0 to remove\
+        \ and 57 not upgraded.\nNeed to get 8,210 B of archives.\nAfter this operation,\
+        \ 57.3 kB of additional disk space will be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-engine all 1.1.2-1 [8,210 B]\n\
+        Fetched 8,210 B in 0s (19.4 kB/s)\nSelecting previously unselected package\
+        \ python3-sawtooth-poet-engine.\r\n(Reading database ... \r(Reading database\
+        \ ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database\
+        \ ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading\
+        \ database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r\
+        (Reading database ... 50%\r(Reading database ... 55%\r(Reading database ...\
+        \ 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database\
+        \ ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading\
+        \ database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r\
+        (Reading database ... 119532 files and directories currently installed.)\r\
+        \nPreparing to unpack .../python3-sawtooth-poet-engine_1.1.2-1_all.deb ...\r\
+        \nUnpacking python3-sawtooth-poet-engine (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-engine\
+        \ (1.1.2-1) ...\r\ncreating key directory: /root/.sawtooth/keys\nwriting file:\
+        \ /root/.sawtooth/keys/root.priv\nwriting file: /root/.sawtooth/keys/root.pub\n\
+        writing file: /etc/sawtooth/keys/validator.priv\nwriting file: /etc/sawtooth/keys/validator.pub\n\
+        Reading package lists...\nBuilding dependency tree...\nReading state information...\n\
+        The following packages were automatically installed and are no longer required:\n\
+        \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+        \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+        The following NEW packages will be installed:\n  telegraf\n0 upgraded, 1 newly\
+        \ installed, 0 to remove and 57 not upgraded.\nNeed to get 21.1 MB of archives.\n\
+        After this operation, 69.5 MB of additional disk space will be used.\nGet:1\
+        \ https://repos.influxdata.com/ubuntu xenial/stable amd64 telegraf amd64 1.14.5-1\
+        \ [21.1 MB]\nFetched 21.1 MB in 1s (11.0 MB/s)\nSelecting previously unselected\
+        \ package telegraf.\r\n(Reading database ... \r(Reading database ... 5%\r\
+        (Reading database ... 10%\r(Reading database ... 15%\r(Reading database ...\
+        \ 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database\
+        \ ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading\
+        \ database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r\
+        (Reading database ... 65%\r(Reading database ... 70%\r(Reading database ...\
+        \ 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database\
+        \ ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading\
+        \ database ... 119549 files and directories currently installed.)\r\nPreparing\
+        \ to unpack .../telegraf_1.14.5-1_amd64.deb ...\r\nUnpacking telegraf (1.14.5-1)\
+        \ ...\r\nSetting up telegraf (1.14.5-1) ...\r\nCreated symlink from /etc/systemd/system/multi-user.target.wants/telegraf.service\
+        \ to /lib/systemd/system/telegraf.service.\r\n"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node1"
+  LOG:
+    MSG: ""
+    subtop0.sub0node1: "Executing: /tmp/tmp.0cRQkTmC25/gpg.1.sh --keyserver\nhkp://keyserver.ubuntu.com:80\n\
+      --recv-keys\n8AA7AF1F1091A5FD\nOK\nHit:1 http://security.ubuntu.com/ubuntu xenial-security\
+      \ InRelease\nHit:2 http://nova.clouds.archive.ubuntu.com/ubuntu xenial InRelease\n\
+      Hit:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates InRelease\n\
+      Hit:4 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-backports InRelease\n\
+      Get:5 http://repo.sawtooth.me/ubuntu/bumper/stable xenial InRelease [2,421 B]\n\
+      Get:6 https://repos.influxdata.com/ubuntu xenial InRelease [4,731 B]\nGet:7\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 Packages\
+      \ [37.8 kB]\nGet:8 https://repos.influxdata.com/ubuntu xenial/stable amd64 Packages\
+      \ [925 B]\nFetched 45.9 kB in 1s (33.4 kB/s)\nReading package lists...\nReading\
+      \ package lists...\nBuilding dependency tree...\nReading state information...\n\
+      The following packages were automatically installed and are no longer required:\n\
+      \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+      \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+      The following additional packages will be installed:\n  libprotobuf12 libsecp256k1-0\
+      \ libsodium18 libssl-dev libssl-doc libzmq5\n  python3-aiodns python3-aiohttp\
+      \ python3-async-timeout python3-cbor\n  python3-cchardet python3-colorlog python3-cryptography\
+      \ python3-lmdb\n  python3-multidict python3-netifaces python3-protobuf python3-pycares\n\
+      \  python3-pyformance python3-sawtooth-cli python3-sawtooth-intkey\n  python3-sawtooth-poet-cli\
+      \ python3-sawtooth-poet-common\n  python3-sawtooth-poet-core python3-sawtooth-poet-families\n\
+      \  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n  python3-sawtooth-sdk\
+      \ python3-sawtooth-settings python3-sawtooth-signing\n  python3-sawtooth-validator\
+      \ python3-sawtooth-xo python3-secp256k1\n  python3-toml python3-yarl python3-zmq\
+      \ zlib1g-dev\nThe following NEW packages will be installed:\n  libprotobuf12\
+      \ libsecp256k1-0 libsodium18 libssl-dev libssl-doc libzmq5\n  python3-aiodns\
+      \ python3-aiohttp python3-async-timeout python3-cbor\n  python3-cchardet python3-colorlog\
+      \ python3-lmdb python3-multidict\n  python3-netifaces python3-protobuf python3-pycares\
+      \ python3-pyformance\n  python3-sawtooth-cli python3-sawtooth-identity python3-sawtooth-intkey\n\
+      \  python3-sawtooth-poet-cli python3-sawtooth-poet-common\n  python3-sawtooth-poet-core\
+      \ python3-sawtooth-poet-families\n  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n\
+      \  python3-sawtooth-sdk python3-sawtooth-settings python3-sawtooth-signing\n\
+      \  python3-sawtooth-validator python3-sawtooth-xo python3-secp256k1\n  python3-toml\
+      \ python3-yarl python3-zmq sawtooth zlib1g-dev\nThe following packages will\
+      \ be upgraded:\n  python3-cryptography\n1 upgraded, 38 newly installed, 0 to\
+      \ remove and 57 not upgraded.\nNeed to get 9,805 kB of archives.\nAfter this\
+      \ operation, 45.8 MB of additional disk space will be used.\nGet:1 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 libsodium18 amd64 1.0.8-5 [144 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 libprotobuf12 amd64 3.4.1-0~maarten0 [700 kB]\nGet:3\
+      \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 zlib1g-dev\
+      \ amd64 1:1.2.8.dfsg-2ubuntu4.3 [167 kB]\nGet:4 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial-updates/main amd64 libssl-dev amd64 1.0.2g-1ubuntu4.16 [1,344 kB]\n\
+      Get:5 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 libsecp256k1-0\
+      \ amd64 0.1~20161228-1 [108 kB]\nGet:6 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial-updates/main amd64 libssl-doc all 1.0.2g-1ubuntu4.16 [1,078 kB]\nGet:7\
+      \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/universe amd64\
+      \ libzmq5 amd64 4.1.4-7ubuntu0.1 [149 kB]\nGet:8 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 python3-cbor amd64 0.1.24-1 [20.3 kB]\nGet:9 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 python3-colorlog all 2.6.0-1 [7,912 B]\nGet:10 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/main amd64 python3-netifaces amd64 0.10.4-0.1build2 [12.9 kB]\nGet:11\
+      \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 python3-toml\
+      \ all 0.9.1-1 [7,932 B]\nGet:12 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 python3-zmq amd64 15.2.0-0ubuntu4 [202 kB]\nGet:13 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-pycares amd64 2.1.1-1 [46.5 kB]\nGet:14 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-aiodns all 1.1.1-1 [4,794 B]\nGet:15 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-async-timeout all 1.2.0-1 [3,448 B]\nGet:16\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-multidict\
+      \ amd64 2.1.4-1 [115 kB]\nGet:17 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-yarl amd64 0.10.0-1 [65.0 kB]\nGet:18 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-aiohttp amd64 2.3.2-1 [238 kB]\nGet:19 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-cchardet amd64 2.0a3-1 [80.0 kB]\nGet:20 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-cryptography amd64 1.7.2-1 [214 kB]\nGet:21\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-lmdb\
+      \ amd64 0.92-1 [76.7 kB]\nGet:22 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-protobuf amd64 3.4.1-0~maarten0 [292 kB]\nGet:23\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-pyformance\
+      \ all 0.4-1 [14.3 kB]\nGet:24 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+      \ amd64 python3-sawtooth-cli all 1.1.5-1 [51.7 kB]\nGet:25 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-secp256k1 amd64 0.13.2-1 [13.4 kB]\nGet:26 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-signing all 1.1.5-1 [4,230 B]\nGet:27\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-sdk\
+      \ all 1.1.5-1 [42.3 kB]\nGet:28 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-identity all 1.1.5-1 [31.2 kB]\nGet:29\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-intkey\
+      \ all 1.1.5-1 [15.6 kB]\nGet:30 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-common all 1.1.2-1 [9,176 B]\n\
+      Get:31 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-poet-simulator\
+      \ all 1.1.2-1 [11.5 kB]\nGet:32 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-core all 1.1.2-1 [33.6 kB]\nGet:33\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-poet-cli\
+      \ all 1.1.2-1 [7,656 B]\nGet:34 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-families all 1.1.2-1 [8,058 B]\n\
+      Get:35 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-rest-api\
+      \ all 1.1.5-1 [44.4 kB]\nGet:36 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-settings all 1.1.5-1 [31.8 kB]\nGet:37\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-validator\
+      \ all 1.1.5-1 [4,395 kB]\nGet:38 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-xo all 1.1.5-1 [12.2 kB]\nGet:39 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 sawtooth all 1.1.5 [2,218 B]\nFetched 9,805 kB in 3s\
+      \ (2,967 kB/s)\nSelecting previously unselected package libprotobuf12:amd64.\r\
+      \n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r\
+      (Reading database ... 15%\r(Reading database ... 20%\r(Reading database ...\
+      \ 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database\
+      \ ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database\
+      \ ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database\
+      \ ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database\
+      \ ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+      \ ... 100%\r(Reading database ... 116586 files and directories currently installed.)\r\
+      \nPreparing to unpack .../libprotobuf12_3.4.1-0~maarten0_amd64.deb ...\r\nUnpacking\
+      \ libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSelecting previously unselected\
+      \ package libsecp256k1-0:amd64.\r\nPreparing to unpack .../libsecp256k1-0_0.1~20161228-1_amd64.deb\
+      \ ...\r\nUnpacking libsecp256k1-0:amd64 (0.1~20161228-1) ...\r\nSelecting previously\
+      \ unselected package libsodium18:amd64.\r\nPreparing to unpack .../libsodium18_1.0.8-5_amd64.deb\
+      \ ...\r\nUnpacking libsodium18:amd64 (1.0.8-5) ...\r\nSelecting previously unselected\
+      \ package zlib1g-dev:amd64.\r\nPreparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-2ubuntu4.3_amd64.deb\
+      \ ...\r\nUnpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSelecting\
+      \ previously unselected package libssl-dev:amd64.\r\nPreparing to unpack .../libssl-dev_1.0.2g-1ubuntu4.16_amd64.deb\
+      \ ...\r\nUnpacking libssl-dev:amd64 (1.0.2g-1ubuntu4.16) ...\r\nSelecting previously\
+      \ unselected package libssl-doc.\r\nPreparing to unpack .../libssl-doc_1.0.2g-1ubuntu4.16_all.deb\
+      \ ...\r\nUnpacking libssl-doc (1.0.2g-1ubuntu4.16) ...\r\nSelecting previously\
+      \ unselected package libzmq5:amd64.\r\nPreparing to unpack .../libzmq5_4.1.4-7ubuntu0.1_amd64.deb\
+      \ ...\r\nUnpacking libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSelecting previously\
+      \ unselected package python3-pycares.\r\nPreparing to unpack .../python3-pycares_2.1.1-1_amd64.deb\
+      \ ...\r\nUnpacking python3-pycares (2.1.1-1) ...\r\nSelecting previously unselected\
+      \ package python3-aiodns.\r\nPreparing to unpack .../python3-aiodns_1.1.1-1_all.deb\
+      \ ...\r\nUnpacking python3-aiodns (1.1.1-1) ...\r\nSelecting previously unselected\
+      \ package python3-async-timeout.\r\nPreparing to unpack .../python3-async-timeout_1.2.0-1_all.deb\
+      \ ...\r\nUnpacking python3-async-timeout (1.2.0-1) ...\r\nSelecting previously\
+      \ unselected package python3-multidict.\r\nPreparing to unpack .../python3-multidict_2.1.4-1_amd64.deb\
+      \ ...\r\nUnpacking python3-multidict (2.1.4-1) ...\r\nSelecting previously unselected\
+      \ package python3-yarl.\r\nPreparing to unpack .../python3-yarl_0.10.0-1_amd64.deb\
+      \ ...\r\nUnpacking python3-yarl (0.10.0-1) ...\r\nSelecting previously unselected\
+      \ package python3-aiohttp.\r\nPreparing to unpack .../python3-aiohttp_2.3.2-1_amd64.deb\
+      \ ...\r\nUnpacking python3-aiohttp (2.3.2-1) ...\r\nSelecting previously unselected\
+      \ package python3-cbor.\r\nPreparing to unpack .../python3-cbor_0.1.24-1_amd64.deb\
+      \ ...\r\nUnpacking python3-cbor (0.1.24-1) ...\r\nSelecting previously unselected\
+      \ package python3-cchardet.\r\nPreparing to unpack .../python3-cchardet_2.0a3-1_amd64.deb\
+      \ ...\r\nUnpacking python3-cchardet (2.0a3-1) ...\r\nSelecting previously unselected\
+      \ package python3-colorlog.\r\nPreparing to unpack .../python3-colorlog_2.6.0-1_all.deb\
+      \ ...\r\nUnpacking python3-colorlog (2.6.0-1) ...\r\nPreparing to unpack .../python3-cryptography_1.7.2-1_amd64.deb\
+      \ ...\r\nUnpacking python3-cryptography (1.7.2-1) over (1.2.3-1ubuntu0.2) ...\r\
+      \nSelecting previously unselected package python3-lmdb.\r\nPreparing to unpack\
+      \ .../python3-lmdb_0.92-1_amd64.deb ...\r\nUnpacking python3-lmdb (0.92-1) ...\r\
+      \nSelecting previously unselected package python3-netifaces.\r\nPreparing to\
+      \ unpack .../python3-netifaces_0.10.4-0.1build2_amd64.deb ...\r\nUnpacking python3-netifaces\
+      \ (0.10.4-0.1build2) ...\r\nSelecting previously unselected package python3-protobuf.\r\
+      \nPreparing to unpack .../python3-protobuf_3.4.1-0~maarten0_amd64.deb ...\r\n\
+      Unpacking python3-protobuf (3.4.1-0~maarten0) ...\r\nSelecting previously unselected\
+      \ package python3-pyformance.\r\nPreparing to unpack .../python3-pyformance_0.4-1_all.deb\
+      \ ...\r\nUnpacking python3-pyformance (0.4-1) ...\r\nSelecting previously unselected\
+      \ package python3-toml.\r\nPreparing to unpack .../python3-toml_0.9.1-1_all.deb\
+      \ ...\r\nUnpacking python3-toml (0.9.1-1) ...\r\nSelecting previously unselected\
+      \ package python3-sawtooth-cli.\r\nPreparing to unpack .../python3-sawtooth-cli_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-cli (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-secp256k1.\r\nPreparing to unpack .../python3-secp256k1_0.13.2-1_amd64.deb\
+      \ ...\r\nUnpacking python3-secp256k1 (0.13.2-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-signing.\r\nPreparing to unpack .../python3-sawtooth-signing_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-signing (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-zmq.\r\nPreparing to unpack .../python3-zmq_15.2.0-0ubuntu4_amd64.deb\
+      \ ...\r\nUnpacking python3-zmq (15.2.0-0ubuntu4) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-sdk.\r\nPreparing to unpack .../python3-sawtooth-sdk_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-sdk (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-identity.\r\nPreparing to unpack .../python3-sawtooth-identity_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-identity (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-intkey.\r\nPreparing to unpack .../python3-sawtooth-intkey_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-intkey (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-poet-common.\r\nPreparing to unpack .../python3-sawtooth-poet-common_1.1.2-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-poet-common (1.1.2-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-poet-simulator.\r\nPreparing to unpack\
+      \ .../python3-sawtooth-poet-simulator_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-simulator\
+      \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-poet-core.\r\
+      \nPreparing to unpack .../python3-sawtooth-poet-core_1.1.2-1_all.deb ...\r\n\
+      Unpacking python3-sawtooth-poet-core (1.1.2-1) ...\r\nSelecting previously unselected\
+      \ package python3-sawtooth-poet-cli.\r\nPreparing to unpack .../python3-sawtooth-poet-cli_1.1.2-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-poet-families.\r\nPreparing to unpack\
+      \ .../python3-sawtooth-poet-families_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-families\
+      \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-rest-api.\r\
+      \nPreparing to unpack .../python3-sawtooth-rest-api_1.1.5-1_all.deb ...\r\n\
+      Unpacking python3-sawtooth-rest-api (1.1.5-1) ...\r\nSelecting previously unselected\
+      \ package python3-sawtooth-settings.\r\nPreparing to unpack .../python3-sawtooth-settings_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-settings (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-validator.\r\nPreparing to unpack .../python3-sawtooth-validator_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-validator (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-xo.\r\nPreparing to unpack .../python3-sawtooth-xo_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-xo (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package sawtooth.\r\nPreparing to unpack .../sawtooth_1.1.5_all.deb\
+      \ ...\r\nUnpacking sawtooth (1.1.5) ...\r\nProcessing triggers for libc-bin\
+      \ (2.23-0ubuntu11.2) ...\r\nProcessing triggers for man-db (2.7.5-1) ...\r\n\
+      Setting up libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSetting up libsecp256k1-0:amd64\
+      \ (0.1~20161228-1) ...\r\nSetting up libsodium18:amd64 (1.0.8-5) ...\r\nSetting\
+      \ up zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSetting up libssl-dev:amd64\
+      \ (1.0.2g-1ubuntu4.16) ...\r\nSetting up libssl-doc (1.0.2g-1ubuntu4.16) ...\r\
+      \nSetting up libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSetting up python3-pycares\
+      \ (2.1.1-1) ...\r\nSetting up python3-aiodns (1.1.1-1) ...\r\nSetting up python3-async-timeout\
+      \ (1.2.0-1) ...\r\nSetting up python3-multidict (2.1.4-1) ...\r\nSetting up\
+      \ python3-yarl (0.10.0-1) ...\r\nSetting up python3-aiohttp (2.3.2-1) ...\r\n\
+      Setting up python3-cbor (0.1.24-1) ...\r\nSetting up python3-cchardet (2.0a3-1)\
+      \ ...\r\nSetting up python3-colorlog (2.6.0-1) ...\r\nSetting up python3-cryptography\
+      \ (1.7.2-1) ...\r\nSetting up python3-lmdb (0.92-1) ...\r\nSetting up python3-netifaces\
+      \ (0.10.4-0.1build2) ...\r\nSetting up python3-protobuf (3.4.1-0~maarten0) ...\r\
+      \nSetting up python3-pyformance (0.4-1) ...\r\nSetting up python3-toml (0.9.1-1)\
+      \ ...\r\nSetting up python3-sawtooth-cli (1.1.5-1) ...\r\nSetting up python3-secp256k1\
+      \ (0.13.2-1) ...\r\nSetting up python3-sawtooth-signing (1.1.5-1) ...\r\nSetting\
+      \ up python3-zmq (15.2.0-0ubuntu4) ...\r\nSetting up python3-sawtooth-sdk (1.1.5-1)\
+      \ ...\r\nSetting up python3-sawtooth-identity (1.1.5-1) ...\r\nSetting up python3-sawtooth-intkey\
+      \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-poet-common (1.1.2-1) ...\r\n\
+      Setting up python3-sawtooth-poet-simulator (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-core\
+      \ (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSetting\
+      \ up python3-sawtooth-poet-families (1.1.2-1) ...\r\nSetting up python3-sawtooth-rest-api\
+      \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-settings (1.1.5-1) ...\r\nSetting\
+      \ up python3-sawtooth-validator (1.1.5-1) ...\r\nSetting up python3-sawtooth-xo\
+      \ (1.1.5-1) ...\r\nSetting up sawtooth (1.1.5) ...\r\nProcessing triggers for\
+      \ libc-bin (2.23-0ubuntu11.2) ...\r\nReading package lists...\nBuilding dependency\
+      \ tree...\nReading state information...\npython3-sawtooth-poet-cli is already\
+      \ the newest version (1.1.2-1).\npython3-sawtooth-poet-cli set to manually installed.\n\
+      The following packages were automatically installed and are no longer required:\n\
+      \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+      \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+      The following NEW packages will be installed:\n  sawtooth-pbft-engine sawtooth-raft-engine\n\
+      0 upgraded, 2 newly installed, 0 to remove and 57 not upgraded.\nNeed to get\
+      \ 2,047 kB of archives.\nAfter this operation, 8,167 kB of additional disk space\
+      \ will be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+      \ amd64 sawtooth-pbft-engine amd64 0.1.3 [1,042 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 sawtooth-raft-engine amd64 0.1.2 [1,004 kB]\nFetched\
+      \ 2,047 kB in 1s (1,881 kB/s)\nSelecting previously unselected package sawtooth-pbft-engine.\r\
+      \n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r\
+      (Reading database ... 15%\r(Reading database ... 20%\r(Reading database ...\
+      \ 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database\
+      \ ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database\
+      \ ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database\
+      \ ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database\
+      \ ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+      \ ... 100%\r(Reading database ... 119522 files and directories currently installed.)\r\
+      \nPreparing to unpack .../sawtooth-pbft-engine_0.1.3_amd64.deb ...\r\nUnpacking\
+      \ sawtooth-pbft-engine (0.1.3) ...\r\nSelecting previously unselected package\
+      \ sawtooth-raft-engine.\r\nPreparing to unpack .../sawtooth-raft-engine_0.1.2_amd64.deb\
+      \ ...\r\nUnpacking sawtooth-raft-engine (0.1.2) ...\r\nSetting up sawtooth-pbft-engine\
+      \ (0.1.3) ...\r\nSetting up sawtooth-raft-engine (0.1.2) ...\r\nReading package\
+      \ lists...\nBuilding dependency tree...\nReading state information...\npython3-sawtooth-poet-families\
+      \ is already the newest version (1.1.2-1).\npython3-sawtooth-poet-families set\
+      \ to manually installed.\nThe following packages were automatically installed\
+      \ and are no longer required:\n  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n\
+      \  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\nUse 'sudo\
+      \ apt autoremove' to remove them.\nThe following NEW packages will be installed:\n\
+      \  python3-sawtooth-poet-engine\n0 upgraded, 1 newly installed, 0 to remove\
+      \ and 57 not upgraded.\nNeed to get 8,210 B of archives.\nAfter this operation,\
+      \ 57.3 kB of additional disk space will be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-engine all 1.1.2-1 [8,210 B]\n\
+      Fetched 8,210 B in 0s (19.4 kB/s)\nSelecting previously unselected package python3-sawtooth-poet-engine.\r\
+      \n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r\
+      (Reading database ... 15%\r(Reading database ... 20%\r(Reading database ...\
+      \ 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database\
+      \ ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database\
+      \ ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database\
+      \ ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database\
+      \ ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+      \ ... 100%\r(Reading database ... 119532 files and directories currently installed.)\r\
+      \nPreparing to unpack .../python3-sawtooth-poet-engine_1.1.2-1_all.deb ...\r\
+      \nUnpacking python3-sawtooth-poet-engine (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-engine\
+      \ (1.1.2-1) ...\r\ncreating key directory: /root/.sawtooth/keys\nwriting file:\
+      \ /root/.sawtooth/keys/root.priv\nwriting file: /root/.sawtooth/keys/root.pub\n\
+      writing file: /etc/sawtooth/keys/validator.priv\nwriting file: /etc/sawtooth/keys/validator.pub\n\
+      Reading package lists...\nBuilding dependency tree...\nReading state information...\n\
+      The following packages were automatically installed and are no longer required:\n\
+      \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+      \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+      The following NEW packages will be installed:\n  telegraf\n0 upgraded, 1 newly\
+      \ installed, 0 to remove and 57 not upgraded.\nNeed to get 21.1 MB of archives.\n\
+      After this operation, 69.5 MB of additional disk space will be used.\nGet:1\
+      \ https://repos.influxdata.com/ubuntu xenial/stable amd64 telegraf amd64 1.14.5-1\
+      \ [21.1 MB]\nFetched 21.1 MB in 1s (11.0 MB/s)\nSelecting previously unselected\
+      \ package telegraf.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading\
+      \ database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading\
+      \ database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading\
+      \ database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading\
+      \ database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading\
+      \ database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading\
+      \ database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading\
+      \ database ... 100%\r(Reading database ... 119549 files and directories currently\
+      \ installed.)\r\nPreparing to unpack .../telegraf_1.14.5-1_amd64.deb ...\r\n\
+      Unpacking telegraf (1.14.5-1) ...\r\nSetting up telegraf (1.14.5-1) ...\r\n\
+      Created symlink from /etc/systemd/system/multi-user.target.wants/telegraf.service\
+      \ to /lib/systemd/system/telegraf.service.\r\n"
+- Time: "1594197850158"
+  Overhead: "3384"
+  Event:
+    Operation: "put"
+    Command: null
+    Options:
+      Src: "file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/architecture/Infs/Topology/sub0node2.sh"
+      Dst: "file@/root"
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node2: "File sub0node2.sh is uploaded!"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node2"
+  LOG:
+    MSG: ""
+    subtop0.sub0node2: "File sub0node2.sh is uploaded!"
+- Time: "1594197912014"
+  Overhead: "61853"
+  Event:
+    Operation: "execute"
+    Command: "bash /root/sub0node2.sh &"
+    Options: null
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node2: "Executing: /tmp/tmp.cuuoGHSxVp/gpg.1.sh --keyserver\nhkp://keyserver.ubuntu.com:80\n\
+        --recv-keys\n8AA7AF1F1091A5FD\nOK\nHit:1 http://security.ubuntu.com/ubuntu\
+        \ xenial-security InRelease\nHit:2 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial InRelease\nHit:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates\
+        \ InRelease\nHit:4 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-backports\
+        \ InRelease\nGet:5 http://repo.sawtooth.me/ubuntu/bumper/stable xenial InRelease\
+        \ [2,421 B]\nGet:6 https://repos.influxdata.com/ubuntu xenial InRelease [4,731\
+        \ B]\nGet:7 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ Packages [37.8 kB]\nGet:8 https://repos.influxdata.com/ubuntu xenial/stable\
+        \ amd64 Packages [925 B]\nFetched 45.9 kB in 1s (34.5 kB/s)\nReading package\
+        \ lists...\nReading package lists...\nBuilding dependency tree...\nReading\
+        \ state information...\nThe following packages were automatically installed\
+        \ and are no longer required:\n  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n\
+        \  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\nUse 'sudo\
+        \ apt autoremove' to remove them.\nThe following additional packages will\
+        \ be installed:\n  libprotobuf12 libsecp256k1-0 libsodium18 libssl-dev libssl-doc\
+        \ libzmq5\n  python3-aiodns python3-aiohttp python3-async-timeout python3-cbor\n\
+        \  python3-cchardet python3-colorlog python3-cryptography python3-lmdb\n \
+        \ python3-multidict python3-netifaces python3-protobuf python3-pycares\n \
+        \ python3-pyformance python3-sawtooth-cli python3-sawtooth-intkey\n  python3-sawtooth-poet-cli\
+        \ python3-sawtooth-poet-common\n  python3-sawtooth-poet-core python3-sawtooth-poet-families\n\
+        \  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n  python3-sawtooth-sdk\
+        \ python3-sawtooth-settings python3-sawtooth-signing\n  python3-sawtooth-validator\
+        \ python3-sawtooth-xo python3-secp256k1\n  python3-toml python3-yarl python3-zmq\
+        \ zlib1g-dev\nThe following NEW packages will be installed:\n  libprotobuf12\
+        \ libsecp256k1-0 libsodium18 libssl-dev libssl-doc libzmq5\n  python3-aiodns\
+        \ python3-aiohttp python3-async-timeout python3-cbor\n  python3-cchardet python3-colorlog\
+        \ python3-lmdb python3-multidict\n  python3-netifaces python3-protobuf python3-pycares\
+        \ python3-pyformance\n  python3-sawtooth-cli python3-sawtooth-identity python3-sawtooth-intkey\n\
+        \  python3-sawtooth-poet-cli python3-sawtooth-poet-common\n  python3-sawtooth-poet-core\
+        \ python3-sawtooth-poet-families\n  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n\
+        \  python3-sawtooth-sdk python3-sawtooth-settings python3-sawtooth-signing\n\
+        \  python3-sawtooth-validator python3-sawtooth-xo python3-secp256k1\n  python3-toml\
+        \ python3-yarl python3-zmq sawtooth zlib1g-dev\nThe following packages will\
+        \ be upgraded:\n  python3-cryptography\n1 upgraded, 38 newly installed, 0\
+        \ to remove and 57 not upgraded.\nNeed to get 9,805 kB of archives.\nAfter\
+        \ this operation, 45.8 MB of additional disk space will be used.\nGet:1 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 libsodium18 amd64 1.0.8-5 [144 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 libprotobuf12 amd64 3.4.1-0~maarten0 [700 kB]\nGet:3\
+        \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 zlib1g-dev\
+        \ amd64 1:1.2.8.dfsg-2ubuntu4.3 [167 kB]\nGet:4 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial-updates/main amd64 libssl-dev amd64 1.0.2g-1ubuntu4.16 [1,344 kB]\n\
+        Get:5 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 libsecp256k1-0\
+        \ amd64 0.1~20161228-1 [108 kB]\nGet:6 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-pycares amd64 2.1.1-1 [46.5 kB]\nGet:7 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-aiodns all 1.1.1-1 [4,794 B]\nGet:8 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial-updates/main amd64 libssl-doc all 1.0.2g-1ubuntu4.16 [1,078 kB]\n\
+        Get:9 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-async-timeout\
+        \ all 1.2.0-1 [3,448 B]\nGet:10 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-multidict amd64 2.1.4-1 [115 kB]\nGet:11 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-yarl amd64 0.10.0-1 [65.0 kB]\nGet:12 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial-updates/universe amd64 libzmq5 amd64 4.1.4-7ubuntu0.1 [149 kB]\n\
+        Get:13 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64\
+        \ python3-cbor amd64 0.1.24-1 [20.3 kB]\nGet:14 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 python3-colorlog all 2.6.0-1 [7,912 B]\nGet:15 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/main amd64 python3-netifaces amd64 0.10.4-0.1build2 [12.9 kB]\nGet:16\
+        \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 python3-toml\
+        \ all 0.9.1-1 [7,932 B]\nGet:17 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 python3-zmq amd64 15.2.0-0ubuntu4 [202 kB]\nGet:18\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-aiohttp\
+        \ amd64 2.3.2-1 [238 kB]\nGet:19 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-cchardet amd64 2.0a3-1 [80.0 kB]\nGet:20 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-cryptography amd64 1.7.2-1 [214 kB]\nGet:21\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-lmdb\
+        \ amd64 0.92-1 [76.7 kB]\nGet:22 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-protobuf amd64 3.4.1-0~maarten0 [292 kB]\n\
+        Get:23 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-pyformance all 0.4-1 [14.3 kB]\nGet:24 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-cli all 1.1.5-1 [51.7 kB]\nGet:25\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-secp256k1\
+        \ amd64 0.13.2-1 [13.4 kB]\nGet:26 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-signing all 1.1.5-1 [4,230 B]\nGet:27\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-sdk\
+        \ all 1.1.5-1 [42.3 kB]\nGet:28 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-identity all 1.1.5-1 [31.2 kB]\n\
+        Get:29 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-intkey all 1.1.5-1 [15.6 kB]\nGet:30 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-common all 1.1.2-1 [9,176 B]\n\
+        Get:31 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-poet-simulator all 1.1.2-1 [11.5 kB]\nGet:32 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-core all 1.1.2-1 [33.6 kB]\n\
+        Get:33 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-poet-cli all 1.1.2-1 [7,656 B]\nGet:34 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-families all 1.1.2-1 [8,058\
+        \ B]\nGet:35 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+        \ amd64 python3-sawtooth-rest-api all 1.1.5-1 [44.4 kB]\nGet:36 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-settings all 1.1.5-1 [31.8 kB]\n\
+        Get:37 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64\
+        \ python3-sawtooth-validator all 1.1.5-1 [4,395 kB]\nGet:38 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-xo all 1.1.5-1 [12.2 kB]\nGet:39\
+        \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 sawtooth\
+        \ all 1.1.5 [2,218 B]\nFetched 9,805 kB in 1s (5,320 kB/s)\nSelecting previously\
+        \ unselected package libprotobuf12:amd64.\r\n(Reading database ... \r(Reading\
+        \ database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r\
+        (Reading database ... 20%\r(Reading database ... 25%\r(Reading database ...\
+        \ 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database\
+        \ ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading\
+        \ database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r\
+        (Reading database ... 75%\r(Reading database ... 80%\r(Reading database ...\
+        \ 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+        \ ... 100%\r(Reading database ... 116586 files and directories currently installed.)\r\
+        \nPreparing to unpack .../libprotobuf12_3.4.1-0~maarten0_amd64.deb ...\r\n\
+        Unpacking libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSelecting previously\
+        \ unselected package libsecp256k1-0:amd64.\r\nPreparing to unpack .../libsecp256k1-0_0.1~20161228-1_amd64.deb\
+        \ ...\r\nUnpacking libsecp256k1-0:amd64 (0.1~20161228-1) ...\r\nSelecting\
+        \ previously unselected package libsodium18:amd64.\r\nPreparing to unpack\
+        \ .../libsodium18_1.0.8-5_amd64.deb ...\r\nUnpacking libsodium18:amd64 (1.0.8-5)\
+        \ ...\r\nSelecting previously unselected package zlib1g-dev:amd64.\r\nPreparing\
+        \ to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-2ubuntu4.3_amd64.deb ...\r\nUnpacking\
+        \ zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSelecting previously unselected\
+        \ package libssl-dev:amd64.\r\nPreparing to unpack .../libssl-dev_1.0.2g-1ubuntu4.16_amd64.deb\
+        \ ...\r\nUnpacking libssl-dev:amd64 (1.0.2g-1ubuntu4.16) ...\r\nSelecting\
+        \ previously unselected package libssl-doc.\r\nPreparing to unpack .../libssl-doc_1.0.2g-1ubuntu4.16_all.deb\
+        \ ...\r\nUnpacking libssl-doc (1.0.2g-1ubuntu4.16) ...\r\nSelecting previously\
+        \ unselected package libzmq5:amd64.\r\nPreparing to unpack .../libzmq5_4.1.4-7ubuntu0.1_amd64.deb\
+        \ ...\r\nUnpacking libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSelecting previously\
+        \ unselected package python3-pycares.\r\nPreparing to unpack .../python3-pycares_2.1.1-1_amd64.deb\
+        \ ...\r\nUnpacking python3-pycares (2.1.1-1) ...\r\nSelecting previously unselected\
+        \ package python3-aiodns.\r\nPreparing to unpack .../python3-aiodns_1.1.1-1_all.deb\
+        \ ...\r\nUnpacking python3-aiodns (1.1.1-1) ...\r\nSelecting previously unselected\
+        \ package python3-async-timeout.\r\nPreparing to unpack .../python3-async-timeout_1.2.0-1_all.deb\
+        \ ...\r\nUnpacking python3-async-timeout (1.2.0-1) ...\r\nSelecting previously\
+        \ unselected package python3-multidict.\r\nPreparing to unpack .../python3-multidict_2.1.4-1_amd64.deb\
+        \ ...\r\nUnpacking python3-multidict (2.1.4-1) ...\r\nSelecting previously\
+        \ unselected package python3-yarl.\r\nPreparing to unpack .../python3-yarl_0.10.0-1_amd64.deb\
+        \ ...\r\nUnpacking python3-yarl (0.10.0-1) ...\r\nSelecting previously unselected\
+        \ package python3-aiohttp.\r\nPreparing to unpack .../python3-aiohttp_2.3.2-1_amd64.deb\
+        \ ...\r\nUnpacking python3-aiohttp (2.3.2-1) ...\r\nSelecting previously unselected\
+        \ package python3-cbor.\r\nPreparing to unpack .../python3-cbor_0.1.24-1_amd64.deb\
+        \ ...\r\nUnpacking python3-cbor (0.1.24-1) ...\r\nSelecting previously unselected\
+        \ package python3-cchardet.\r\nPreparing to unpack .../python3-cchardet_2.0a3-1_amd64.deb\
+        \ ...\r\nUnpacking python3-cchardet (2.0a3-1) ...\r\nSelecting previously\
+        \ unselected package python3-colorlog.\r\nPreparing to unpack .../python3-colorlog_2.6.0-1_all.deb\
+        \ ...\r\nUnpacking python3-colorlog (2.6.0-1) ...\r\nPreparing to unpack .../python3-cryptography_1.7.2-1_amd64.deb\
+        \ ...\r\nUnpacking python3-cryptography (1.7.2-1) over (1.2.3-1ubuntu0.2)\
+        \ ...\r\nSelecting previously unselected package python3-lmdb.\r\nPreparing\
+        \ to unpack .../python3-lmdb_0.92-1_amd64.deb ...\r\nUnpacking python3-lmdb\
+        \ (0.92-1) ...\r\nSelecting previously unselected package python3-netifaces.\r\
+        \nPreparing to unpack .../python3-netifaces_0.10.4-0.1build2_amd64.deb ...\r\
+        \nUnpacking python3-netifaces (0.10.4-0.1build2) ...\r\nSelecting previously\
+        \ unselected package python3-protobuf.\r\nPreparing to unpack .../python3-protobuf_3.4.1-0~maarten0_amd64.deb\
+        \ ...\r\nUnpacking python3-protobuf (3.4.1-0~maarten0) ...\r\nSelecting previously\
+        \ unselected package python3-pyformance.\r\nPreparing to unpack .../python3-pyformance_0.4-1_all.deb\
+        \ ...\r\nUnpacking python3-pyformance (0.4-1) ...\r\nSelecting previously\
+        \ unselected package python3-toml.\r\nPreparing to unpack .../python3-toml_0.9.1-1_all.deb\
+        \ ...\r\nUnpacking python3-toml (0.9.1-1) ...\r\nSelecting previously unselected\
+        \ package python3-sawtooth-cli.\r\nPreparing to unpack .../python3-sawtooth-cli_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-cli (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-secp256k1.\r\nPreparing to unpack .../python3-secp256k1_0.13.2-1_amd64.deb\
+        \ ...\r\nUnpacking python3-secp256k1 (0.13.2-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-signing.\r\nPreparing to unpack .../python3-sawtooth-signing_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-signing (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-zmq.\r\nPreparing to unpack .../python3-zmq_15.2.0-0ubuntu4_amd64.deb\
+        \ ...\r\nUnpacking python3-zmq (15.2.0-0ubuntu4) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-sdk.\r\nPreparing to unpack .../python3-sawtooth-sdk_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-sdk (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-identity.\r\nPreparing to unpack .../python3-sawtooth-identity_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-identity (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-intkey.\r\nPreparing to unpack .../python3-sawtooth-intkey_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-intkey (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-poet-common.\r\nPreparing to unpack\
+        \ .../python3-sawtooth-poet-common_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-common\
+        \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-poet-simulator.\r\
+        \nPreparing to unpack .../python3-sawtooth-poet-simulator_1.1.2-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-poet-simulator (1.1.2-1) ...\r\nSelecting\
+        \ previously unselected package python3-sawtooth-poet-core.\r\nPreparing to\
+        \ unpack .../python3-sawtooth-poet-core_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-core\
+        \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-poet-cli.\r\
+        \nPreparing to unpack .../python3-sawtooth-poet-cli_1.1.2-1_all.deb ...\r\n\
+        Unpacking python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-poet-families.\r\nPreparing to unpack\
+        \ .../python3-sawtooth-poet-families_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-families\
+        \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-rest-api.\r\
+        \nPreparing to unpack .../python3-sawtooth-rest-api_1.1.5-1_all.deb ...\r\n\
+        Unpacking python3-sawtooth-rest-api (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-settings.\r\nPreparing to unpack .../python3-sawtooth-settings_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-settings (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-validator.\r\nPreparing to unpack .../python3-sawtooth-validator_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-validator (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package python3-sawtooth-xo.\r\nPreparing to unpack .../python3-sawtooth-xo_1.1.5-1_all.deb\
+        \ ...\r\nUnpacking python3-sawtooth-xo (1.1.5-1) ...\r\nSelecting previously\
+        \ unselected package sawtooth.\r\nPreparing to unpack .../sawtooth_1.1.5_all.deb\
+        \ ...\r\nUnpacking sawtooth (1.1.5) ...\r\nProcessing triggers for libc-bin\
+        \ (2.23-0ubuntu11.2) ...\r\nProcessing triggers for man-db (2.7.5-1) ...\r\
+        \nSetting up libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSetting up libsecp256k1-0:amd64\
+        \ (0.1~20161228-1) ...\r\nSetting up libsodium18:amd64 (1.0.8-5) ...\r\nSetting\
+        \ up zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSetting up libssl-dev:amd64\
+        \ (1.0.2g-1ubuntu4.16) ...\r\nSetting up libssl-doc (1.0.2g-1ubuntu4.16) ...\r\
+        \nSetting up libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSetting up python3-pycares\
+        \ (2.1.1-1) ...\r\nSetting up python3-aiodns (1.1.1-1) ...\r\nSetting up python3-async-timeout\
+        \ (1.2.0-1) ...\r\nSetting up python3-multidict (2.1.4-1) ...\r\nSetting up\
+        \ python3-yarl (0.10.0-1) ...\r\nSetting up python3-aiohttp (2.3.2-1) ...\r\
+        \nSetting up python3-cbor (0.1.24-1) ...\r\nSetting up python3-cchardet (2.0a3-1)\
+        \ ...\r\nSetting up python3-colorlog (2.6.0-1) ...\r\nSetting up python3-cryptography\
+        \ (1.7.2-1) ...\r\nSetting up python3-lmdb (0.92-1) ...\r\nSetting up python3-netifaces\
+        \ (0.10.4-0.1build2) ...\r\nSetting up python3-protobuf (3.4.1-0~maarten0)\
+        \ ...\r\nSetting up python3-pyformance (0.4-1) ...\r\nSetting up python3-toml\
+        \ (0.9.1-1) ...\r\nSetting up python3-sawtooth-cli (1.1.5-1) ...\r\nSetting\
+        \ up python3-secp256k1 (0.13.2-1) ...\r\nSetting up python3-sawtooth-signing\
+        \ (1.1.5-1) ...\r\nSetting up python3-zmq (15.2.0-0ubuntu4) ...\r\nSetting\
+        \ up python3-sawtooth-sdk (1.1.5-1) ...\r\nSetting up python3-sawtooth-identity\
+        \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-intkey (1.1.5-1) ...\r\nSetting\
+        \ up python3-sawtooth-poet-common (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-simulator\
+        \ (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-core (1.1.2-1) ...\r\n\
+        Setting up python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-families\
+        \ (1.1.2-1) ...\r\nSetting up python3-sawtooth-rest-api (1.1.5-1) ...\r\n\
+        Setting up python3-sawtooth-settings (1.1.5-1) ...\r\nSetting up python3-sawtooth-validator\
+        \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-xo (1.1.5-1) ...\r\nSetting\
+        \ up sawtooth (1.1.5) ...\r\nProcessing triggers for libc-bin (2.23-0ubuntu11.2)\
+        \ ...\r\nReading package lists...\nBuilding dependency tree...\nReading state\
+        \ information...\npython3-sawtooth-poet-cli is already the newest version\
+        \ (1.1.2-1).\npython3-sawtooth-poet-cli set to manually installed.\nThe following\
+        \ packages were automatically installed and are no longer required:\n  linux-headers-4.4.0-148\
+        \ linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\n\
+        Use 'sudo apt autoremove' to remove them.\nThe following NEW packages will\
+        \ be installed:\n  sawtooth-pbft-engine sawtooth-raft-engine\n0 upgraded,\
+        \ 2 newly installed, 0 to remove and 57 not upgraded.\nNeed to get 2,047 kB\
+        \ of archives.\nAfter this operation, 8,167 kB of additional disk space will\
+        \ be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+        \ amd64 sawtooth-pbft-engine amd64 0.1.3 [1,042 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 sawtooth-raft-engine amd64 0.1.2 [1,004 kB]\nFetched\
+        \ 2,047 kB in 0s (2,141 kB/s)\nSelecting previously unselected package sawtooth-pbft-engine.\r\
+        \n(Reading database ... \r(Reading database ... 5%\r(Reading database ...\
+        \ 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database\
+        \ ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading\
+        \ database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r\
+        (Reading database ... 55%\r(Reading database ... 60%\r(Reading database ...\
+        \ 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database\
+        \ ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading\
+        \ database ... 95%\r(Reading database ... 100%\r(Reading database ... 119522\
+        \ files and directories currently installed.)\r\nPreparing to unpack .../sawtooth-pbft-engine_0.1.3_amd64.deb\
+        \ ...\r\nUnpacking sawtooth-pbft-engine (0.1.3) ...\r\nSelecting previously\
+        \ unselected package sawtooth-raft-engine.\r\nPreparing to unpack .../sawtooth-raft-engine_0.1.2_amd64.deb\
+        \ ...\r\nUnpacking sawtooth-raft-engine (0.1.2) ...\r\nSetting up sawtooth-pbft-engine\
+        \ (0.1.3) ...\r\nSetting up sawtooth-raft-engine (0.1.2) ...\r\nReading package\
+        \ lists...\nBuilding dependency tree...\nReading state information...\npython3-sawtooth-poet-families\
+        \ is already the newest version (1.1.2-1).\npython3-sawtooth-poet-families\
+        \ set to manually installed.\nThe following packages were automatically installed\
+        \ and are no longer required:\n  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n\
+        \  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\nUse 'sudo\
+        \ apt autoremove' to remove them.\nThe following NEW packages will be installed:\n\
+        \  python3-sawtooth-poet-engine\n0 upgraded, 1 newly installed, 0 to remove\
+        \ and 57 not upgraded.\nNeed to get 8,210 B of archives.\nAfter this operation,\
+        \ 57.3 kB of additional disk space will be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable\
+        \ xenial/universe amd64 python3-sawtooth-poet-engine all 1.1.2-1 [8,210 B]\n\
+        Fetched 8,210 B in 0s (20.5 kB/s)\nSelecting previously unselected package\
+        \ python3-sawtooth-poet-engine.\r\n(Reading database ... \r(Reading database\
+        \ ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database\
+        \ ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading\
+        \ database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r\
+        (Reading database ... 50%\r(Reading database ... 55%\r(Reading database ...\
+        \ 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database\
+        \ ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading\
+        \ database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r\
+        (Reading database ... 119532 files and directories currently installed.)\r\
+        \nPreparing to unpack .../python3-sawtooth-poet-engine_1.1.2-1_all.deb ...\r\
+        \nUnpacking python3-sawtooth-poet-engine (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-engine\
+        \ (1.1.2-1) ...\r\ncreating key directory: /root/.sawtooth/keys\nwriting file:\
+        \ /root/.sawtooth/keys/root.priv\nwriting file: /root/.sawtooth/keys/root.pub\n\
+        writing file: /etc/sawtooth/keys/validator.priv\nwriting file: /etc/sawtooth/keys/validator.pub\n\
+        Reading package lists...\nBuilding dependency tree...\nReading state information...\n\
+        The following packages were automatically installed and are no longer required:\n\
+        \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+        \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+        The following NEW packages will be installed:\n  telegraf\n0 upgraded, 1 newly\
+        \ installed, 0 to remove and 57 not upgraded.\nNeed to get 21.1 MB of archives.\n\
+        After this operation, 69.5 MB of additional disk space will be used.\nGet:1\
+        \ https://repos.influxdata.com/ubuntu xenial/stable amd64 telegraf amd64 1.14.5-1\
+        \ [21.1 MB]\nFetched 21.1 MB in 1s (11.4 MB/s)\nSelecting previously unselected\
+        \ package telegraf.\r\n(Reading database ... \r(Reading database ... 5%\r\
+        (Reading database ... 10%\r(Reading database ... 15%\r(Reading database ...\
+        \ 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database\
+        \ ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading\
+        \ database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r\
+        (Reading database ... 65%\r(Reading database ... 70%\r(Reading database ...\
+        \ 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database\
+        \ ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading\
+        \ database ... 119549 files and directories currently installed.)\r\nPreparing\
+        \ to unpack .../telegraf_1.14.5-1_amd64.deb ...\r\nUnpacking telegraf (1.14.5-1)\
+        \ ...\r\nSetting up telegraf (1.14.5-1) ...\r\nCreated symlink from /etc/systemd/system/multi-user.target.wants/telegraf.service\
+        \ to /lib/systemd/system/telegraf.service.\r\n"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node2"
+  LOG:
+    MSG: ""
+    subtop0.sub0node2: "Executing: /tmp/tmp.cuuoGHSxVp/gpg.1.sh --keyserver\nhkp://keyserver.ubuntu.com:80\n\
+      --recv-keys\n8AA7AF1F1091A5FD\nOK\nHit:1 http://security.ubuntu.com/ubuntu xenial-security\
+      \ InRelease\nHit:2 http://nova.clouds.archive.ubuntu.com/ubuntu xenial InRelease\n\
+      Hit:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates InRelease\n\
+      Hit:4 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-backports InRelease\n\
+      Get:5 http://repo.sawtooth.me/ubuntu/bumper/stable xenial InRelease [2,421 B]\n\
+      Get:6 https://repos.influxdata.com/ubuntu xenial InRelease [4,731 B]\nGet:7\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 Packages\
+      \ [37.8 kB]\nGet:8 https://repos.influxdata.com/ubuntu xenial/stable amd64 Packages\
+      \ [925 B]\nFetched 45.9 kB in 1s (34.5 kB/s)\nReading package lists...\nReading\
+      \ package lists...\nBuilding dependency tree...\nReading state information...\n\
+      The following packages were automatically installed and are no longer required:\n\
+      \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+      \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+      The following additional packages will be installed:\n  libprotobuf12 libsecp256k1-0\
+      \ libsodium18 libssl-dev libssl-doc libzmq5\n  python3-aiodns python3-aiohttp\
+      \ python3-async-timeout python3-cbor\n  python3-cchardet python3-colorlog python3-cryptography\
+      \ python3-lmdb\n  python3-multidict python3-netifaces python3-protobuf python3-pycares\n\
+      \  python3-pyformance python3-sawtooth-cli python3-sawtooth-intkey\n  python3-sawtooth-poet-cli\
+      \ python3-sawtooth-poet-common\n  python3-sawtooth-poet-core python3-sawtooth-poet-families\n\
+      \  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n  python3-sawtooth-sdk\
+      \ python3-sawtooth-settings python3-sawtooth-signing\n  python3-sawtooth-validator\
+      \ python3-sawtooth-xo python3-secp256k1\n  python3-toml python3-yarl python3-zmq\
+      \ zlib1g-dev\nThe following NEW packages will be installed:\n  libprotobuf12\
+      \ libsecp256k1-0 libsodium18 libssl-dev libssl-doc libzmq5\n  python3-aiodns\
+      \ python3-aiohttp python3-async-timeout python3-cbor\n  python3-cchardet python3-colorlog\
+      \ python3-lmdb python3-multidict\n  python3-netifaces python3-protobuf python3-pycares\
+      \ python3-pyformance\n  python3-sawtooth-cli python3-sawtooth-identity python3-sawtooth-intkey\n\
+      \  python3-sawtooth-poet-cli python3-sawtooth-poet-common\n  python3-sawtooth-poet-core\
+      \ python3-sawtooth-poet-families\n  python3-sawtooth-poet-simulator python3-sawtooth-rest-api\n\
+      \  python3-sawtooth-sdk python3-sawtooth-settings python3-sawtooth-signing\n\
+      \  python3-sawtooth-validator python3-sawtooth-xo python3-secp256k1\n  python3-toml\
+      \ python3-yarl python3-zmq sawtooth zlib1g-dev\nThe following packages will\
+      \ be upgraded:\n  python3-cryptography\n1 upgraded, 38 newly installed, 0 to\
+      \ remove and 57 not upgraded.\nNeed to get 9,805 kB of archives.\nAfter this\
+      \ operation, 45.8 MB of additional disk space will be used.\nGet:1 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 libsodium18 amd64 1.0.8-5 [144 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 libprotobuf12 amd64 3.4.1-0~maarten0 [700 kB]\nGet:3\
+      \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates/main amd64 zlib1g-dev\
+      \ amd64 1:1.2.8.dfsg-2ubuntu4.3 [167 kB]\nGet:4 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial-updates/main amd64 libssl-dev amd64 1.0.2g-1ubuntu4.16 [1,344 kB]\n\
+      Get:5 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 libsecp256k1-0\
+      \ amd64 0.1~20161228-1 [108 kB]\nGet:6 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-pycares amd64 2.1.1-1 [46.5 kB]\nGet:7 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-aiodns all 1.1.1-1 [4,794 B]\nGet:8 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial-updates/main amd64 libssl-doc all 1.0.2g-1ubuntu4.16 [1,078 kB]\nGet:9\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-async-timeout\
+      \ all 1.2.0-1 [3,448 B]\nGet:10 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-multidict amd64 2.1.4-1 [115 kB]\nGet:11 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-yarl amd64 0.10.0-1 [65.0 kB]\nGet:12 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial-updates/universe amd64 libzmq5 amd64 4.1.4-7ubuntu0.1 [149 kB]\nGet:13\
+      \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 python3-cbor\
+      \ amd64 0.1.24-1 [20.3 kB]\nGet:14 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 python3-colorlog all 2.6.0-1 [7,912 B]\nGet:15 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/main amd64 python3-netifaces amd64 0.10.4-0.1build2 [12.9 kB]\nGet:16\
+      \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 python3-toml\
+      \ all 0.9.1-1 [7,932 B]\nGet:17 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 python3-zmq amd64 15.2.0-0ubuntu4 [202 kB]\nGet:18 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-aiohttp amd64 2.3.2-1 [238 kB]\nGet:19 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-cchardet amd64 2.0a3-1 [80.0 kB]\nGet:20 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-cryptography amd64 1.7.2-1 [214 kB]\nGet:21\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-lmdb\
+      \ amd64 0.92-1 [76.7 kB]\nGet:22 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-protobuf amd64 3.4.1-0~maarten0 [292 kB]\nGet:23\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-pyformance\
+      \ all 0.4-1 [14.3 kB]\nGet:24 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+      \ amd64 python3-sawtooth-cli all 1.1.5-1 [51.7 kB]\nGet:25 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-secp256k1 amd64 0.13.2-1 [13.4 kB]\nGet:26 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-signing all 1.1.5-1 [4,230 B]\nGet:27\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-sdk\
+      \ all 1.1.5-1 [42.3 kB]\nGet:28 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-identity all 1.1.5-1 [31.2 kB]\nGet:29\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-intkey\
+      \ all 1.1.5-1 [15.6 kB]\nGet:30 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-common all 1.1.2-1 [9,176 B]\n\
+      Get:31 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-poet-simulator\
+      \ all 1.1.2-1 [11.5 kB]\nGet:32 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-core all 1.1.2-1 [33.6 kB]\nGet:33\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-poet-cli\
+      \ all 1.1.2-1 [7,656 B]\nGet:34 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-families all 1.1.2-1 [8,058 B]\n\
+      Get:35 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-rest-api\
+      \ all 1.1.5-1 [44.4 kB]\nGet:36 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-settings all 1.1.5-1 [31.8 kB]\nGet:37\
+      \ http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe amd64 python3-sawtooth-validator\
+      \ all 1.1.5-1 [4,395 kB]\nGet:38 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-xo all 1.1.5-1 [12.2 kB]\nGet:39 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 sawtooth all 1.1.5 [2,218 B]\nFetched 9,805 kB in 1s\
+      \ (5,320 kB/s)\nSelecting previously unselected package libprotobuf12:amd64.\r\
+      \n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r\
+      (Reading database ... 15%\r(Reading database ... 20%\r(Reading database ...\
+      \ 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database\
+      \ ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database\
+      \ ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database\
+      \ ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database\
+      \ ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+      \ ... 100%\r(Reading database ... 116586 files and directories currently installed.)\r\
+      \nPreparing to unpack .../libprotobuf12_3.4.1-0~maarten0_amd64.deb ...\r\nUnpacking\
+      \ libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSelecting previously unselected\
+      \ package libsecp256k1-0:amd64.\r\nPreparing to unpack .../libsecp256k1-0_0.1~20161228-1_amd64.deb\
+      \ ...\r\nUnpacking libsecp256k1-0:amd64 (0.1~20161228-1) ...\r\nSelecting previously\
+      \ unselected package libsodium18:amd64.\r\nPreparing to unpack .../libsodium18_1.0.8-5_amd64.deb\
+      \ ...\r\nUnpacking libsodium18:amd64 (1.0.8-5) ...\r\nSelecting previously unselected\
+      \ package zlib1g-dev:amd64.\r\nPreparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-2ubuntu4.3_amd64.deb\
+      \ ...\r\nUnpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSelecting\
+      \ previously unselected package libssl-dev:amd64.\r\nPreparing to unpack .../libssl-dev_1.0.2g-1ubuntu4.16_amd64.deb\
+      \ ...\r\nUnpacking libssl-dev:amd64 (1.0.2g-1ubuntu4.16) ...\r\nSelecting previously\
+      \ unselected package libssl-doc.\r\nPreparing to unpack .../libssl-doc_1.0.2g-1ubuntu4.16_all.deb\
+      \ ...\r\nUnpacking libssl-doc (1.0.2g-1ubuntu4.16) ...\r\nSelecting previously\
+      \ unselected package libzmq5:amd64.\r\nPreparing to unpack .../libzmq5_4.1.4-7ubuntu0.1_amd64.deb\
+      \ ...\r\nUnpacking libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSelecting previously\
+      \ unselected package python3-pycares.\r\nPreparing to unpack .../python3-pycares_2.1.1-1_amd64.deb\
+      \ ...\r\nUnpacking python3-pycares (2.1.1-1) ...\r\nSelecting previously unselected\
+      \ package python3-aiodns.\r\nPreparing to unpack .../python3-aiodns_1.1.1-1_all.deb\
+      \ ...\r\nUnpacking python3-aiodns (1.1.1-1) ...\r\nSelecting previously unselected\
+      \ package python3-async-timeout.\r\nPreparing to unpack .../python3-async-timeout_1.2.0-1_all.deb\
+      \ ...\r\nUnpacking python3-async-timeout (1.2.0-1) ...\r\nSelecting previously\
+      \ unselected package python3-multidict.\r\nPreparing to unpack .../python3-multidict_2.1.4-1_amd64.deb\
+      \ ...\r\nUnpacking python3-multidict (2.1.4-1) ...\r\nSelecting previously unselected\
+      \ package python3-yarl.\r\nPreparing to unpack .../python3-yarl_0.10.0-1_amd64.deb\
+      \ ...\r\nUnpacking python3-yarl (0.10.0-1) ...\r\nSelecting previously unselected\
+      \ package python3-aiohttp.\r\nPreparing to unpack .../python3-aiohttp_2.3.2-1_amd64.deb\
+      \ ...\r\nUnpacking python3-aiohttp (2.3.2-1) ...\r\nSelecting previously unselected\
+      \ package python3-cbor.\r\nPreparing to unpack .../python3-cbor_0.1.24-1_amd64.deb\
+      \ ...\r\nUnpacking python3-cbor (0.1.24-1) ...\r\nSelecting previously unselected\
+      \ package python3-cchardet.\r\nPreparing to unpack .../python3-cchardet_2.0a3-1_amd64.deb\
+      \ ...\r\nUnpacking python3-cchardet (2.0a3-1) ...\r\nSelecting previously unselected\
+      \ package python3-colorlog.\r\nPreparing to unpack .../python3-colorlog_2.6.0-1_all.deb\
+      \ ...\r\nUnpacking python3-colorlog (2.6.0-1) ...\r\nPreparing to unpack .../python3-cryptography_1.7.2-1_amd64.deb\
+      \ ...\r\nUnpacking python3-cryptography (1.7.2-1) over (1.2.3-1ubuntu0.2) ...\r\
+      \nSelecting previously unselected package python3-lmdb.\r\nPreparing to unpack\
+      \ .../python3-lmdb_0.92-1_amd64.deb ...\r\nUnpacking python3-lmdb (0.92-1) ...\r\
+      \nSelecting previously unselected package python3-netifaces.\r\nPreparing to\
+      \ unpack .../python3-netifaces_0.10.4-0.1build2_amd64.deb ...\r\nUnpacking python3-netifaces\
+      \ (0.10.4-0.1build2) ...\r\nSelecting previously unselected package python3-protobuf.\r\
+      \nPreparing to unpack .../python3-protobuf_3.4.1-0~maarten0_amd64.deb ...\r\n\
+      Unpacking python3-protobuf (3.4.1-0~maarten0) ...\r\nSelecting previously unselected\
+      \ package python3-pyformance.\r\nPreparing to unpack .../python3-pyformance_0.4-1_all.deb\
+      \ ...\r\nUnpacking python3-pyformance (0.4-1) ...\r\nSelecting previously unselected\
+      \ package python3-toml.\r\nPreparing to unpack .../python3-toml_0.9.1-1_all.deb\
+      \ ...\r\nUnpacking python3-toml (0.9.1-1) ...\r\nSelecting previously unselected\
+      \ package python3-sawtooth-cli.\r\nPreparing to unpack .../python3-sawtooth-cli_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-cli (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-secp256k1.\r\nPreparing to unpack .../python3-secp256k1_0.13.2-1_amd64.deb\
+      \ ...\r\nUnpacking python3-secp256k1 (0.13.2-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-signing.\r\nPreparing to unpack .../python3-sawtooth-signing_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-signing (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-zmq.\r\nPreparing to unpack .../python3-zmq_15.2.0-0ubuntu4_amd64.deb\
+      \ ...\r\nUnpacking python3-zmq (15.2.0-0ubuntu4) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-sdk.\r\nPreparing to unpack .../python3-sawtooth-sdk_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-sdk (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-identity.\r\nPreparing to unpack .../python3-sawtooth-identity_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-identity (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-intkey.\r\nPreparing to unpack .../python3-sawtooth-intkey_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-intkey (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-poet-common.\r\nPreparing to unpack .../python3-sawtooth-poet-common_1.1.2-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-poet-common (1.1.2-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-poet-simulator.\r\nPreparing to unpack\
+      \ .../python3-sawtooth-poet-simulator_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-simulator\
+      \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-poet-core.\r\
+      \nPreparing to unpack .../python3-sawtooth-poet-core_1.1.2-1_all.deb ...\r\n\
+      Unpacking python3-sawtooth-poet-core (1.1.2-1) ...\r\nSelecting previously unselected\
+      \ package python3-sawtooth-poet-cli.\r\nPreparing to unpack .../python3-sawtooth-poet-cli_1.1.2-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-poet-families.\r\nPreparing to unpack\
+      \ .../python3-sawtooth-poet-families_1.1.2-1_all.deb ...\r\nUnpacking python3-sawtooth-poet-families\
+      \ (1.1.2-1) ...\r\nSelecting previously unselected package python3-sawtooth-rest-api.\r\
+      \nPreparing to unpack .../python3-sawtooth-rest-api_1.1.5-1_all.deb ...\r\n\
+      Unpacking python3-sawtooth-rest-api (1.1.5-1) ...\r\nSelecting previously unselected\
+      \ package python3-sawtooth-settings.\r\nPreparing to unpack .../python3-sawtooth-settings_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-settings (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-validator.\r\nPreparing to unpack .../python3-sawtooth-validator_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-validator (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package python3-sawtooth-xo.\r\nPreparing to unpack .../python3-sawtooth-xo_1.1.5-1_all.deb\
+      \ ...\r\nUnpacking python3-sawtooth-xo (1.1.5-1) ...\r\nSelecting previously\
+      \ unselected package sawtooth.\r\nPreparing to unpack .../sawtooth_1.1.5_all.deb\
+      \ ...\r\nUnpacking sawtooth (1.1.5) ...\r\nProcessing triggers for libc-bin\
+      \ (2.23-0ubuntu11.2) ...\r\nProcessing triggers for man-db (2.7.5-1) ...\r\n\
+      Setting up libprotobuf12:amd64 (3.4.1-0~maarten0) ...\r\nSetting up libsecp256k1-0:amd64\
+      \ (0.1~20161228-1) ...\r\nSetting up libsodium18:amd64 (1.0.8-5) ...\r\nSetting\
+      \ up zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4.3) ...\r\nSetting up libssl-dev:amd64\
+      \ (1.0.2g-1ubuntu4.16) ...\r\nSetting up libssl-doc (1.0.2g-1ubuntu4.16) ...\r\
+      \nSetting up libzmq5:amd64 (4.1.4-7ubuntu0.1) ...\r\nSetting up python3-pycares\
+      \ (2.1.1-1) ...\r\nSetting up python3-aiodns (1.1.1-1) ...\r\nSetting up python3-async-timeout\
+      \ (1.2.0-1) ...\r\nSetting up python3-multidict (2.1.4-1) ...\r\nSetting up\
+      \ python3-yarl (0.10.0-1) ...\r\nSetting up python3-aiohttp (2.3.2-1) ...\r\n\
+      Setting up python3-cbor (0.1.24-1) ...\r\nSetting up python3-cchardet (2.0a3-1)\
+      \ ...\r\nSetting up python3-colorlog (2.6.0-1) ...\r\nSetting up python3-cryptography\
+      \ (1.7.2-1) ...\r\nSetting up python3-lmdb (0.92-1) ...\r\nSetting up python3-netifaces\
+      \ (0.10.4-0.1build2) ...\r\nSetting up python3-protobuf (3.4.1-0~maarten0) ...\r\
+      \nSetting up python3-pyformance (0.4-1) ...\r\nSetting up python3-toml (0.9.1-1)\
+      \ ...\r\nSetting up python3-sawtooth-cli (1.1.5-1) ...\r\nSetting up python3-secp256k1\
+      \ (0.13.2-1) ...\r\nSetting up python3-sawtooth-signing (1.1.5-1) ...\r\nSetting\
+      \ up python3-zmq (15.2.0-0ubuntu4) ...\r\nSetting up python3-sawtooth-sdk (1.1.5-1)\
+      \ ...\r\nSetting up python3-sawtooth-identity (1.1.5-1) ...\r\nSetting up python3-sawtooth-intkey\
+      \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-poet-common (1.1.2-1) ...\r\n\
+      Setting up python3-sawtooth-poet-simulator (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-core\
+      \ (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-cli (1.1.2-1) ...\r\nSetting\
+      \ up python3-sawtooth-poet-families (1.1.2-1) ...\r\nSetting up python3-sawtooth-rest-api\
+      \ (1.1.5-1) ...\r\nSetting up python3-sawtooth-settings (1.1.5-1) ...\r\nSetting\
+      \ up python3-sawtooth-validator (1.1.5-1) ...\r\nSetting up python3-sawtooth-xo\
+      \ (1.1.5-1) ...\r\nSetting up sawtooth (1.1.5) ...\r\nProcessing triggers for\
+      \ libc-bin (2.23-0ubuntu11.2) ...\r\nReading package lists...\nBuilding dependency\
+      \ tree...\nReading state information...\npython3-sawtooth-poet-cli is already\
+      \ the newest version (1.1.2-1).\npython3-sawtooth-poet-cli set to manually installed.\n\
+      The following packages were automatically installed and are no longer required:\n\
+      \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+      \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+      The following NEW packages will be installed:\n  sawtooth-pbft-engine sawtooth-raft-engine\n\
+      0 upgraded, 2 newly installed, 0 to remove and 57 not upgraded.\nNeed to get\
+      \ 2,047 kB of archives.\nAfter this operation, 8,167 kB of additional disk space\
+      \ will be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable xenial/universe\
+      \ amd64 sawtooth-pbft-engine amd64 0.1.3 [1,042 kB]\nGet:2 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 sawtooth-raft-engine amd64 0.1.2 [1,004 kB]\nFetched\
+      \ 2,047 kB in 0s (2,141 kB/s)\nSelecting previously unselected package sawtooth-pbft-engine.\r\
+      \n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r\
+      (Reading database ... 15%\r(Reading database ... 20%\r(Reading database ...\
+      \ 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database\
+      \ ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database\
+      \ ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database\
+      \ ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database\
+      \ ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+      \ ... 100%\r(Reading database ... 119522 files and directories currently installed.)\r\
+      \nPreparing to unpack .../sawtooth-pbft-engine_0.1.3_amd64.deb ...\r\nUnpacking\
+      \ sawtooth-pbft-engine (0.1.3) ...\r\nSelecting previously unselected package\
+      \ sawtooth-raft-engine.\r\nPreparing to unpack .../sawtooth-raft-engine_0.1.2_amd64.deb\
+      \ ...\r\nUnpacking sawtooth-raft-engine (0.1.2) ...\r\nSetting up sawtooth-pbft-engine\
+      \ (0.1.3) ...\r\nSetting up sawtooth-raft-engine (0.1.2) ...\r\nReading package\
+      \ lists...\nBuilding dependency tree...\nReading state information...\npython3-sawtooth-poet-families\
+      \ is already the newest version (1.1.2-1).\npython3-sawtooth-poet-families set\
+      \ to manually installed.\nThe following packages were automatically installed\
+      \ and are no longer required:\n  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n\
+      \  linux-image-4.4.0-148-generic linux-modules-4.4.0-148-generic\nUse 'sudo\
+      \ apt autoremove' to remove them.\nThe following NEW packages will be installed:\n\
+      \  python3-sawtooth-poet-engine\n0 upgraded, 1 newly installed, 0 to remove\
+      \ and 57 not upgraded.\nNeed to get 8,210 B of archives.\nAfter this operation,\
+      \ 57.3 kB of additional disk space will be used.\nGet:1 http://repo.sawtooth.me/ubuntu/bumper/stable\
+      \ xenial/universe amd64 python3-sawtooth-poet-engine all 1.1.2-1 [8,210 B]\n\
+      Fetched 8,210 B in 0s (20.5 kB/s)\nSelecting previously unselected package python3-sawtooth-poet-engine.\r\
+      \n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r\
+      (Reading database ... 15%\r(Reading database ... 20%\r(Reading database ...\
+      \ 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database\
+      \ ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database\
+      \ ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database\
+      \ ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database\
+      \ ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+      \ ... 100%\r(Reading database ... 119532 files and directories currently installed.)\r\
+      \nPreparing to unpack .../python3-sawtooth-poet-engine_1.1.2-1_all.deb ...\r\
+      \nUnpacking python3-sawtooth-poet-engine (1.1.2-1) ...\r\nSetting up python3-sawtooth-poet-engine\
+      \ (1.1.2-1) ...\r\ncreating key directory: /root/.sawtooth/keys\nwriting file:\
+      \ /root/.sawtooth/keys/root.priv\nwriting file: /root/.sawtooth/keys/root.pub\n\
+      writing file: /etc/sawtooth/keys/validator.priv\nwriting file: /etc/sawtooth/keys/validator.pub\n\
+      Reading package lists...\nBuilding dependency tree...\nReading state information...\n\
+      The following packages were automatically installed and are no longer required:\n\
+      \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+      \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+      The following NEW packages will be installed:\n  telegraf\n0 upgraded, 1 newly\
+      \ installed, 0 to remove and 57 not upgraded.\nNeed to get 21.1 MB of archives.\n\
+      After this operation, 69.5 MB of additional disk space will be used.\nGet:1\
+      \ https://repos.influxdata.com/ubuntu xenial/stable amd64 telegraf amd64 1.14.5-1\
+      \ [21.1 MB]\nFetched 21.1 MB in 1s (11.4 MB/s)\nSelecting previously unselected\
+      \ package telegraf.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading\
+      \ database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading\
+      \ database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading\
+      \ database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading\
+      \ database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading\
+      \ database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading\
+      \ database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading\
+      \ database ... 100%\r(Reading database ... 119549 files and directories currently\
+      \ installed.)\r\nPreparing to unpack .../telegraf_1.14.5-1_amd64.deb ...\r\n\
+      Unpacking telegraf (1.14.5-1) ...\r\nSetting up telegraf (1.14.5-1) ...\r\n\
+      Created symlink from /etc/systemd/system/multi-user.target.wants/telegraf.service\
+      \ to /lib/systemd/system/telegraf.service.\r\n"
+- Time: "1594197915470"
+  Overhead: "3451"
+  Event:
+    Operation: "put"
+    Command: null
+    Options:
+      Src: "file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/architecture/Infs/Topology/influxdb.sh"
+      Dst: "file@/root"
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.monitor: "File influxdb.sh is uploaded!"
+    ObjectType: "VM"
+    Objects: "subtop0.monitor"
+  LOG:
+    MSG: ""
+    subtop0.monitor: "File influxdb.sh is uploaded!"
+- Time: "1594198009365"
+  Overhead: "93891"
+  Event:
+    Operation: "execute"
+    Command: "bash /root/influxdb.sh"
+    Options: null
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.monitor: "OK\nHit:1 http://security.ubuntu.com/ubuntu xenial-security\
+        \ InRelease\nHit:2 http://nova.clouds.archive.ubuntu.com/ubuntu xenial InRelease\n\
+        Hit:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates InRelease\n\
+        Get:4 https://download.docker.com/linux/ubuntu xenial InRelease [66.2 kB]\n\
+        Hit:5 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-backports InRelease\n\
+        Get:6 https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages\
+        \ [14.5 kB]\nFetched 80.7 kB in 1s (59.3 kB/s)\nReading package lists...\n\
+        Reading package lists...\nBuilding dependency tree...\nReading state information...\n\
+        The following packages were automatically installed and are no longer required:\n\
+        \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+        \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+        The following additional packages will be installed:\n  aufs-tools cgroupfs-mount\
+        \ containerd.io docker-ce-cli libltdl7 pigz\nSuggested packages:\n  mountall\n\
+        The following NEW packages will be installed:\n  aufs-tools cgroupfs-mount\
+        \ containerd.io docker-ce docker-ce-cli libltdl7\n  pigz\n0 upgraded, 7 newly\
+        \ installed, 0 to remove and 57 not upgraded.\nNeed to get 84.6 MB of archives.\n\
+        After this operation, 381 MB of additional disk space will be used.\nGet:1\
+        \ http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 pigz\
+        \ amd64 2.3.1-2 [61.1 kB]\nGet:2 http://nova.clouds.archive.ubuntu.com/ubuntu\
+        \ xenial/universe amd64 aufs-tools amd64 1:3.2+20130722-1.1ubuntu1 [92.9 kB]\n\
+        Get:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 cgroupfs-mount\
+        \ all 1.2 [4,970 B]\nGet:4 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main\
+        \ amd64 libltdl7 amd64 2.4.6-0.1 [38.3 kB]\nGet:5 https://download.docker.com/linux/ubuntu\
+        \ xenial/stable amd64 containerd.io amd64 1.2.13-2 [20.9 MB]\nGet:6 https://download.docker.com/linux/ubuntu\
+        \ xenial/stable amd64 docker-ce-cli amd64 5:19.03.12~3-0~ubuntu-xenial [41.0\
+        \ MB]\nGet:7 https://download.docker.com/linux/ubuntu xenial/stable amd64\
+        \ docker-ce amd64 5:19.03.12~3-0~ubuntu-xenial [22.4 MB]\ndebconf: unable\
+        \ to initialize frontend: Dialog\ndebconf: (Dialog frontend will not work\
+        \ on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)\n\
+        debconf: falling back to frontend: Readline\ndebconf: unable to initialize\
+        \ frontend: Readline\ndebconf: (This frontend requires a controlling tty.)\n\
+        debconf: falling back to frontend: Teletype\ndpkg-preconfigure: unable to\
+        \ re-open stdin: \nFetched 84.6 MB in 4s (17.2 MB/s)\nSelecting previously\
+        \ unselected package pigz.\r\n(Reading database ... \r(Reading database ...\
+        \ 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database\
+        \ ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading\
+        \ database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r\
+        (Reading database ... 50%\r(Reading database ... 55%\r(Reading database ...\
+        \ 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database\
+        \ ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading\
+        \ database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r\
+        (Reading database ... 116586 files and directories currently installed.)\r\
+        \nPreparing to unpack .../pigz_2.3.1-2_amd64.deb ...\r\nUnpacking pigz (2.3.1-2)\
+        \ ...\r\nSelecting previously unselected package aufs-tools.\r\nPreparing\
+        \ to unpack .../aufs-tools_1%3a3.2+20130722-1.1ubuntu1_amd64.deb ...\r\nUnpacking\
+        \ aufs-tools (1:3.2+20130722-1.1ubuntu1) ...\r\nSelecting previously unselected\
+        \ package cgroupfs-mount.\r\nPreparing to unpack .../cgroupfs-mount_1.2_all.deb\
+        \ ...\r\nUnpacking cgroupfs-mount (1.2) ...\r\nSelecting previously unselected\
+        \ package containerd.io.\r\nPreparing to unpack .../containerd.io_1.2.13-2_amd64.deb\
+        \ ...\r\nUnpacking containerd.io (1.2.13-2) ...\r\nSelecting previously unselected\
+        \ package docker-ce-cli.\r\nPreparing to unpack .../docker-ce-cli_5%3a19.03.12~3-0~ubuntu-xenial_amd64.deb\
+        \ ...\r\nUnpacking docker-ce-cli (5:19.03.12~3-0~ubuntu-xenial) ...\r\nSelecting\
+        \ previously unselected package docker-ce.\r\nPreparing to unpack .../docker-ce_5%3a19.03.12~3-0~ubuntu-xenial_amd64.deb\
+        \ ...\r\nUnpacking docker-ce (5:19.03.12~3-0~ubuntu-xenial) ...\r\nSelecting\
+        \ previously unselected package libltdl7:amd64.\r\nPreparing to unpack .../libltdl7_2.4.6-0.1_amd64.deb\
+        \ ...\r\nUnpacking libltdl7:amd64 (2.4.6-0.1) ...\r\nProcessing triggers for\
+        \ man-db (2.7.5-1) ...\r\nProcessing triggers for libc-bin (2.23-0ubuntu11.2)\
+        \ ...\r\nProcessing triggers for ureadahead (0.100.0-19.1) ...\r\nProcessing\
+        \ triggers for systemd (229-4ubuntu21.27) ...\r\nSetting up pigz (2.3.1-2)\
+        \ ...\r\nSetting up aufs-tools (1:3.2+20130722-1.1ubuntu1) ...\r\nSetting\
+        \ up cgroupfs-mount (1.2) ...\r\nSetting up containerd.io (1.2.13-2) ...\r\
+        \nSetting up docker-ce-cli (5:19.03.12~3-0~ubuntu-xenial) ...\r\nSetting up\
+        \ docker-ce (5:19.03.12~3-0~ubuntu-xenial) ...\r\nSetting up libltdl7:amd64\
+        \ (2.4.6-0.1) ...\r\nProcessing triggers for libc-bin (2.23-0ubuntu11.2) ...\r\
+        \nProcessing triggers for systemd (229-4ubuntu21.27) ...\r\nProcessing triggers\
+        \ for ureadahead (0.100.0-19.1) ...\r\nCloning into 'sawtooth-core'...\nUsing\
+        \ default tag: latest\nlatest: Pulling from library/influxdb\n81fc19181915:\
+        \ Pulling fs layer\nee49ee6a23d1: Pulling fs layer\n828510924538: Pulling\
+        \ fs layer\nb7e4835694e1: Pulling fs layer\n05df09a184e9: Pulling fs layer\n\
+        671fe28366cf: Pulling fs layer\nf36ec69a8c12: Pulling fs layer\nbc93bd218ea3:\
+        \ Pulling fs layer\nb7e4835694e1: Waiting\n05df09a184e9: Waiting\n671fe28366cf:\
+        \ Waiting\nf36ec69a8c12: Waiting\nbc93bd218ea3: Waiting\n828510924538: Verifying\
+        \ Checksum\n828510924538: Download complete\nee49ee6a23d1: Verifying Checksum\n\
+        ee49ee6a23d1: Download complete\nb7e4835694e1: Verifying Checksum\nb7e4835694e1:\
+        \ Download complete\n81fc19181915: Verifying Checksum\n81fc19181915: Download\
+        \ complete\n671fe28366cf: Verifying Checksum\n671fe28366cf: Download complete\n\
+        f36ec69a8c12: Verifying Checksum\nf36ec69a8c12: Download complete\nbc93bd218ea3:\
+        \ Verifying Checksum\nbc93bd218ea3: Download complete\n05df09a184e9: Verifying\
+        \ Checksum\n05df09a184e9: Download complete\n81fc19181915: Pull complete\n\
+        ee49ee6a23d1: Pull complete\n828510924538: Pull complete\nb7e4835694e1: Pull\
+        \ complete\n05df09a184e9: Pull complete\n671fe28366cf: Pull complete\nf36ec69a8c12:\
+        \ Pull complete\nbc93bd218ea3: Pull complete\nDigest: sha256:2c4ee7675963a8f5a388e7853f6e68a1fcabebd24ce386364356587ad374e047\n\
+        Status: Downloaded newer image for influxdb:latest\ndocker.io/library/influxdb:latest\n\
+        Using default tag: latest\nlatest: Pulling from zh9314/sawtooth-stats-grafana\n\
+        c6b13209f43b: Pulling fs layer\na3ed95caeb02: Pulling fs layer\n051738ac6f7e:\
+        \ Pulling fs layer\n66e042ba6513: Pulling fs layer\n71f0469b58d6: Pulling\
+        \ fs layer\nf1272b64677c: Pulling fs layer\n8cc7bfa90756: Pulling fs layer\n\
+        278756b31d40: Pulling fs layer\n0726682962b6: Pulling fs layer\n53e610f3e2e1:\
+        \ Pulling fs layer\n8e1df233eeef: Pulling fs layer\n66e042ba6513: Waiting\n\
+        71f0469b58d6: Waiting\nf1272b64677c: Waiting\n8cc7bfa90756: Waiting\n278756b31d40:\
+        \ Waiting\n0726682962b6: Waiting\n53e610f3e2e1: Waiting\n8e1df233eeef: Waiting\n\
+        a3ed95caeb02: Verifying Checksum\na3ed95caeb02: Download complete\n66e042ba6513:\
+        \ Verifying Checksum\n66e042ba6513: Download complete\nc6b13209f43b: Verifying\
+        \ Checksum\nc6b13209f43b: Download complete\n051738ac6f7e: Verifying Checksum\n\
+        051738ac6f7e: Download complete\n71f0469b58d6: Verifying Checksum\n71f0469b58d6:\
+        \ Download complete\nf1272b64677c: Verifying Checksum\nf1272b64677c: Download\
+        \ complete\n278756b31d40: Verifying Checksum\n278756b31d40: Download complete\n\
+        8cc7bfa90756: Download complete\n0726682962b6: Verifying Checksum\n0726682962b6:\
+        \ Download complete\n53e610f3e2e1: Verifying Checksum\n53e610f3e2e1: Download\
+        \ complete\n8e1df233eeef: Verifying Checksum\n8e1df233eeef: Download complete\n\
+        c6b13209f43b: Pull complete\na3ed95caeb02: Pull complete\n051738ac6f7e: Pull\
+        \ complete\n66e042ba6513: Pull complete\n71f0469b58d6: Pull complete\nf1272b64677c:\
+        \ Pull complete\n8cc7bfa90756: Pull complete\n278756b31d40: Pull complete\n\
+        0726682962b6: Pull complete\n53e610f3e2e1: Pull complete\n8e1df233eeef: Pull\
+        \ complete\nDigest: sha256:0471404589b3ea4cf8423bc81105766ff0d33ea1a63d46bc1cf5c8b8ee69a57f\n\
+        Status: Downloaded newer image for zh9314/sawtooth-stats-grafana:latest\n\
+        docker.io/zh9314/sawtooth-stats-grafana:latest\n9b9323d662edf90fcded377ce4f85246929f8c6b587701c873cd1ae858a4acf2\n\
+        c929fd5ec0449514eed457580f00e00e8e9f2e2082970020b528884a37e349bc\n"
+    ObjectType: "VM"
+    Objects: "subtop0.monitor"
+  LOG:
+    MSG: ""
+    subtop0.monitor: "OK\nHit:1 http://security.ubuntu.com/ubuntu xenial-security\
+      \ InRelease\nHit:2 http://nova.clouds.archive.ubuntu.com/ubuntu xenial InRelease\n\
+      Hit:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-updates InRelease\n\
+      Get:4 https://download.docker.com/linux/ubuntu xenial InRelease [66.2 kB]\n\
+      Hit:5 http://nova.clouds.archive.ubuntu.com/ubuntu xenial-backports InRelease\n\
+      Get:6 https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages\
+      \ [14.5 kB]\nFetched 80.7 kB in 1s (59.3 kB/s)\nReading package lists...\nReading\
+      \ package lists...\nBuilding dependency tree...\nReading state information...\n\
+      The following packages were automatically installed and are no longer required:\n\
+      \  linux-headers-4.4.0-148 linux-headers-4.4.0-148-generic\n  linux-image-4.4.0-148-generic\
+      \ linux-modules-4.4.0-148-generic\nUse 'sudo apt autoremove' to remove them.\n\
+      The following additional packages will be installed:\n  aufs-tools cgroupfs-mount\
+      \ containerd.io docker-ce-cli libltdl7 pigz\nSuggested packages:\n  mountall\n\
+      The following NEW packages will be installed:\n  aufs-tools cgroupfs-mount containerd.io\
+      \ docker-ce docker-ce-cli libltdl7\n  pigz\n0 upgraded, 7 newly installed, 0\
+      \ to remove and 57 not upgraded.\nNeed to get 84.6 MB of archives.\nAfter this\
+      \ operation, 381 MB of additional disk space will be used.\nGet:1 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 pigz amd64 2.3.1-2 [61.1 kB]\nGet:2 http://nova.clouds.archive.ubuntu.com/ubuntu\
+      \ xenial/universe amd64 aufs-tools amd64 1:3.2+20130722-1.1ubuntu1 [92.9 kB]\n\
+      Get:3 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/universe amd64 cgroupfs-mount\
+      \ all 1.2 [4,970 B]\nGet:4 http://nova.clouds.archive.ubuntu.com/ubuntu xenial/main\
+      \ amd64 libltdl7 amd64 2.4.6-0.1 [38.3 kB]\nGet:5 https://download.docker.com/linux/ubuntu\
+      \ xenial/stable amd64 containerd.io amd64 1.2.13-2 [20.9 MB]\nGet:6 https://download.docker.com/linux/ubuntu\
+      \ xenial/stable amd64 docker-ce-cli amd64 5:19.03.12~3-0~ubuntu-xenial [41.0\
+      \ MB]\nGet:7 https://download.docker.com/linux/ubuntu xenial/stable amd64 docker-ce\
+      \ amd64 5:19.03.12~3-0~ubuntu-xenial [22.4 MB]\ndebconf: unable to initialize\
+      \ frontend: Dialog\ndebconf: (Dialog frontend will not work on a dumb terminal,\
+      \ an emacs shell buffer, or without a controlling terminal.)\ndebconf: falling\
+      \ back to frontend: Readline\ndebconf: unable to initialize frontend: Readline\n\
+      debconf: (This frontend requires a controlling tty.)\ndebconf: falling back\
+      \ to frontend: Teletype\ndpkg-preconfigure: unable to re-open stdin: \nFetched\
+      \ 84.6 MB in 4s (17.2 MB/s)\nSelecting previously unselected package pigz.\r\
+      \n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r\
+      (Reading database ... 15%\r(Reading database ... 20%\r(Reading database ...\
+      \ 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database\
+      \ ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database\
+      \ ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database\
+      \ ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database\
+      \ ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database\
+      \ ... 100%\r(Reading database ... 116586 files and directories currently installed.)\r\
+      \nPreparing to unpack .../pigz_2.3.1-2_amd64.deb ...\r\nUnpacking pigz (2.3.1-2)\
+      \ ...\r\nSelecting previously unselected package aufs-tools.\r\nPreparing to\
+      \ unpack .../aufs-tools_1%3a3.2+20130722-1.1ubuntu1_amd64.deb ...\r\nUnpacking\
+      \ aufs-tools (1:3.2+20130722-1.1ubuntu1) ...\r\nSelecting previously unselected\
+      \ package cgroupfs-mount.\r\nPreparing to unpack .../cgroupfs-mount_1.2_all.deb\
+      \ ...\r\nUnpacking cgroupfs-mount (1.2) ...\r\nSelecting previously unselected\
+      \ package containerd.io.\r\nPreparing to unpack .../containerd.io_1.2.13-2_amd64.deb\
+      \ ...\r\nUnpacking containerd.io (1.2.13-2) ...\r\nSelecting previously unselected\
+      \ package docker-ce-cli.\r\nPreparing to unpack .../docker-ce-cli_5%3a19.03.12~3-0~ubuntu-xenial_amd64.deb\
+      \ ...\r\nUnpacking docker-ce-cli (5:19.03.12~3-0~ubuntu-xenial) ...\r\nSelecting\
+      \ previously unselected package docker-ce.\r\nPreparing to unpack .../docker-ce_5%3a19.03.12~3-0~ubuntu-xenial_amd64.deb\
+      \ ...\r\nUnpacking docker-ce (5:19.03.12~3-0~ubuntu-xenial) ...\r\nSelecting\
+      \ previously unselected package libltdl7:amd64.\r\nPreparing to unpack .../libltdl7_2.4.6-0.1_amd64.deb\
+      \ ...\r\nUnpacking libltdl7:amd64 (2.4.6-0.1) ...\r\nProcessing triggers for\
+      \ man-db (2.7.5-1) ...\r\nProcessing triggers for libc-bin (2.23-0ubuntu11.2)\
+      \ ...\r\nProcessing triggers for ureadahead (0.100.0-19.1) ...\r\nProcessing\
+      \ triggers for systemd (229-4ubuntu21.27) ...\r\nSetting up pigz (2.3.1-2) ...\r\
+      \nSetting up aufs-tools (1:3.2+20130722-1.1ubuntu1) ...\r\nSetting up cgroupfs-mount\
+      \ (1.2) ...\r\nSetting up containerd.io (1.2.13-2) ...\r\nSetting up docker-ce-cli\
+      \ (5:19.03.12~3-0~ubuntu-xenial) ...\r\nSetting up docker-ce (5:19.03.12~3-0~ubuntu-xenial)\
+      \ ...\r\nSetting up libltdl7:amd64 (2.4.6-0.1) ...\r\nProcessing triggers for\
+      \ libc-bin (2.23-0ubuntu11.2) ...\r\nProcessing triggers for systemd (229-4ubuntu21.27)\
+      \ ...\r\nProcessing triggers for ureadahead (0.100.0-19.1) ...\r\nCloning into\
+      \ 'sawtooth-core'...\nUsing default tag: latest\nlatest: Pulling from library/influxdb\n\
+      81fc19181915: Pulling fs layer\nee49ee6a23d1: Pulling fs layer\n828510924538:\
+      \ Pulling fs layer\nb7e4835694e1: Pulling fs layer\n05df09a184e9: Pulling fs\
+      \ layer\n671fe28366cf: Pulling fs layer\nf36ec69a8c12: Pulling fs layer\nbc93bd218ea3:\
+      \ Pulling fs layer\nb7e4835694e1: Waiting\n05df09a184e9: Waiting\n671fe28366cf:\
+      \ Waiting\nf36ec69a8c12: Waiting\nbc93bd218ea3: Waiting\n828510924538: Verifying\
+      \ Checksum\n828510924538: Download complete\nee49ee6a23d1: Verifying Checksum\n\
+      ee49ee6a23d1: Download complete\nb7e4835694e1: Verifying Checksum\nb7e4835694e1:\
+      \ Download complete\n81fc19181915: Verifying Checksum\n81fc19181915: Download\
+      \ complete\n671fe28366cf: Verifying Checksum\n671fe28366cf: Download complete\n\
+      f36ec69a8c12: Verifying Checksum\nf36ec69a8c12: Download complete\nbc93bd218ea3:\
+      \ Verifying Checksum\nbc93bd218ea3: Download complete\n05df09a184e9: Verifying\
+      \ Checksum\n05df09a184e9: Download complete\n81fc19181915: Pull complete\nee49ee6a23d1:\
+      \ Pull complete\n828510924538: Pull complete\nb7e4835694e1: Pull complete\n\
+      05df09a184e9: Pull complete\n671fe28366cf: Pull complete\nf36ec69a8c12: Pull\
+      \ complete\nbc93bd218ea3: Pull complete\nDigest: sha256:2c4ee7675963a8f5a388e7853f6e68a1fcabebd24ce386364356587ad374e047\n\
+      Status: Downloaded newer image for influxdb:latest\ndocker.io/library/influxdb:latest\n\
+      Using default tag: latest\nlatest: Pulling from zh9314/sawtooth-stats-grafana\n\
+      c6b13209f43b: Pulling fs layer\na3ed95caeb02: Pulling fs layer\n051738ac6f7e:\
+      \ Pulling fs layer\n66e042ba6513: Pulling fs layer\n71f0469b58d6: Pulling fs\
+      \ layer\nf1272b64677c: Pulling fs layer\n8cc7bfa90756: Pulling fs layer\n278756b31d40:\
+      \ Pulling fs layer\n0726682962b6: Pulling fs layer\n53e610f3e2e1: Pulling fs\
+      \ layer\n8e1df233eeef: Pulling fs layer\n66e042ba6513: Waiting\n71f0469b58d6:\
+      \ Waiting\nf1272b64677c: Waiting\n8cc7bfa90756: Waiting\n278756b31d40: Waiting\n\
+      0726682962b6: Waiting\n53e610f3e2e1: Waiting\n8e1df233eeef: Waiting\na3ed95caeb02:\
+      \ Verifying Checksum\na3ed95caeb02: Download complete\n66e042ba6513: Verifying\
+      \ Checksum\n66e042ba6513: Download complete\nc6b13209f43b: Verifying Checksum\n\
+      c6b13209f43b: Download complete\n051738ac6f7e: Verifying Checksum\n051738ac6f7e:\
+      \ Download complete\n71f0469b58d6: Verifying Checksum\n71f0469b58d6: Download\
+      \ complete\nf1272b64677c: Verifying Checksum\nf1272b64677c: Download complete\n\
+      278756b31d40: Verifying Checksum\n278756b31d40: Download complete\n8cc7bfa90756:\
+      \ Download complete\n0726682962b6: Verifying Checksum\n0726682962b6: Download\
+      \ complete\n53e610f3e2e1: Verifying Checksum\n53e610f3e2e1: Download complete\n\
+      8e1df233eeef: Verifying Checksum\n8e1df233eeef: Download complete\nc6b13209f43b:\
+      \ Pull complete\na3ed95caeb02: Pull complete\n051738ac6f7e: Pull complete\n\
+      66e042ba6513: Pull complete\n71f0469b58d6: Pull complete\nf1272b64677c: Pull\
+      \ complete\n8cc7bfa90756: Pull complete\n278756b31d40: Pull complete\n0726682962b6:\
+      \ Pull complete\n53e610f3e2e1: Pull complete\n8e1df233eeef: Pull complete\n\
+      Digest: sha256:0471404589b3ea4cf8423bc81105766ff0d33ea1a63d46bc1cf5c8b8ee69a57f\n\
+      Status: Downloaded newer image for zh9314/sawtooth-stats-grafana:latest\ndocker.io/zh9314/sawtooth-stats-grafana:latest\n\
+      9b9323d662edf90fcded377ce4f85246929f8c6b587701c873cd1ae858a4acf2\nc929fd5ec0449514eed457580f00e00e8e9f2e2082970020b528884a37e349bc\n"
+- Time: "1594198133999"
+  Overhead: "3320"
+  Event:
+    Operation: "put"
+    Command: null
+    Options:
+      Src: "file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/stop.sh"
+      Dst: "file@/root"
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node0: "File stop.sh is uploaded!"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node0"
+  LOG:
+    MSG: ""
+    subtop0.sub0node0: "File stop.sh is uploaded!"
+- Time: "1594198137488"
+  Overhead: "3486"
+  Event:
+    Operation: "put"
+    Command: null
+    Options:
+      Src: "file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/genesis.sh"
+      Dst: "file@/root"
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node0: "File genesis.sh is uploaded!"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node0"
+  LOG:
+    MSG: ""
+    subtop0.sub0node0: "File genesis.sh is uploaded!"
+- Time: "1594198183304"
+  Overhead: "45813"
+  Event:
+    Operation: "execute"
+    Command: "bash /root/genesis.sh"
+    Options: null
+    Log: null
+    LogString:
+      MSG: ""
+      subtop0.sub0node0: "Generated config-genesis.batch\nWarning: Permanently added\
+        \ '192.168.10.10' (ECDSA) to the list of known hosts.\r\nWarning: Permanently\
+        \ added '192.168.10.11' (ECDSA) to the list of known hosts.\r\nWarning: Permanently\
+        \ added '192.168.10.12' (ECDSA) to the list of known hosts.\r\nProcessing\
+        \ config-genesis.batch...\nProcessing config-consensus.batch...\nProcessing\
+        \ pbft-settings.batch...\nGenerating /var/lib/sawtooth/genesis.batch\nWarning:\
+        \ Permanently added 'sub0node0,192.168.10.10' (ECDSA) to the list of known\
+        \ hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10' (ECDSA) to\
+        \ the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+        \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+        \ (ECDSA) to the list of known hosts.\r\n"
+    ObjectType: "VM"
+    Objects: "subtop0.sub0node0"
+  LOG:
+    MSG: ""
+    subtop0.sub0node0: "Generated config-genesis.batch\nWarning: Permanently added\
+      \ '192.168.10.10' (ECDSA) to the list of known hosts.\r\nWarning: Permanently\
+      \ added '192.168.10.11' (ECDSA) to the list of known hosts.\r\nWarning: Permanently\
+      \ added '192.168.10.12' (ECDSA) to the list of known hosts.\r\nProcessing config-genesis.batch...\n\
+      Processing config-consensus.batch...\nProcessing pbft-settings.batch...\nGenerating\
+      \ /var/lib/sawtooth/genesis.batch\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node0,192.168.10.10'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node1,192.168.10.11'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+      \ (ECDSA) to the list of known hosts.\r\nWarning: Permanently added 'sub0node2,192.168.10.12'\
+      \ (ECDSA) to the list of known hosts.\r\n"

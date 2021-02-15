@@ -1,0 +1,31 @@
+---
+SEngineClass: null
+extraInfo: null
+WhetherCreateVPC: "true"
+VMs:
+- name: "sub0node0"
+  type: null
+  nodeType: "t2.micro"
+  CPU: "1"
+  Mem: "1"
+  OStype: "Ubuntu 16.04"
+  defaultSSHAccount: "ubuntu"
+  script: "name@sub0node0.sh"
+  publicAddress: "54.196.124.81"
+  selfEthAddresses:
+    192.168.10.10/255.255.255.0: "self_0"
+  VEngineClass: null
+  extraInfo:
+    AMI: "ami-0565af6e282977273"
+  VNFType: null
+  scaledFrom: null
+  fake: null
+  diskSize: "8"
+  IOPS: "0"
+  vpcId: "vpc-0d8cc3cf3302a3187"
+  subnetId: "subnet-0874f6a27d1707ac9"
+  securityGroupId: "sg-0dc44aab2356498d1"
+  instanceId: "i-059f677f8e1d7df58"
+  volumeId: null
+  routeTableId: "rtb-060b6a1af71c14eee"
+  internetGatewayId: "igw-08f4070132077cc7e"

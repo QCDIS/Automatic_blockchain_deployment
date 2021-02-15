@@ -1,0 +1,57 @@
+---
+SEngineClass: null
+extraInfo: null
+WhetherCreateVPC: "true"
+VMs:
+- name: "sub1node0"
+  type: null
+  nodeType: "t2.micro"
+  CPU: "1"
+  Mem: "1"
+  OStype: "Ubuntu 16.04"
+  defaultSSHAccount: "ubuntu"
+  script: "name@sub1node0.sh"
+  publicAddress: "3.101.131.253"
+  selfEthAddresses:
+    192.168.10.11/255.255.255.0: "self_0"
+  VEngineClass: null
+  extraInfo:
+    AMI: "ami-09eb5e8a83c7aa890"
+  VNFType: null
+  scaledFrom: null
+  fake: null
+  diskSize: "8"
+  IOPS: "0"
+  vpcId: "vpc-04de03e6269787f2d"
+  subnetId: "subnet-00f4b5f5d1216ca52"
+  securityGroupId: "sg-05cfb91739ab5cc02"
+  instanceId: "i-0d71885454bcdecb8"
+  volumeId: null
+  routeTableId: "rtb-0c8c63f672b27090d"
+  internetGatewayId: "igw-07c3f806406e7de21"
+- name: "monitor"
+  type: null
+  nodeType: "t2.micro"
+  CPU: "1"
+  Mem: "1"
+  OStype: "Ubuntu 16.04"
+  defaultSSHAccount: "ubuntu"
+  script: "name@influxdb.sh"
+  publicAddress: "54.183.179.65"
+  selfEthAddresses:
+    192.168.10.5/255.255.255.0: "self_0"
+  VEngineClass: null
+  extraInfo:
+    AMI: "ami-09eb5e8a83c7aa890"
+  VNFType: null
+  scaledFrom: null
+  fake: null
+  diskSize: "8"
+  IOPS: "0"
+  vpcId: "vpc-04de03e6269787f2d"
+  subnetId: "subnet-00f4b5f5d1216ca52"
+  securityGroupId: "sg-05cfb91739ab5cc02"
+  instanceId: "i-0cf8d8a7010a72774"
+  volumeId: null
+  routeTableId: "rtb-0c8c63f672b27090d"
+  internetGatewayId: "igw-07c3f806406e7de21"

@@ -1,0 +1,10 @@
+{
+  "sidebar": {
+    "title": "Blockchain tool",
+    "shortTitle": "BT",
+    "create_blockchain": "Deploy blockchain",
+    "blockchain_overview": "Blockchain overview",
+    "blockchain_compare": "Compare performance",  
+    "transaction_requests": "Transaction overview"
+  }
+}

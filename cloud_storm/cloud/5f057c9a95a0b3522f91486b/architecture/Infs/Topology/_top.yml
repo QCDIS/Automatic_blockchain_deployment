@@ -1,0 +1,126 @@
+---
+userName: "jardenna"
+publicKeyPath: "name@test.pub"
+topologies:
+- topology: "subtop0"
+  cloudProvider: "ExoGENI"
+  subTopologyClass: null
+  domain: "UvA (Amsterdam, The Netherlands) XO Rack"
+  status: "running"
+  logsInfo:
+    sub0node2#network: "8555@1594197095613"
+    sub0node0#network: "9558@1594197095613"
+    sub0node2#deploy: "0@1594197095546"
+    monitor#network: "8555@1594197095613"
+    sub0node1#deploy: "0@1594197095575"
+    sub0node0#deploy: "0@1594197095532"
+    monitor#deploy: "0@1594197095546"
+    subtop0#Provision: "304854@1594196790721"
+    sub0node1#network: "7550@1594197095613"
+    subtop0#Network: "9567@1594197095613"
+  sshKeyPairId: "exogeni-uva (amsterdam, the netherlands) xo rack"
+  scaledFrom: null
+connections:
+- name: "c0"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "subtop0.monitor"
+    netmask: "24"
+    address: "192.168.10.5"
+    ethName: "acp_0"
+  target:
+    vmName: "subtop0.sub0node0"
+    netmask: "24"
+    address: "192.168.10.10"
+    ethName: "acp_0"
+  logic: "false"
+- name: "c1"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "subtop0.monitor"
+    netmask: "24"
+    address: "192.168.10.5"
+    ethName: "acp_1"
+  target:
+    vmName: "subtop0.sub0node1"
+    netmask: "24"
+    address: "192.168.10.11"
+    ethName: "acp_0"
+  logic: "false"
+- name: "c2"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "subtop0.monitor"
+    netmask: "24"
+    address: "192.168.10.5"
+    ethName: "acp_2"
+  target:
+    vmName: "subtop0.sub0node2"
+    netmask: "24"
+    address: "192.168.10.12"
+    ethName: "acp_0"
+  logic: "false"
+- name: "c3"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "subtop0.sub0node0"
+    netmask: "24"
+    address: "192.168.10.10"
+    ethName: "acp_1"
+  target:
+    vmName: "subtop0.sub0node1"
+    netmask: "24"
+    address: "192.168.10.11"
+    ethName: "acp_1"
+  logic: "false"
+- name: "c4"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "subtop0.sub0node0"
+    netmask: "24"
+    address: "192.168.10.10"
+    ethName: "acp_2"
+  target:
+    vmName: "subtop0.sub0node2"
+    netmask: "24"
+    address: "192.168.10.12"
+    ethName: "acp_1"
+  logic: "false"
+- name: "c5"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "subtop0.sub0node1"
+    netmask: "24"
+    address: "192.168.10.11"
+    ethName: "acp_2"
+  target:
+    vmName: "subtop0.sub0node2"
+    netmask: "24"
+    address: "192.168.10.12"
+    ethName: "acp_2"
+  logic: "false"
+subnets:
+- name: "s1"
+  subnet: "192.168.10.0"
+  netmask: "24"
+  members:
+  - vmName: "subtop0.monitor"
+    address: "192.168.10.5"
+  - vmName: "subtop0.sub0node0"
+    address: "192.168.10.10"
+  - vmName: "subtop0.sub0node1"
+    address: "192.168.10.11"
+  - vmName: "subtop0.sub0node2"
+    address: "192.168.10.12"

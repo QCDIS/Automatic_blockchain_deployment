@@ -1,0 +1,7 @@
+cloudCreds:
+- cloudProvider: "EC2"
+  credInfoFile: EC2.yml
+- cloudProvider: "ExoGENI"
+  credInfoFile: ExoGENI.yml
+
+

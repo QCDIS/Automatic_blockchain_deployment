@@ -1,0 +1,101 @@
+Mode: "CTRL" # or CTRL
+InfrasCodes:
+- CodeType: "LOOP"
+  Duration: null
+  Count: 1
+  Deadline: null
+  OpCodes:
+    - Operation: "provision"
+      ObjectType: SubTopology
+      Objects: "subtop0"
+    - Operation: "sleep"
+      Command: "10m"
+    - Operation: "put"
+      Options:
+        Src: file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/architecture/Infs/Topology/sub0node0.sh
+        Dst: file@/root
+      ObjectType: VM
+      Objects: "subtop0.sub0node0"
+    - Operation: "execute"
+      Command: "bash /root/sub0node0.sh &"
+      ObjectType: VM
+      Objects: "subtop0.sub0node0"
+    - Operation: "put"
+      Options:
+        Src: file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/architecture/Infs/Topology/sub0node1.sh
+        Dst: file@/root
+      ObjectType: VM
+      Objects: "subtop0.sub0node1"
+    - Operation: "execute"
+      Command: "bash /root/sub0node1.sh &"
+      ObjectType: VM
+      Objects: "subtop0.sub0node1"
+    - Operation: "put"
+      Options:
+        Src: file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/architecture/Infs/Topology/sub0node2.sh
+        Dst: file@/root
+      ObjectType: VM
+      Objects: "subtop0.sub0node2"
+    - Operation: "execute"
+      Command: "bash /root/sub0node2.sh &"
+      ObjectType: VM
+      Objects: "subtop0.sub0node2"
+    - Operation: "put"
+      Options:
+        Src: file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/architecture/Infs/Topology/influxdb.sh
+        Dst: file@/root
+      ObjectType: VM
+      Objects: "subtop0.monitor"
+    - Operation: "execute"
+      Command: "bash /root/influxdb.sh"
+      ObjectType: VM
+      Objects: "subtop0.monitor"
+    - Operation: "sleep"
+      Command: "2m"
+    - Operation: "put"
+      Options:
+        Src: file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/stop.sh
+        Dst: file@/root
+      ObjectType: VM
+      Objects: "subtop0.sub0node0"
+    - Operation: "put"
+      Options:
+        Src: file@./cloud_storm/cloud/5f057c9a95a0b3522f91486b/genesis.sh
+        Dst: file@/root
+      ObjectType: VM
+      Objects: "subtop0.sub0node0"
+    - Operation: "execute"
+      Command: "bash /root/genesis.sh"
+      ObjectType: VM
+      Objects: "subtop0.sub0node0"
+Mode: "CTRL" # or CTRL
+InfrasCodes:
+- CodeType: "LOOP"
+  Duration: null
+  Count: 1
+  Deadline: null
+  OpCodes:
+  - Operation: "provision"
+    ObjectType: SubTopology
+    Objects: "subtop0"
+  - Operation: "provision"
+    ObjectType: SubTopology
+    Objects: "subtop1"
+  - Operation: "sleep"
+    Command: "10m"
+  - Operation: "put"
+    Options:
+      Src: file@./cloud_storm/cloud/602a59971b13ddb0875b4bd0/stop.sh
+      Dst: file@/root
+    ObjectType: VM
+    Objects: "subtop0.sub0node0"
+  - Operation: "put"
+    Options:
+      Src: file@./cloud_storm/cloud/602a59971b13ddb0875b4bd0/genesis.sh
+      Dst: file@/root
+    ObjectType: VM
+    Objects: "subtop0.sub0node0"
+  - Operation: "execute"
+    Command: "bash /root/genesis.sh"
+    ObjectType: VM
+    Objects: "subtop0.sub0node0"

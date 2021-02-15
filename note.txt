@@ -1,0 +1,55 @@
+The user input data will be stored in a database (mongodb), which means you need to start a database at first. In this demo a Cloud MongoDB Atlas is used. You can follow this link to register and start the database. (https://studio3t.com/knowledge-base/articles/connect-to-mongodb-atlas/)
+Copy the database connection string and replace it in loadUserInputCollection and loadTransactionCollection() functions in the file ./blockchain_tool/server/routes/api/user_input.js.
+mongodb+srv://xin:xry112358@cluster0.utjhm.mongodb.net/test?retryWrites=true&w=majority
+
+In the folder ./blockchain_tool/cloud_storm/cloud/template_folder/Infs/UC/, update your account/password for ExoGENI and Amazon Cloud provider. I would suggest try AWS free hours at first because it's more easier. For ExoGENI you need to convert the pem key (which I send you before) to jks format. More details can be found at my repository page.
+ExoGeni:
+openssl pkcs12 -export -out eneCert.pkcs12 -in eneCert.pem
+java -jar portecle.jar
+https://github.com/scop/portecle
+keytool -list -v -keystore user(.jks)
+
+Amazon:
+Access Key ID: AKIAIR55GAHZ3ZTSQNJA
+Secret Access Key: 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
+
+Copy the APP and Logs folders from ./blockchain_tool/cloud_storm/cloud/5f057c9a95a0b3522f91486b/architecture/Logs to template_folder in the same path.
+Start to run the demo.
+I would suggest first follow my repository, deploy and monitor the blockchain locally (use multipass VMs), and then goes to the Cloud automation part. Finally, configure the frond-end.
+
+How to use exogeni
+1. Register and login in. Don't need to join project. 
+https://www.geni.net/get-involved/get-started/
+2. Download Flukes which is an user interface. 
+Tutorial: https://dutta.csc.ncsu.edu/csc573_fall16/wrap/how-to-exogeni.pdf
+https://github.com/RENCI-NRIG/flukes/wiki/flukes-help
+Install: curl http://geni-images.renci.org/webstart/flukes.jnlp > ~/Downloads/flukes.jnlp
+Start: javaws ~/Downloads/flukes.jnlp
+Set up Java security
+Add list: http://geni-images.renci.org
+Configure ~/.flukes.properties
+orca.xmlrpc.url=https://geni.renci.org:11443/orca/xmlrpc
+user.certfile=/Users/zeshunshi/.ssl/***.pem
+user.certkeyfile=/Users/zeshunshi/.ssl/***.pem
+enable.modify=true
+# SSH Public key to install into VM instances
+# ssh.pubkey=~/.ssh/id_dsa.pub
+# Secondary login (works with ssh.other.pubkey)
+# ssh.other.login=pruth
+# Secondary public SSH keys 
+# ssh.other.pubkey=~/.ssh/id_dsa.pub
+# Should the secondary account have sudo privileges
+# ssh.other.sudo=yes
+# Path to XTerm executable on your system
+xterm.path=/opt/X11/bin/xterm
+
+npm cache clean --force
+rm -rfv package-lock.json node_modules
+npm install
+Start server `$ npm run start`
+Open a new terminal window
+Navigate to client folder `$ cd client`
+                           npm install
+Start application `$ npm run serve`
+
+Jardenna是自己写了一个configure_blockchain的bash文件，你可以在她那个基础上改，也可以进到cloud/.../architecture/Infs/Topology 里面，自己配置每个vm上自动运动的脚本。这里有个区别就是这里是用的linux直接安装，没有用container。你要用container需要在每个节点先安装docker swarm或者kubernetes
